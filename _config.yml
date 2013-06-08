@@ -1,9 +1,9 @@
 source: ./_source
 destination: ./_site
 
-name: l3kn.de Blog
-description: Ruby, Webdesign und andere Absurditäten
-url: http://www.l3kn.de
+name: HaSi e.V.
+description: Dein Hackspace in Siegen
+url: http://www.hasi.it
 
 excerpt_separator: "<!-- break -->"
 
@@ -33,7 +33,7 @@ safe: false
 navigation:
 - title: Home
   url: /index.html
-- title: Blog
+- title: Vorträge
   url: /blog/
-- title: Projekte
-  url: /projects/
+- title: Wiki
+  url: wiki.hasi.it
