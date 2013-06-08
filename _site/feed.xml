@@ -7,98 +7,19 @@
         <atom:link href="http://www.hasi.it/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
-                <title>Twitter und Flattr Buttons ohne Javascript</title>
-                <description>&lt;h1 id=&quot;go-home-js-you-are-drunk&quot;&gt;Go home JS, you are drunk!&lt;/h1&gt;
+                <title>Erklär mir Kunst</title>
+                <description>&lt;p&gt;&lt;img src=&quot;http://hasi.it/wp-content/uploads/2013/05/tumblr_mh53xkDKSW1qz6f9yo1_500-300x168.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Normalerweise werden Flattr- und Twitterbuttons mit einem html-Anker definiert und dann durch Javascripts nachgeladen, 
-obwohl normale Links viel einfacher und ressourcenschonender wären…&lt;/p&gt;
+&lt;p&gt;Hybr1s ist Regisseur bei der Theatergruppe tollMut. Am 30. Mai 2013 hat er versucht, Kunst zu erklären:&lt;/p&gt;
 
-&lt;!-- break --&gt;
+&lt;p&gt;&lt;strong&gt;Ist das Kunst oder kann das weg?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Der Vorteil dieser obskuren Scripts ist, dass neben dem Button auch die Anzahl der Nutzer, die ihn bereits geklickt haben,
-angezeigt wird, wobei auch dies im Fall von Twitter kaum funktioniert.&lt;/p&gt;
-
-&lt;p&gt;Nachteile hingegen sind, dass Javascript erlaubt sein muss, um die Buttons anzuzeigen, die Verwenung von komische html Elemente und unkontrolliert nachlandende Dateien.
-Außerdem kann das Aussehen der Buttons nicht (nur schwierig) angepasst werden.
-Auch beim Blick in die Chrome Developer Tools (oder ähnliche Werkzeuge) wird schnell klar, dass diese Variante bestenfalls unelegant ist.&lt;/p&gt;
-
-&lt;p&gt;Obwohl der restliche Inhalt der Seite (dank gzip und code compression) in unter einer Sekunde geladen ist, benötigen die beiden Buttons mit dazugehörigem Javascript noch einmal drei Sekunden.&lt;/p&gt;
-
-&lt;h2 id=&quot;die-lsung&quot;&gt;Die Lösung&lt;/h2&gt;
-
-&lt;p&gt;Laut der &lt;a href=&quot;http://developers.flattr.net/auto-submit/&quot;&gt;Flattr Developer-docs&lt;/a&gt; ist es möglich über einfache Links Inhalte zu flattrn.
-Auch die Javascripts, die Twitter uns andrehen möchte, erzeugen letztendlich nur einen Link in dessen Parametern alle wichtigen Informationen enthalten sind, bis jetzt konnte
-ich dafür aber keine offizielle Dokumentation finden.&lt;/p&gt;
-
-&lt;p&gt;Eine einfache Möglichkeit die Funktion des “tweet-this” Buttons nachzuempfinden sieht so aus:&lt;br /&gt;
-&lt;code&gt;https://twitter.com/intent/tweet?url=[URL]&amp;amp;via=[USERID]&lt;/code&gt;  &lt;/p&gt;
-
-&lt;p&gt;bei Flattr verhält es sich ähnlich, hier sollte aber noch eine Titelbeschreibung hinzugefügt werden:&lt;br /&gt;
-&lt;code&gt;https://flattr.com/submit/auto?user_id=[USERID]&amp;amp;url=[URL]&amp;amp;title=[TITEL]&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;als-jekyll-include&quot;&gt;Als Jekyll Include&lt;/h2&gt;
-
-&lt;p&gt;Der Static Site Generator &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, auf dem u.A. diese Website basiert, bietet die Möglichkeit sogenannte &lt;strong&gt;Includes&lt;/strong&gt; festzulegen um häufig wiederholten Code 
-nur an einer Stelle anpassen zu müssen.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;_includes/social.html&lt;/em&gt;&lt;/p&gt;
-
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
-&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
-&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
-&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
-&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
-&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
-&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
-&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
-&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
-&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
-&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
-&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
-&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
-&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;
-{% if post %}
-    {% assign this = post %}
-{% else %}
-    {% assign this = page %}
-{% endif %}
-
-&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;https://twitter.com/intent/tweet?url=http://www.l3kn.de{{ this.url }}&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;via=l3kn&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070&quot;&gt;&amp;gt;&lt;/span&gt;
-    tweet
-&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-
-&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;https://flattr.com/submit/auto?user_id=l3kn&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;url=http://www.l3kn.de{{ this.url }}&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;title={{ this.title }}&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070&quot;&gt;&amp;gt;&lt;/span&gt;
-    flattr this
-&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ich würde mich natürlich auch über fremde Flattrs freuen, die Parameter der URLs sollten aber noch angepasst werden ;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Enthält das &lt;code&gt;_includes&lt;/code&gt;-Verzeichnis die obenstehende Datei können Posts und einzelne Seiten durch ein einfaches   &lt;/p&gt;
-
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% include social.html %}
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;p&gt;mit Tweet- und Flattrbuttons versehen werden.&lt;br /&gt;
-Die entstehenden Links können dann durch Einfügen von Bildern oder Anpassungen im CSS individualisiert werden.&lt;/p&gt;
+&lt;p&gt;Kunst ist langweilig, unverständlich, bringt doch nichts!
+Ob Liebhaber oder Banause – Kunst polarisiert.&lt;/p&gt;
 </description>
                 <pubDate>Thu, 23 May 2013 00:00:00 +0200</pubDate>
-                <link>http://www.hasi.itblog/2013/05/23/Twitter_und_Flattr_Button_ohnes_JS.html</link>
-                <guid isPermaLink="true">http://www.hasi.itblog/2013/05/23/Twitter_und_Flattr_Button_ohnes_JS.html</guid>
+                <link>http://www.hasi.ittalk/2013/05/23/Erklaer_mir_Kunst.html</link>
+                <guid isPermaLink="true">http://www.hasi.ittalk/2013/05/23/Erklaer_mir_Kunst.html</guid>
             </item>
         
     </channel>

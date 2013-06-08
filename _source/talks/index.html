@@ -2,7 +2,7 @@
 layout: default
 title: blog
 ---
-{% for post in site.categories.blog %}
+{% for post in site.categories.talk %}
 <section class="wside post">
 	<article class="group">
 		<header><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></header>
@@ -10,12 +10,16 @@ title: blog
 		<p><a class="button" href="{{ post.url }}">Read more...</a></p>
 	</article>
 </section>
-<aside class="m-hidden">
+<aside>
 	<article class="group">
-		<header><h2>{{ post.date | date: "%d %B %Y"}}</h2></header>
+		<header><h2>media</h2></header>
+		<audio controls>
+			<source src={{ post.file }} type="audio/mpeg">
+			Your browser does not support this audio format.
+		</audio>
+		<a href={{ post.video }} target="_blank" class="button">zum Video</a>
+		<a href={{ post.slides }} target="_blank" class="button">zu den Slides</a>
 		{% include social.html %}
-		<p>time to read: {{ post.content | number_of_words | divided_by: 4}}s</p>
-		{% include tags.html %}
 	</article>
 </aside>
 {% endfor %}

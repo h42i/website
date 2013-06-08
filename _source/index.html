@@ -5,8 +5,8 @@ title: Dein Hackspace in Siegen
 <section class="wside">
     <article>
         <header><h1>news</h1></header>
-        {% for post in site.categories.blog limit: 4 %}
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {% for post in site.posts limit: 4 %}
+            <h3><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h3>
         {% endfor %}
     </article>
 </section>
