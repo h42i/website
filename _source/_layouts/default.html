@@ -17,6 +17,12 @@ to contact me: hello(at)l3kn.de
 		<![endif]-->
 		<section id="wrapper">
 			<header id="page-header">
+				<div class="image-header">
+					<h1 class="huge">HaSi e.V.</h1>
+					<p>Dein hackspace in Siegen</p>
+				</div>
+			</header>
+			<section>
 				<nav>
 					<ul>
 					{% for link in site.navigation %}
@@ -27,15 +33,14 @@ to contact me: hello(at)l3kn.de
 						{% endif %}
 					{% endfor %}
 					</ul>
-				</nav>		
-			</header>
+				</nav>	
+			</section>
 			<section id="main" class="group">
 				{{ content }}
 			</section>
 			<footer>
 				<a href="/site_notice/">Impressum</a>
 				<p>Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on asteroids by <a href="https://uberspace.de">Uberspace</a></p>
-				<p>Insert html5 & css3 badges here (fancy!)</p>
 			</footer>
 		</section>
 	</body>

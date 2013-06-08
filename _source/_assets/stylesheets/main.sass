@@ -5,13 +5,13 @@
 // wide desktop 1440px - ... 
 
 // variables
-$color_back: white
-$color_back_light: #EEEEEE 
-$color_text: #404040
-$color_text_highlight: #666666
+$color_back: #1D1717
+$color_back_light: #303030  
+$color_text: white
+$color_text_highlight: white
 $color_text_light: white
-$color_text_contrast: #61CDF5
-$color_back_contrast: #61CDF5
+$color_text_contrast: #33CC00
+$color_back_contrast: #008800
 
 // fonts
 @font-face
@@ -27,45 +27,51 @@ html, button, input, select, textarea
   color: $color_text
 
 body 
-  font-family: ff-din-web-condensed, helvetica, sans-serif
-  font-weight: 400
+  background: #E4E3DE
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 200
   font-size: 100%
   color: $color_text
 
 #page-header
-  background: $color_back_light
-  padding: 0.5em
+  background-color: $color_back_contrast
+  padding: 1em
   margin: 0
+  h1
+    color: $color_back
+  p
+    margin: 0
+    margin-left: 8px
 
 #wrapper
   background: $color_back
 
 #main
-  padding: 2em
+  padding: 0.5em 2em
 
 footer
-  background: $color_back_contrast
+  background: $color_back_light
   padding: 0.5em
   a
     color: $color_text_light
     &:hover
-      color: $color_text_highlight
+      color: $color_text_contrast
 
 nav
   width: 100%
-  font-size: 200%
+  font-size: 1.5em
   text-transform: lowercase
   text-align: center
+  background: $color_back_light
   ul
-    margin: 0.5em 0
+    margin: 0
+    padding: 0.1em 0.5em
   li
-    width: 90%
-    &:before 
-      content: "{ "
-      color: $color_back_contrast
-    &:after
-      content: " }"
-      color: $color_back_contrast
+    padding: 0 0.2em
+  a
+    color: $color_text_light
+    &:hover
+      color: $color_text_contrast
 
 article
   text-align: justify
@@ -91,13 +97,19 @@ aside
 
 .m-hidden
   display: none
+
+.huge
+  font-size: 3em
+  margin: 0.1em
+
+
 // text styling
 
 a
   text-decoration: none
-  color: $color_text_highlight
+  color: $color_text_contrast
   &:hover
-    color: $color_text_contrast
+    color: $color_text_highlight
 
 table
   margin: 10px 0 15px 0
@@ -136,17 +148,9 @@ code
     width: 27%
 
   nav
-    text-align: right
+    text-align: left
     li
       display: inline
-      &:before
-        content: "  //  "
-        color: $color_back_contrast
-      &:first-child 
-        &:before
-          content: none 
-      &:after
-        content: none
 
 .tag
   float: left
@@ -168,7 +172,7 @@ code
 
 @media screen and (min-width: 1024px)
   body
-    background-image: url(asset_path('pattern.png'))
+    // background-image: url(asset_path('pattern.png'))
   #wrapper
     width: 90%
     margin-left: auto
