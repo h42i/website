@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--
+Hello my name is Leon Rische and welcome to my code!
+
+If you have any questions or improvements feel free 
+to contact me: hello(at)l3kn.de
+-->
+
+<html class="no-js">
+	<head>
+		{% include head.html %}
+	</head>
+	<body lang="de">
+		<!--[if lt IE 9]>
+			<h1 class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</h1>
+		<![endif]-->
+		<section id="wrapper">
+			<header id="page-header">
+				<nav>
+					<ul>
+					{% for link in site.navigation %}
+						{% if page.url == link.url %}
+							<li class="active"><a href="{{link.url}}">{{link.title}}</a></li>
+						{% else %}
+							<li><a href="{{link.url}}">{{link.title}}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				</nav>		
+			</header>
+			<section id="main" class="group">
+				{{ content }}
+			</section>
+			<footer>
+				<a href="/site_notice/">Impressum</a>
+				<p>Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on asteroids by <a href="https://uberspace.de">Uberspace</a></p>
+				<p>Insert html5 & css3 badges here (fancy!)</p>
+			</footer>
+		</section>
+	</body>
+</html>
+

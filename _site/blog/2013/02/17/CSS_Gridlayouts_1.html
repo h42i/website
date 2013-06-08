@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!--
+Hello my name is Leon Rische and welcome to my code!
+
+If you have any questions or improvements feel free 
+to contact me: hello(at)l3kn.de
+-->
+
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+<title>l3kn.de Blog</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.l3kn.de/feed.xml" />
+
+<link rel="stylesheet" type="text/css" href="/assets/main-13824ab75c8da85f21f354dff5445ba1.css">
+<link rel="stylesheet" type="text/css" href="/assets/icons-2a3fbb19dc1d971dcd87aca5f76766bf.css">
+<link rel="stylesheet" type="text/css" href="/assets/normalize-e9c4a2fd04244d6c0c1a916f2fb9292a.css">
+
+	</head>
+	<body lang="de">
+		<!--[if lt IE 9]>
+			<h1 class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</h1>
+		<![endif]-->
+		<section id="wrapper">
+			<header id="page-header">
+				<nav>
+					<ul>
+					
+						
+							<li><a href="/index.html">Home</a></li>
+						
+					
+						
+							<li><a href="/blog/">Blog</a></li>
+						
+					
+						
+							<li><a href="/projects/">Projekte</a></li>
+						
+					
+					</ul>
+				</nav>		
+			</header>
+			<section id="main" class="group">
+				<!--
+l3 default layout for a single blogpage
+-->
+
+<article>
+	<header>
+		<h1>CSS Gridlayouts (Teil 1)</h1>
+	</header>	
+	<h1 id="theoretische-grundlage-von-gridlayouts">Theoretische Grundlage von Gridlayouts</h1>
+
+<h2 id="whoot">Whoot??</h2>
+
+<p>Als Gridlayouts bezeichnet man bei der Entwicklung von Websites ein aus Zeilen und Spalten bestehendes Grundgerüst zur Positionierung von Elementen. Die Verwendung eines Gridlayouts erspart es, bei jedem Webprojekt die Position einzelner Elemente manuell festzulegen.</p>
+
+<!-- break -->
+
+<h2 id="beispiele">Beispiele</h2>
+
+<ul>
+  <li><a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a> enthält unter anderem auch ein 12-Spaltiges Gridsystem</li>
+  <li><a href="http://gridpak.com/">Gridpak</a> ist ein online Gridgenerator mit dem es möglich ist, schnell eigene Grids zu erstellen </li>
+  <li><a href="https://github.com/l3kn/l3_grid">l3 grid</a> Meine eigene, leicht anpassbare Umsetzung eines Gridlayouts, geschrieben in .sass (dazu später mehr)</li>
+  <li><a href="http://cssgrid.net/">1140 css grid</a> Ein weiteres vorgefertigtes Gridlayout</li>
+</ul>
+
+<h2 id="aufbau">Aufbau</h2>
+
+<p>Alle Beispiellayouts basieren auf zwei Hauptklassen:</p>
+
+<ol>
+  <li><code>.row</code>
+Unterteilt das Layout horizontal  </li>
+  <li><code>.column_(1..n)</code>
+Vertikale ‘Blöcke’ in n (meist 12) verschiedenen Breiten
+wobei die columns wieder rows mit weiteren columns enthalten können, da die Breitenangaben relativ sind.</li>
+</ol>
+
+<p><img src="http://shared.l3kn.de/images/gridlayout.png" alt="layout" /></p>
+
+<h3 id="warum-12">Warum 12?</h3>
+
+<p>Häufig unterteilen sich Gridlayouts in 12 columns, da sich die Zahl 12 gut in</p>
+
+<blockquote>
+  <ul>
+    <li>zwei columns der Breite 6</li>
+    <li>drei columns der Breite 4</li>
+    <li>vier columns der Breite 3</li>
+    <li>sechs columns der Breite 2</li>
+  </ul>
+</blockquote>
+
+<p>teilen lässt.</p>
+
+<p>Eine gröbere Unterteilung wäre aber auch mit 6 (teilbar durch 1,2,3 und 6) möglich,
+feinere Layouts könnten sich in 24 Spalten (teilbar durch 1,2,3,4,6,8,12 und 24) unterteilen.</p>
+
+
+</article>
+<aside>
+	
+    
+
+
+<div class="pull-right">
+	<ul>
+		<li><a href="https://twitter.com/intent/tweet?url=http://www.l3kn.de/blog/2013/02/17/CSS_Gridlayouts_1.html&via=l3kn" target="_blank"><i class="twitter"></i>Tweet</a></li>
+		<li><a href="https://flattr.com/submit/auto?user_id=l3kn&url=http://www.l3kn.de/blog/2013/02/17/CSS_Gridlayouts_1.html&title=CSS Gridlayouts (Teil 1)" target="_blank"><i class="flattr"></i>Flattr this</a></li>
+	</ul>
+</div>	
+</aside>
+
+
+
+			</section>
+			<footer>
+				<a href="/site_notice/">Impressum</a>
+				<p>Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on asteroids by <a href="https://uberspace.de">Uberspace</a></p>
+				<p>Insert html5 & css3 badges here (fancy!)</p>
+			</footer>
+		</section>
+	</body>
+</html>
+

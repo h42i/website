@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article>
+	{{ content}}
+</article>
+<aside>
+	{% include social.html %}
+	{% if page.git %}
+		<a href="{{ page.git }}" class="button" target="_blank">Github</a>
+	{% endif %}
+	{% if page.doc %}
+		<a href="{{ page.doc }}" class="button" target="_blank">Documentation</a>
+	{% endif %}
+</aside>

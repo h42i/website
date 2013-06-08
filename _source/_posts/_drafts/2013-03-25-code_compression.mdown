@@ -1,0 +1,116 @@
+---
+layout: post 
+category: blog
+title: (Jekyll) code compression
+tags:
+- Jekyll
+- Webdesign
+---
+# Speeding up things a little
+
+## Einleitung
+
+Formattierungsmaßnamen wie z.B. Zeilenumbrüche, Kommentare und eingerückte Zeilen steigern zwar die Lesbarkeit von Code enorm, sind aber eher hinderlich, wenn es darum geht diesen beim Aufruf einer Website zu übertragen.
+Vor allem bei großen oder viel besuchten Websites kann es deshalb sinnvoll sein die zu ladenden Dateien zu komprimieren, um zum einen Ladezeiten möglichst gering zu halten und zum anderen um in Form von Traffickosten bares Geld zu sparen.
+
+<!-- break -->
+
+Nehmen wir als Beispiel dieses Stück Code aus dem Stylesheet von [nopoint](http://www.github.com/l3kn/nopoint):
+
+~~~ css
+.count 
+{
+	position: fixed;
+	bottom: 1em;
+	right: 1em;   
+}
+
+/*********************************************** 
+ * sinnloser Kommentar                         *
+ * der am besten noch über mehrere Zeilen geht *
+ ***********************************************/ 
+h1, h2, h3, h4, h5, h6, p, blockquote 
+{
+	margin: 0;
+	padding: 0; 
+}
+
+table 
+{
+	margin: 10px 0 15px 0;
+	border-collapse: collapse; 
+}
+~~~
+
+In seiner jetzigen Form ist dieses Snippet 423byte groß (was erstmal nicht viel klingt, es handelt sich aber auch nur um einen kleinen Teil des gesamten Stylesheets) und voller "überflüssiger" Zeichen und Kommentare.  
+Auch die Zeilenumbrüche und -einrückungen haben nur einen ästhetischen Nutzen, aber auch an weniger offensichtlichen Stellen kann Platz gespart werden: so muss beispielsweise bei __CSS__-Dateien die letzte Eigenschaft eines Objektes nicht mit einem `;` abgeschlossen werden.
+
+Diese Probleme beschränken sich nicht nur auf __CSS__, auch __JavaScript__ und __html__-Dateien enthalten oft unnötigen Ballast. 
+
+## Lösung
+
+Abhilfe schafft ein sogenannter _Compressor_ oder _Minifier_. Bekannt sind vor allem der von Yahoo! entwickelte [YUI Compressor](http://yui.github.com/yuicompressor/) oder Googles [Closure Compiler](https://developers.google.com/closure/compiler/)
+
+Komprimiert sieht das CSS-Snippet von oben so aus
+~~~ css
+.count{position:fixed;bottom:1em;right:1em}h1,h2,h3,h4,h5,h6,p,blockquote{margin:0;padding:0}table{margin:10px 0 15px 0;border-collapse:collapse}
+~~~
+
+und ist nur noch 146byte, also ca. um den Faktor 3 kleiner als die Ausgangsdatei.
+
+Insbesondere bei __JavaScript__ können zusätzlich noch Variablennamen durch einzelne Buchstaben ersetzt werden um Platz zu sparen. Komprimiert sähe das Script, das auf dieser Website die Twitterbuttons einbaut so und immerhin 50byte kleiner aus:
+
+~~~ javascript
+!function(e,a,f){var c,b=e.getElementsByTagName(a)[0];if(!e.getElementById(f)){c=e.createElement(a);c.id=f;c.src="https://platform.twitter.com/widgets.js";b.parentNode.insertBefore(c,b)}}(document,"script","twitter-wjs");
+~~~
+
+## Benutzung mit Jekyll
+
+Jekyll kann mithilfe von Plugins wie [Jekyll Asset Bundler](https://github.com/moshen/jekyll-asset_bundler) um Code Compression erweitert werden. Für dieses Blog verwende ich die [Jekyll asset pipeline](https://github.com/matthodan/jekyll-asset-pipeline), da sie zusätzlich noch verschiedene __CSS__ und __JS__-Dateien in eine zusammenfasst und auch __sass__ und __bourbon__ unterstützt. Eine gute Anleitung hierzu findet sich schon [hier](https://github.com/matthodan/jekyll-asset-pipeline), deshalb poste ich an dieser Stelle nur noch die aktuelle Version meiner `_plugins/ext.rb` Datei:
+
+~~~ ruby  
+require 'jekyll_asset_pipeline'
+require 'bourbon'
+require 'sass'
+require 'yui/compressor'
+
+module JekyllAssetPipeline
+	class SassConverter < JekyllAssetPipeline::Converter
+		require 'sass'
+
+		def self.filetype
+			'.sass'
+		end
+
+		def convert
+			return Sass::Engine.new(@content, syntax: :sass).render
+		end
+	end
+
+	class CssCompressor < JekyllAssetPipeline::Compressor
+		require 'yui/compressor'
+
+		def self.filetype
+			'.css'
+		end
+
+		def compress
+			return YUI::CssCompressor.new.compress(@content)
+		end
+	end
+
+	class JavaScriptCompressor < JekyllAssetPipeline::Compressor
+		require 'yui/compressor'
+
+		def self.filetype
+			'.js'
+		end
+
+		def compress
+			return YUI::JavaScriptCompressor.new(munge: true).compress(@content)
+		end
+	end
+end
+~~~  
+
+__Achtung:__ Vorher müssen mit `gem install` natürlich noch alle benötigten Pakete installiert werden.

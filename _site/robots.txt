@@ -1,0 +1,5 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow:
+Sitemap: http://l3kn.de/sitemap.xml

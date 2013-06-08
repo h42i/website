@@ -1,0 +1,30 @@
+---
+layout: default
+title: home
+---
+<h1>Hier könnte eine sinnvolle Überschrift stehen</h1>
+<section class="wside">
+    <article>
+        <header><h1><i class="pen"></i>posts</h1></header>
+        {% for post in site.categories.blog limit: 4 %}
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {% endfor %}
+    </article>
+</section>
+<aside>
+    <article>
+        <header><h1><i class="social"></i>social</h1></header>
+            <ul id="social">
+                <li><a href="https://www.github.com/l3kn" target="_blank"><i class="github"></i>Github</a></li>
+                <li><a href="https://www.twitter.com/l3kn" target="_blank"><i class="twitter"></i>Twitter</a></li>
+                <li><a href="https://www.flattr.com/profile/l3kn" target="_blank"><i class="flattr"></i>Flattr</a></li>
+            </ul>
+    </article>
+    <article>
+        <header><h1><i class="tags"></i>tags</h1></header>
+        {% for tag in site.tags %}
+            <a href="{{ site.url }}/{% if site.tag_gen.dir %}{{ site.tag_gen.dir }}{% else %}tags{% endif %}/{{ tag | first }}.html" class="tag">{{ tag | first }}</a>
+        {% endfor %}
+    </article>
+</aside>
+

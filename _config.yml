@@ -1,0 +1,39 @@
+source: ./_source
+destination: ./_site
+
+name: l3kn.de Blog
+description: Ruby, Webdesign und andere Absurditäten
+url: http://www.l3kn.de
+
+excerpt_separator: "<!-- break -->"
+
+markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: table
+
+assets:
+  sources:
+  - _assets/stylesheets
+  - _assets/webfonts
+  - _assets/images
+  compress:
+    js:   uglifier
+    css:  yui
+
+info:
+  name: Leon Rische
+  mail: hello@l3kn.de
+  street: Voßhölzchen 8 
+  country: 57489 Drolshagen (NRW)
+
+safe: false
+
+navigation:
+- title: Home
+  url: /index.html
+- title: Blog
+  url: /blog/
+- title: Projekte
+  url: /projects/

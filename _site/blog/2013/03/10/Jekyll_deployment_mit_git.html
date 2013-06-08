@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<!--
+Hello my name is Leon Rische and welcome to my code!
+
+If you have any questions or improvements feel free 
+to contact me: hello(at)l3kn.de
+-->
+
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+<title>l3kn.de Blog</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.l3kn.de/feed.xml" />
+
+<link rel="stylesheet" type="text/css" href="/assets/main-13824ab75c8da85f21f354dff5445ba1.css">
+<link rel="stylesheet" type="text/css" href="/assets/icons-2a3fbb19dc1d971dcd87aca5f76766bf.css">
+<link rel="stylesheet" type="text/css" href="/assets/normalize-e9c4a2fd04244d6c0c1a916f2fb9292a.css">
+
+	</head>
+	<body lang="de">
+		<!--[if lt IE 9]>
+			<h1 class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</h1>
+		<![endif]-->
+		<section id="wrapper">
+			<header id="page-header">
+				<nav>
+					<ul>
+					
+						
+							<li><a href="/index.html">Home</a></li>
+						
+					
+						
+							<li><a href="/blog/">Blog</a></li>
+						
+					
+						
+							<li><a href="/projects/">Projekte</a></li>
+						
+					
+					</ul>
+				</nav>		
+			</header>
+			<section id="main" class="group">
+				<!--
+l3 default layout for a single blogpage
+-->
+
+<article>
+	<header>
+		<h1>Jekyll Deployment</h1>
+	</header>	
+	<h2 id="einleitung">Einleitung</h2>
+
+<p>Da Jekyll nur auf statischen Dateien basiert, bietet es sich an, die gesamte Website mit <code>git</code> zu deployen.
+Natürlich ist es möglich, das alle nötigen Dateiens erst auf dem Webserver generieren zu lassen, dazu müssten dort aber auch alle genutzten Erweiterungen <em>(assets, coderay, sass)</em> installiert sein, was nicht immer problemlos möglich ist.
+Deshalb erzeuge ich die Seite lokal und pushe dann die Änderungen auf meinen <a href="www.uberspace.de">Uberspace</a></p>
+
+<!-- break -->
+
+<h2 id="aufbau">Aufbau</h2>
+
+<p>Mein Aufbau besteht aus 3 .git-repositories, von denen sich eins lokal auf meinem PC und zwei auf meinem uberspace befinden.</p>
+
+<h3 id="lokal">Lokal</h3>
+
+<p>Das lokale Repository ist ein Clone des <strong>bare-Repos</strong> auf dem Server und kann mit</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone ssh://&lt;name&gt;@&lt;server&gt;/home/&lt;name&gt;/git/jekyll.git
+</pre></td>
+</tr></table>
+</div>
+
+<p>angelegt werden.
+Damit Jekyll die generierten Dateien dort speichert muss der <em>directory:</em>-Pfad in der <code>_config.yml</code> Datei angepasst werden.  </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#606">directory</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">../jekyll/</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<blockquote>
+  <p><strong>Achtung</strong>
+Hier muss ein Ordner <em>(_site)</em> innerhalb des Repos angegeben werden, da sonst bei jedem Ausführen von <code>jekyll</code> auch der <code>.git</code> gelöscht würde.</p>
+</blockquote>
+
+<h3 id="remote">Remote</h3>
+
+<p>Auf dem Server befinden sich ein <strong>bare-Repo</strong> an das die von <code>jekyll</code> generierte Seite gepusht werden. Dieses wird mit </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre>cd ~  
+mkdir git
+cd git   
+mkdir jekyll.git
+cd jekyll.git
+git init --bare
+</pre></td>
+</tr></table>
+</div>
+
+<p>erzeugt.</p>
+
+<p>In <code>~/html/</code> befindet sich ein Clone des <strong>bare-Repos</strong>  </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone ~/git/jekyll.git
+</pre></td>
+</tr></table>
+</div>
+
+<p>der mit einem git-hook im <strong>bare-Repo</strong> nach jedem Commit aktualisiert wird.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>mv ~/git/jekyll.git/hooks/post-receive.sample ~/git/jekyll.git/hooks/post-receive
+vim ~/git/jekyll.git/hooks/post-receive 
+</pre></td>
+</tr></table>
+</div>
+
+<p>In diese Datei muss folgendes Script eingefügt werden:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>#!/bin/sh
+cd $HOME/html/jekyll/
+git --git-dir $HOME/html/jekyll/.git pull
+</pre></td>
+</tr></table>
+</div>
+
+<p>Sobald nun Änderungen aus dem lokalen Repo an das <strong>bare-Repo</strong> gepusht werden, aktualisiert sich auch das Repo im <code>html/</code> Ordner.</p>
+
+<blockquote>
+  <p><code>--git-dir $HOME/html/jekyll/.git</code> ist nötig, da <code>git</code> sich sonst, obwohl das Verzeichnis geändert wurde, auf das ursprüngliche Repo (jekyll.git) bezieht.</p>
+</blockquote>
+
+<p>Nun muss nurnoch jeder Aufruf der Website (<em>hier l3kn.de</em>) an den Ordner <code>html/jekyll/</code> weitergeleitet werden.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>cd /var/www/virtual/&lt;name&gt;/
+ln -s html/jekyll/ &lt;url&gt; 
+ln -s html/jekyll/ www.&lt;url&gt; 
+</pre></td>
+</tr></table>
+</div>
+
+<p>Treten beim ersten Pushen in das neue Repo Fehler auf hilft meist ein einmaliges</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git push origin master
+</pre></td>
+</tr></table>
+</div>
+
+</article>
+<aside>
+	
+    
+
+
+<div class="pull-right">
+	<ul>
+		<li><a href="https://twitter.com/intent/tweet?url=http://www.l3kn.de/blog/2013/03/10/Jekyll_deployment_mit_git.html&via=l3kn" target="_blank"><i class="twitter"></i>Tweet</a></li>
+		<li><a href="https://flattr.com/submit/auto?user_id=l3kn&url=http://www.l3kn.de/blog/2013/03/10/Jekyll_deployment_mit_git.html&title=Jekyll Deployment" target="_blank"><i class="flattr"></i>Flattr this</a></li>
+	</ul>
+</div>	
+</aside>
+
+
+
+			</section>
+			<footer>
+				<a href="/site_notice/">Impressum</a>
+				<p>Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on asteroids by <a href="https://uberspace.de">Uberspace</a></p>
+				<p>Insert html5 & css3 badges here (fancy!)</p>
+			</footer>
+		</section>
+	</body>
+</html>
+

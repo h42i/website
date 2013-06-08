@@ -1,0 +1,70 @@
+---
+layout: post
+category: blog
+title: Vim Black Magic, Kapitel 1
+tags:
+- Shell
+- Vim
+- Black Magic
+---
+# Verbrennt ihn!
+
+Neben den normalen Posts der _Vim_ Reihe werde ich ab und zu kleine Arbeitsabläufe
+veröffentlichen die im Hinblick auf Effizienz und Schnelligkeit für Außenstehende 
+fast wie schwarzer Magie aussehen können. 
+
+<!-- break -->
+
+## Der Ausgangszustand
+
+In meinem letzten Post habe ich u.A. diese Zeile geschrieben, die sich in diesem 
+Szenario in einer eigenen Datei befinden soll:
+
+_"Obwohl vim auf den ersten Blick sehr abschreckend wirken kann, gibt es nur wenige 
+Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst 
+einmal die Grundlagen verstanden hat)."_
+
+`vim magic1.txt` öffnet ein neues Dokument. Mit `i` betreten wir den _insert_-Mode
+und fügen den oben stehenden Text ein. Mit `ESC` kehren wir dann in
+den normalen Modus zurück.
+
+## Das Szenario
+
+Mittlerweile habe ich meine Meinung geändert und möchte jetzt den
+oben erwähnten Post anpassen und __vim__ besser darstellen.
+
+## Die Magie
+
+~~~ text
+Obwohl vim auf den ersten Blick sehr abschreckend wirken kann, gibt es nur wenige 
+Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst 
+einmal die Grundlagen verstanden hat).
+~~~
+
+`f``a` _(from) a_ springt zum ersten _"a"_ der Zeile.
+
+~~~ text
+Obwohl vim |auf den ersten Blick sehr abschreckend wirken kann, gibt es nur wenige 
+Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst 
+einmal die Grundlagen verstanden hat).
+~~~
+
+`d``t``.` _(delete)(to),_ löscht den Text bis zum nächsten Komma.
+
+~~~ text
+Obwohl vim |, gibt es nur wenige 
+Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst 
+einmal die Grundlagen verstanden hat).
+~~~
+
+`i``großartig ist` _(insert)_ betritt den _insert_-Mode und fügt neuen Text ein.
+
+~~~ text
+Obwohl vim großartig ist|, gibt es nur wenige 
+Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst 
+einmal die Grundlagen verstanden hat).
+~~~
+
+`ESC``:wq``Enter` _(write, close)_ beendet den _insert_-Mode und speichert die Datei.
+
+*__Anmerkung:__ Geklaut aus diesem [Vortrag](http://vimeo.com/53144573)*

@@ -1,0 +1,9 @@
+{% if post %}
+    {% assign this = post %}
+{% else %}
+    {% assign this = page %}
+{% endif %}
+
+{% for tag in this.tags %}
+	<a href="/{% if site.tag_gen.dir %}{{ site.tag_gen.dir }}{% else %}tags{% endif %}/{{ tag }}.html" class="tag">{{ tag }}</a>
+{% endfor %}

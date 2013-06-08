@@ -1,0 +1,28 @@
+---
+layout: default
+title: Projekte
+---
+
+{% for post in site.categories.project %}
+<section class="wside post">
+	<article class="group">
+		<header><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></header>
+		{{ post.excerpt }}
+		<p><a class="button" href="{{ post.url }}">Read more...</a></p>
+	</article>
+</section>
+<aside>
+	<article>
+		<header><h2>{{ post.date | date: "%d %B %Y"}}</h2></header>
+		{% include social.html %}
+		{% include tags.html %}
+		{% if post.git %}
+			<a href="{{ post.git }}" class="button" target="_blank">Github</a>
+		{% endif %}
+		{% if post.doc %}
+			<a href="{{ post.doc }}" class="button" target="_blank">Documentation</a>
+		{% endif %}	
+	</article>
+</aside>
+{% endfor %}
+

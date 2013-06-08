@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>l3kn.de Blog</title>
+        <description>Ruby, Webdesign und andere Absurditäten</description>
+        <link>http://www.l3kn.de</link>
+        <atom:link href="http://www.l3kn.de/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>Twitter und Flattr Buttons ohne Javascript</title>
+                <description>&lt;h1 id=&quot;go-home-js-you-are-drunk&quot;&gt;Go home JS, you are drunk!&lt;/h1&gt;
+
+&lt;p&gt;Normalerweise werden Flattr- und Twitterbuttons mit einem html-Anker definiert und dann durch Javascripts nachgeladen, 
+obwohl normale Links viel einfacher und ressourcenschonender wären…&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;Der Vorteil dieser obskuren Scripts ist, dass neben dem Button auch die Anzahl der Nutzer, die ihn bereits geklickt haben,
+angezeigt wird, wobei auch dies im Fall von Twitter kaum funktioniert.&lt;/p&gt;
+
+&lt;p&gt;Nachteile hingegen sind, dass Javascript erlaubt sein muss, um die Buttons anzuzeigen, die Verwenung von komische html Elemente und unkontrolliert nachlandende Dateien.
+Außerdem kann das Aussehen der Buttons nicht (nur schwierig) angepasst werden.
+Auch beim Blick in die Chrome Developer Tools (oder ähnliche Werkzeuge) wird schnell klar, dass diese Variante bestenfalls unelegant ist.&lt;/p&gt;
+
+&lt;p&gt;Obwohl der restliche Inhalt der Seite (dank gzip und code compression) in unter einer Sekunde geladen ist, benötigen die beiden Buttons mit dazugehörigem Javascript noch einmal drei Sekunden.&lt;/p&gt;
+
+&lt;h2 id=&quot;die-lsung&quot;&gt;Die Lösung&lt;/h2&gt;
+
+&lt;p&gt;Laut der &lt;a href=&quot;http://developers.flattr.net/auto-submit/&quot;&gt;Flattr Developer-docs&lt;/a&gt; ist es möglich über einfache Links Inhalte zu flattrn.
+Auch die Javascripts, die Twitter uns andrehen möchte, erzeugen letztendlich nur einen Link in dessen Parametern alle wichtigen Informationen enthalten sind, bis jetzt konnte
+ich dafür aber keine offizielle Dokumentation finden.&lt;/p&gt;
+
+&lt;p&gt;Eine einfache Möglichkeit die Funktion des “tweet-this” Buttons nachzuempfinden sieht so aus:&lt;br /&gt;
+&lt;code&gt;https://twitter.com/intent/tweet?url=[URL]&amp;amp;via=[USERID]&lt;/code&gt;  &lt;/p&gt;
+
+&lt;p&gt;bei Flattr verhält es sich ähnlich, hier sollte aber noch eine Titelbeschreibung hinzugefügt werden:&lt;br /&gt;
+&lt;code&gt;https://flattr.com/submit/auto?user_id=[USERID]&amp;amp;url=[URL]&amp;amp;title=[TITEL]&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;als-jekyll-include&quot;&gt;Als Jekyll Include&lt;/h2&gt;
+
+&lt;p&gt;Der Static Site Generator &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, auf dem u.A. diese Website basiert, bietet die Möglichkeit sogenannte &lt;strong&gt;Includes&lt;/strong&gt; festzulegen um häufig wiederholten Code 
+nur an einer Stelle anpassen zu müssen.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;_includes/social.html&lt;/em&gt;&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;
+{% if post %}
+    {% assign this = post %}
+{% else %}
+    {% assign this = page %}
+{% endif %}
+
+&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;https://twitter.com/intent/tweet?url=http://www.l3kn.de{{ this.url }}&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;via=l3kn&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070&quot;&gt;&amp;gt;&lt;/span&gt;
+    tweet
+&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;https://flattr.com/submit/auto?user_id=l3kn&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;url=http://www.l3kn.de{{ this.url }}&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;title={{ this.title }}&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070&quot;&gt;&amp;gt;&lt;/span&gt;
+    flattr this
+&lt;span style=&quot;color:#070&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ich würde mich natürlich auch über fremde Flattrs freuen, die Parameter der URLs sollten aber noch angepasst werden ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Enthält das &lt;code&gt;_includes&lt;/code&gt;-Verzeichnis die obenstehende Datei können Posts und einzelne Seiten durch ein einfaches   &lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% include social.html %}
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;mit Tweet- und Flattrbuttons versehen werden.&lt;br /&gt;
+Die entstehenden Links können dann durch Einfügen von Bildern oder Anpassungen im CSS individualisiert werden.&lt;/p&gt;
+</description>
+                <pubDate>Thu, 23 May 2013 00:00:00 +0200</pubDate>
+                <link>http://www.l3kn.deblog/2013/05/23/Twitter_und_Flattr_Button_ohnes_JS.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/05/23/Twitter_und_Flattr_Button_ohnes_JS.html</guid>
+            </item>
+        
+            <item>
+                <title>Vim (Teil 1)</title>
+                <description>&lt;h1 id=&quot;berblick-und-installation&quot;&gt;Überblick und Installation&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Editing at the speed of thought&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(behauptet zumindest dieses Buch -&amp;gt; &lt;a href=&quot;http://pragprog.com/book/dnvim/practical-vim&quot;&gt;Practical Vim&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;allgemeines&quot;&gt;Allgemeines&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Vim&lt;/strong&gt; &lt;em&gt;(Vi-IMproved)&lt;/em&gt; ist, wie schon am Namen zu erkennen, eine Weiterentwicklung von &lt;strong&gt;vi&lt;/strong&gt;, einem Open-Source Texteditor für Terminals. Beide Editoren basieren auf einem modularen Konzept, d.h. für verschiedenen Aufgaben/Aktionen kann zwischen 3(vi) bzw. 12(vim) Modi gewechselt werden, wodurch weniger Tastenkombinationen nötig sind.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Anmerkung:&lt;/strong&gt; Auch, wenn viele Befehle abwärtskompatiebel sind, beziehe ich mich im Folgenden auf die modernere Version des Editors (vim)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;warum-vim&quot;&gt;Warum vim?&lt;/h2&gt;
+
+&lt;p&gt;Obwohl &lt;strong&gt;vim&lt;/strong&gt; auf den ersten Blick sehr abschreckend wirken kann, gibt es nur wenige Editoren die in Effizienz und Geschwindigkeit vergleichbar sind (wenn man erst einmal die Grundlagen verstanden hat).&lt;/p&gt;
+
+&lt;h3 id=&quot;nachteile&quot;&gt;Nachteile&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Was ist denn ein Terminal?&lt;/li&gt;
+  &lt;li&gt;Igitt, komische Tastenkombinationen!&lt;/li&gt;
+  &lt;li&gt;Warum brauche ich 12 Modi um einen Text zu schreiben?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;vorteile&quot;&gt;Vorteile&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Auf den meisten (UNIX basierten) Betriebssystemen ist &lt;strong&gt;vim&lt;/strong&gt; oder &lt;strong&gt;vi&lt;/strong&gt; schon installiert&lt;/li&gt;
+  &lt;li&gt;Alle Funktionen sind ohne Maus(tasten) zugänglich und können so auch über eine ssh-Verbindung verwendet werden.&lt;/li&gt;
+  &lt;li&gt;schnell und effizient&lt;/li&gt;
+  &lt;li&gt;durch Plugins erweiterbar&lt;/li&gt;
+  &lt;li&gt;Open-Source und kostenlos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Wenn &lt;strong&gt;vim&lt;/strong&gt; noch nicht installiert ist kann dies mit dem jeweiligen Paketmanager nachholt werden.&lt;br /&gt;
+&lt;code&gt;apt-get install vim&lt;/code&gt; (Ubuntu)&lt;br /&gt;
+&lt;code&gt;pacman -S vim&lt;/code&gt; (Arch-Linux)&lt;br /&gt;
+&lt;code&gt;brew install vim&lt;/code&gt; (MacOS, benötigt &lt;a href=&quot;http://mxcl.github.io/homebrew/&quot;&gt;brew&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Im Zweifelsfall (und Windowsnutzern) hilft Google weiter ;)&lt;/p&gt;
+
+&lt;h2 id=&quot;und-jetzt&quot;&gt;Und jetzt?&lt;/h2&gt;
+
+&lt;p&gt;In den Folgenden Teilen werde ich auf die verschiedenen Modi und Befehle eingehen,
+bis der Editor zu einer direkten verlängerung meines Gehirns geworden ist oder, was wahrscheinlicher ist,
+ich aufgebe und nur noch Sublime Text benutze.&lt;/p&gt;
+</description>
+                <pubDate>Mon, 20 May 2013 00:00:00 +0200</pubDate>
+                <link>http://www.l3kn.deblog/2013/05/20/Vim_%5C%28Teil_1%5C%29.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/05/20/Vim_%5C%28Teil_1%5C%29.html</guid>
+            </item>
+        
+            <item>
+                <title>Unicode Arrows</title>
+                <description>&lt;h1 id=&quot;larr-uarr-rarr-darr&quot;&gt;← ↑ → ↓&lt;/h1&gt;
+
+&lt;h2 id=&quot;einleitung&quot;&gt;Einleitung&lt;/h2&gt;
+
+&lt;p&gt;Wenn es darum geht, die Bedienung von Programmen o.Ä. zu erklären wäre es manchmal sinnvoll Ions für die Pfeiltasten der Tastatur zu haben.&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;was-ist-unicode&quot;&gt;Was ist Unicode&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Achtung&lt;/strong&gt;
+gefährliches Halbwissen!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.unicode.org/&quot;&gt;Unicode&lt;/a&gt; ist ein internationaler Standard mit dem Ziel eine digitale Repräsentation für jedes halbwegs wichtige Zeichen festzulegen, damit diese in digitalen Medien (Websites, Programme, Texte) verwendet werden können. Der aktuelle Unicode Standart besteht aus mehr als 110.000 Zeichen. Für viele dieser Zeichen gibt es zusätzlich zu ihrem Hexadezimalcode &lt;em&gt;(0x2190: ←)&lt;/em&gt; eine mehr oder weniger logische Zeichenfolge &lt;code&gt;&amp;amp;&lt;/code&gt; + &lt;code&gt;&amp;lt;[a-z]*4&amp;gt;&lt;/code&gt; + &lt;code&gt;;&lt;/code&gt; die nach dem Eingeben in das jeweilige Zeichen umgewandelt wird.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bla Bal tl;dr&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gz, mein Computer versteht also jede Menge Codes für komische Zeichen, was bringt mir das jetzt?&lt;/p&gt;
+
+&lt;h2 id=&quot;in-der-praxis&quot;&gt;In der Praxis&lt;/h2&gt;
+
+&lt;p&gt;In der Praxis braucht man meistens nur Buchstaben, Zahlen, ein paar Sonderzeichen und natürlich &lt;strong&gt;Pfeile&lt;/strong&gt;. Von denen gibt es eine ganze &lt;a href=&quot;http://www.alanwood.net/unicode/arrows.html&quot;&gt;Menge&lt;/a&gt;, nützlich sind aber vor allem diese hier:  &lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;unicode&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;←&lt;/td&gt;
+      &lt;td&gt;&amp;amp;larr;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;l&lt;/strong&gt;eft &lt;strong&gt;arr&lt;/strong&gt;ow&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;→&lt;/td&gt;
+      &lt;td&gt;&amp;amp;rarr;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;r&lt;/strong&gt;ight &lt;strong&gt;arr&lt;/strong&gt;ow&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;↑&lt;/td&gt;
+      &lt;td&gt;&amp;amp;uarr;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;u&lt;/strong&gt;p &lt;strong&gt;arr&lt;/strong&gt;ow&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;↓&lt;/td&gt;
+      &lt;td&gt;&amp;amp;darr;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;d&lt;/strong&gt;own &lt;strong&gt;arr&lt;/strong&gt;ow&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;weitere-sinnvolle-zeichen&quot;&gt;Weitere “sinnvolle” Zeichen&lt;/h2&gt;
+
+&lt;h3 id=&quot;o--o--&quot;&gt;⇜  ℻  ⅊  o⃝  o⃦  ⁜&lt;/h3&gt;
+
+</description>
+                <pubDate>Wed, 20 Mar 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deblog/2013/03/20/Unicode_arrows.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/03/20/Unicode_arrows.html</guid>
+            </item>
+        
+            <item>
+                <title>Jekyll Deployment</title>
+                <description>&lt;h2 id=&quot;einleitung&quot;&gt;Einleitung&lt;/h2&gt;
+
+&lt;p&gt;Da Jekyll nur auf statischen Dateien basiert, bietet es sich an, die gesamte Website mit &lt;code&gt;git&lt;/code&gt; zu deployen.
+Natürlich ist es möglich, das alle nötigen Dateiens erst auf dem Webserver generieren zu lassen, dazu müssten dort aber auch alle genutzten Erweiterungen &lt;em&gt;(assets, coderay, sass)&lt;/em&gt; installiert sein, was nicht immer problemlos möglich ist.
+Deshalb erzeuge ich die Seite lokal und pushe dann die Änderungen auf meinen &lt;a href=&quot;www.uberspace.de&quot;&gt;Uberspace&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;aufbau&quot;&gt;Aufbau&lt;/h2&gt;
+
+&lt;p&gt;Mein Aufbau besteht aus 3 .git-repositories, von denen sich eins lokal auf meinem PC und zwei auf meinem uberspace befinden.&lt;/p&gt;
+
+&lt;h3 id=&quot;lokal&quot;&gt;Lokal&lt;/h3&gt;
+
+&lt;p&gt;Das lokale Repository ist ein Clone des &lt;strong&gt;bare-Repos&lt;/strong&gt; auf dem Server und kann mit&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git clone ssh://&amp;lt;name&amp;gt;@&amp;lt;server&amp;gt;/home/&amp;lt;name&amp;gt;/git/jekyll.git
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;angelegt werden.
+Damit Jekyll die generierten Dateien dort speichert muss der &lt;em&gt;directory:&lt;/em&gt;-Pfad in der &lt;code&gt;_config.yml&lt;/code&gt; Datei angepasst werden.  &lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#606&quot;&gt;directory&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;../jekyll/&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Achtung&lt;/strong&gt;
+Hier muss ein Ordner &lt;em&gt;(_site)&lt;/em&gt; innerhalb des Repos angegeben werden, da sonst bei jedem Ausführen von &lt;code&gt;jekyll&lt;/code&gt; auch der &lt;code&gt;.git&lt;/code&gt; gelöscht würde.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;remote&quot;&gt;Remote&lt;/h3&gt;
+
+&lt;p&gt;Auf dem Server befinden sich ein &lt;strong&gt;bare-Repo&lt;/strong&gt; an das die von &lt;code&gt;jekyll&lt;/code&gt; generierte Seite gepusht werden. Dieses wird mit &lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;cd ~  
+mkdir git
+cd git   
+mkdir jekyll.git
+cd jekyll.git
+git init --bare
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;erzeugt.&lt;/p&gt;
+
+&lt;p&gt;In &lt;code&gt;~/html/&lt;/code&gt; befindet sich ein Clone des &lt;strong&gt;bare-Repos&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git clone ~/git/jekyll.git
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;der mit einem git-hook im &lt;strong&gt;bare-Repo&lt;/strong&gt; nach jedem Commit aktualisiert wird.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;mv ~/git/jekyll.git/hooks/post-receive.sample ~/git/jekyll.git/hooks/post-receive
+vim ~/git/jekyll.git/hooks/post-receive 
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In diese Datei muss folgendes Script eingefügt werden:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;#!/bin/sh
+cd $HOME/html/jekyll/
+git --git-dir $HOME/html/jekyll/.git pull
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sobald nun Änderungen aus dem lokalen Repo an das &lt;strong&gt;bare-Repo&lt;/strong&gt; gepusht werden, aktualisiert sich auch das Repo im &lt;code&gt;html/&lt;/code&gt; Ordner.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;--git-dir $HOME/html/jekyll/.git&lt;/code&gt; ist nötig, da &lt;code&gt;git&lt;/code&gt; sich sonst, obwohl das Verzeichnis geändert wurde, auf das ursprüngliche Repo (jekyll.git) bezieht.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nun muss nurnoch jeder Aufruf der Website (&lt;em&gt;hier l3kn.de&lt;/em&gt;) an den Ordner &lt;code&gt;html/jekyll/&lt;/code&gt; weitergeleitet werden.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;cd /var/www/virtual/&amp;lt;name&amp;gt;/
+ln -s html/jekyll/ &amp;lt;url&amp;gt; 
+ln -s html/jekyll/ www.&amp;lt;url&amp;gt; 
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Treten beim ersten Pushen in das neue Repo Fehler auf hilft meist ein einmaliges&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git push origin master
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+</description>
+                <pubDate>Sun, 10 Mar 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deblog/2013/03/10/Jekyll_deployment_mit_git.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/03/10/Jekyll_deployment_mit_git.html</guid>
+            </item>
+        
+            <item>
+                <title>RGBlink</title>
+                <description>&lt;p&gt;Eine Arduino RGB-LED Library mit non-blocking Patterns und HSB Support&lt;/p&gt;
+</description>
+                <pubDate>Sat, 23 Feb 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deproject/2013/02/23/RGBlink.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deproject/2013/02/23/RGBlink.html</guid>
+            </item>
+        
+            <item>
+                <title>CSS Gridlayouts (Teil 1)</title>
+                <description>&lt;h1 id=&quot;theoretische-grundlage-von-gridlayouts&quot;&gt;Theoretische Grundlage von Gridlayouts&lt;/h1&gt;
+
+&lt;h2 id=&quot;whoot&quot;&gt;Whoot??&lt;/h2&gt;
+
+&lt;p&gt;Als Gridlayouts bezeichnet man bei der Entwicklung von Websites ein aus Zeilen und Spalten bestehendes Grundgerüst zur Positionierung von Elementen. Die Verwendung eines Gridlayouts erspart es, bei jedem Webprojekt die Position einzelner Elemente manuell festzulegen.&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;beispiele&quot;&gt;Beispiele&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://twitter.github.com/bootstrap/&quot;&gt;Twitter bootstrap&lt;/a&gt; enthält unter anderem auch ein 12-Spaltiges Gridsystem&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gridpak.com/&quot;&gt;Gridpak&lt;/a&gt; ist ein online Gridgenerator mit dem es möglich ist, schnell eigene Grids zu erstellen &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/l3kn/l3_grid&quot;&gt;l3 grid&lt;/a&gt; Meine eigene, leicht anpassbare Umsetzung eines Gridlayouts, geschrieben in .sass (dazu später mehr)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cssgrid.net/&quot;&gt;1140 css grid&lt;/a&gt; Ein weiteres vorgefertigtes Gridlayout&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;aufbau&quot;&gt;Aufbau&lt;/h2&gt;
+
+&lt;p&gt;Alle Beispiellayouts basieren auf zwei Hauptklassen:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;.row&lt;/code&gt;
+Unterteilt das Layout horizontal  &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;.column_(1..n)&lt;/code&gt;
+Vertikale ‘Blöcke’ in n (meist 12) verschiedenen Breiten
+wobei die columns wieder rows mit weiteren columns enthalten können, da die Breitenangaben relativ sind.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://shared.l3kn.de/images/gridlayout.png&quot; alt=&quot;layout&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;warum-12&quot;&gt;Warum 12?&lt;/h3&gt;
+
+&lt;p&gt;Häufig unterteilen sich Gridlayouts in 12 columns, da sich die Zahl 12 gut in&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;zwei columns der Breite 6&lt;/li&gt;
+    &lt;li&gt;drei columns der Breite 4&lt;/li&gt;
+    &lt;li&gt;vier columns der Breite 3&lt;/li&gt;
+    &lt;li&gt;sechs columns der Breite 2&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;teilen lässt.&lt;/p&gt;
+
+&lt;p&gt;Eine gröbere Unterteilung wäre aber auch mit 6 (teilbar durch 1,2,3 und 6) möglich,
+feinere Layouts könnten sich in 24 Spalten (teilbar durch 1,2,3,4,6,8,12 und 24) unterteilen.&lt;/p&gt;
+
+</description>
+                <pubDate>Sun, 17 Feb 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deblog/2013/02/17/CSS_Gridlayouts_1.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/02/17/CSS_Gridlayouts_1.html</guid>
+            </item>
+        
+            <item>
+                <title>Regular Expressions</title>
+                <description>&lt;h1 id=&quot;beschreibung&quot;&gt;Beschreibung&lt;/h1&gt;
+
+&lt;p&gt;Als regulären Ausdruck &lt;em&gt;(regular expression oder Regex)&lt;/em&gt; bezeichnet man in der Informatik einen syntaktischen Regeln folgenden Ausdruck zur Beschreibung anderer Zeichenketten.&lt;/p&gt;
+
+&lt;p&gt;So beschreibt zum Beispiel der reguläre Ausdruck [abc] eine beliebig lange Folge der Zeichen ‘a’,’b’ und ‘c’. &lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h1 id=&quot;zeichen&quot;&gt;Zeichen&lt;/h1&gt;
+
+&lt;h2 id=&quot;zeichenauswahlen&quot;&gt;Zeichenauswahlen&lt;/h2&gt;
+
+&lt;p&gt;[abc]|’a’, ‘b’ oder ‘c’
+[A-Z]|Zeichen aus dem Bereich von ‘A’ bis ‘Z’
+[^A-Z]|alle Zeichen außer dem Bereich ‘A’ bis ‘Z’
+ (&lt;em&gt;^&lt;/em&gt; in einer Zeichengruppe negiert den folgenden Ausdruck)
+[A-Z0-9]|Großbuchstaben und Ziffern
+.|ein beliebiges Zeichen&lt;/p&gt;
+
+&lt;h2 id=&quot;zeichenklassen&quot;&gt;Zeichenklassen&lt;/h2&gt;
+
+&lt;p&gt;\d|Ziffer
+\w|Ziffer/Buchstabe/’_’
+\s|Whitespace (Leerzeichen, Tab, Newline)
+\b|Leere Zeichenkette
+der Klassenname großgeschrieben (\B) bezeichnet alle Zeichen die nicht der Klasse angehören&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:cntrl:]&lt;/td&gt;
+      &lt;td&gt;Steuerzeichen&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:space:]&lt;/td&gt;
+      &lt;td&gt;Whitespace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:punct:]&lt;/td&gt;
+      &lt;td&gt;Sonder- und Satzzeichen&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:alnum:]&lt;/td&gt;
+      &lt;td&gt;Alphanumerische Zeichen&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:alpha:]&lt;/td&gt;
+      &lt;td&gt;Buchstaben&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:lower:]&lt;/td&gt;
+      &lt;td&gt;Kleinbuchstaben&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:upper:]&lt;/td&gt;
+      &lt;td&gt;Großbuchstaben&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:xdigit:]&lt;/td&gt;
+      &lt;td&gt;hexadezimale Ziffern&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:digit:]&lt;/td&gt;
+      &lt;td&gt;dezimale Ziffern&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;weitere-metazeichen&quot;&gt;weitere (Meta)Zeichen&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;Zeilenanfang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;&lt;/td&gt;
+      &lt;td&gt;leere Zeichenkette am Wortanfang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;&lt;/td&gt;
+      &lt;td&gt;”            ende&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\n&lt;/td&gt;
+      &lt;td&gt;Zeilenumbruch, Unix&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\r&lt;/td&gt;
+      &lt;td&gt;Zeilenumbruch, Mac&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\r\n&lt;/td&gt;
+      &lt;td&gt;Zeilenumbruch, Windows&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Durch ein vorangestelltes ‘' kann auch nach Metazeichen &lt;em&gt;z.B. ‘(‘&lt;/em&gt; gesucht werden&lt;/p&gt;
+
+&lt;h1 id=&quot;quantoren&quot;&gt;Quantoren&lt;/h1&gt;
+
+&lt;p&gt;Quantoren können hinter einen Ausdruck geschrieben werden und beschreiben, wie oft er vorkommt.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;optional &lt;em&gt;0..1&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;min. 1*  &lt;em&gt;1..∞&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;beliebig &lt;em&gt;0..∞&lt;/em&gt; (greedy, maximal mögliche Länge)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?*&lt;/td&gt;
+      &lt;td&gt;beliebig &lt;em&gt;0..∞&lt;/em&gt; (non-greedy, minimal nötige Länge)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n}&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;n&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n,}&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;n..∞&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n,m}&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;n..m&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{0,m}&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;0..m&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;logik&quot;&gt;Logik&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(?=exp)&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;exp&lt;/em&gt; muss nachfolgend erfüllt sein, wird aber nicht angezigt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(?!exp)&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;exp&lt;/em&gt; darf nachfolgend nicht erfüllt sein, wird aber nicht angezigt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(?&amp;lt;=exp)&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;exp&lt;/em&gt; muss vorausgehend erfüllt sein, wird aber nicht angezigt&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(?&amp;lt;!exp)&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;exp&lt;/em&gt; darf vorausgehend nicht erfüllt sein, wird aber nicht angezeigt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;gruppierungen&quot;&gt;Gruppierungen&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(wort)&lt;/td&gt;
+      &lt;td&gt;runde Klammern fassen Ausdrücke zusammen, diese Regex sucht nach ‘wort’&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;beispiele&quot;&gt;Beispiele&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^[A-Z]&lt;/td&gt;
+      &lt;td&gt;Ein Großbuchstabe am Zeilenanfang&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;eine IPv4 Adresse lässt sich grob durch ([0-9]{1,3}[.]?){4}&lt;/td&gt;
+      &lt;td&gt;beschreiben&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(\d+)&lt;/td&gt;
+      &lt;td&gt;Eine Zahl in runden Klammern &lt;em&gt;z.B. ‘(42)’&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(?&amp;lt;=()\d+(?=))&lt;/td&gt;
+      &lt;td&gt;wie oben, hier wird aber nur die Zahl ausgewählt &lt;em&gt;(die ‘23’ in ‘(23)’)&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;((foo ))?(bar)(?(1)( baz))&lt;/td&gt;
+      &lt;td&gt;akzeptiert nur ‘bar’ oder ‘foo bar baz’, aber nicht ‘bar baz’&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</description>
+                <pubDate>Sun, 20 Jan 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deblog/2013/01/20/Regular_Expressions.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/01/20/Regular_Expressions.html</guid>
+            </item>
+        
+            <item>
+                <title>My own Keyboard-layout</title>
+                <description>&lt;h1 id=&quot;because-diaeresis-sounds-like-diarrhea&quot;&gt;Because “diaeresis” sounds like “diarrhea”&lt;/h1&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;Based on the german version this keyboard layout optimizes the key position of those &lt;code&gt;{ ( [] ) }&lt;/code&gt; while diaeresis &lt;code&gt;ä ö ü&lt;/code&gt; stay accessible via the ‘alt’ key.&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;from&lt;/th&gt;
+      &lt;th&gt;to&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;alt + a&lt;/td&gt;
+      &lt;td&gt;ä&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;alt + o&lt;/td&gt;
+      &lt;td&gt;ö&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;alt + u&lt;/td&gt;
+      &lt;td&gt;ü&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ä&lt;/td&gt;
+      &lt;td&gt;{ }&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ö&lt;/td&gt;
+      &lt;td&gt;( )&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ü&lt;/td&gt;
+      &lt;td&gt;[ }&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy the file into the &lt;strong&gt;‘$user/Library/Keyboard Layouts/’&lt;/strong&gt; Folder  (in Finder alt-click on ‘go to’)&lt;/li&gt;
+  &lt;li&gt;Go to &lt;strong&gt;System Preferences -&amp;gt; Language &amp;amp; Text -&amp;gt; Input Sources&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Search for the &lt;strong&gt;‘German - Prog’&lt;/strong&gt; layout and enable it&lt;/li&gt;
+  &lt;li&gt;Set &lt;strong&gt;‘Show Input menu in menu bar’&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Switch the current layout (menu bar icon)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;downloadhttpsgithubcoml3kngerman-prog&quot;&gt;&lt;a href=&quot;https://github.com/l3kn/German-Prog&quot;&gt;Download&lt;/a&gt;&lt;/h2&gt;
+</description>
+                <pubDate>Fri, 04 Jan 2013 00:00:00 +0100</pubDate>
+                <link>http://www.l3kn.deblog/2013/01/04/Because_diaeresis_sounds_like_diarrhea.html</link>
+                <guid isPermaLink="true">http://www.l3kn.deblog/2013/01/04/Because_diaeresis_sounds_like_diarrhea.html</guid>
+            </item>
+        
+    </channel>
+</rss>
