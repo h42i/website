@@ -4,8 +4,8 @@
 # TEAM
 
     Leon Rische -- Main Developer -- @l3kn
+    Du          -- Was du tust    -- Nickname
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr

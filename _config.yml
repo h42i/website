@@ -33,6 +33,8 @@ safe: false
 navigation:
 - title: Home
   url: /index.html
+- title: Blog
+  url: /blog/
 - title: Vorträge
   url: /talks/
 - title: Wiki

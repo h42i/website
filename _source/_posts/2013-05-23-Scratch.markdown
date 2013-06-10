@@ -1,0 +1,13 @@
+---
+layout: post
+title: Scratch – Grafisches Programmieren von Kindesbeinen an
+category: talk
+file: http://files.hasi.it/NA-Scratch.mp3
+---
+Scratch ist eine noch relativ neue, leicht zu erlernende, grafisch orientierte 
+Programmiersprache für Einsteiger. Unter dem Motto “Ausdenken, Programmieren,
+Mitteilen” werden eigene Spiele, Steuerungen und Multimediaanwendungen möglich. 
+Damit bringt Scratch besonders Kindern und Jugendlichen frühzeitig 
+Programmiertechniken spielerisch nahe. Scratch gibt es kostenlos für Windows, 
+Mac OS X sowie Linux. In der weltweiten Scratch-Community gibt es inzwischen 
+über 3 Millionen “Apps” von rund 1,5 Millionen registrierten Scratch-Usern.

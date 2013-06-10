@@ -2,10 +2,24 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
     <loc>http://www.hasi.it</loc>
-    <lastmod>2013-06-09T13:46:14+02:00</lastmod>
+    <lastmod>2013-06-10T13:08:34+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>http://www.hasi.ittalk/2013/05/23/Scratch.html</loc> 
+      <lastmod>2013-05-23T00:00:00+02:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>http://www.hasi.itblog/2013/05/23/Guidelines.html</loc> 
+      <lastmod>2013-05-23T00:00:00+02:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
   
     <url>
       <loc>http://www.hasi.ittalk/2013/05/23/Erklaer_mir_Kunst.html</loc> 

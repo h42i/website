@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<!--
+Hello my name is Leon Rische and welcome to my code!
+
+If you have any questions or improvements feel free 
+to contact me: hello(at)l3kn.de
+-->
+
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+<title>HaSi e.V.</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.hasi.it/feed.xml" />
+
+<link rel="stylesheet" type="text/css" href="/assets/main-7d91710b47b1777bde7b840a3a57f73d.css">
+<link rel="stylesheet" type="text/css" href="/assets/icons-2a3fbb19dc1d971dcd87aca5f76766bf.css">
+<link rel="stylesheet" type="text/css" href="/assets/normalize-e9c4a2fd04244d6c0c1a916f2fb9292a.css">
+
+	</head>
+	<body lang="de">
+		<!--[if lt IE 9]>
+			<h1 class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</h1>
+		<![endif]-->
+		<section id="wrapper">
+			<header id="page-header">
+				<div class="image-header">
+					<h1 class="huge">HaSi e.V.</h1>
+					<p>Dein hackspace in Siegen</p>
+				</div>
+			</header>
+			<section>
+				<nav>
+					<ul>
+					
+						
+							<li><a href="/index.html">Home</a></li>
+						
+					
+						
+							<li><a href="/blog/">Blog</a></li>
+						
+					
+						
+							<li><a href="/talks/">Vorträge</a></li>
+						
+					
+						
+							<li><a href="http://hasi.it/wiki/Hauptseite">Wiki</a></li>
+						
+					
+					</ul>
+				</nav>	
+			</section>
+			<section id="main" class="group">
+				<!--
+l3 default layout for a single blogpage
+-->
+
+<article>
+	<header>
+		<h1>Guidelines</h1>
+	</header>	
+	<h1 id="guidelines">Guidelines</h1>
+
+<h2 id="philosophie--meta">Philosophie / Meta</h2>
+
+<ul>
+  <li>Alle verwendeten Tools sollten Open-Source sein  </li>
+  <li>Responsive Design -&gt; keine Breitenangaben in <strong>px</strong>, immer <strong>%</strong> oder <strong>em</strong>  </li>
+  <li>Mobile first -&gt; Das Stylesheet b ezieht sich auf die Version für Mobilgeräte,
+alle Anpassungen für breitere Bildschirme finden in den media-queries am Ende 
+der Datei statt  </li>
+  <li>Ändert mal die breite eures Browserfensters, um zu sehen, warum der oben 
+gewählte Ansatz sinnvoll ist.  </li>
+  <li>Flat UI, möglichst keine Schatten oder Farbverläufe.  </li>
+  <li>Sauberer Quellcode, “Hacks” wie die <em>.group</em>-Kalsse sollten erklärt werden.  </li>
+  <li>redundater Code sollte vermieden werden -&gt; includes Verwendern  </li>
+</ul>
+
+<h2 id="grab-the-tools">Grab the tools</h2>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>$paketmanager $install ruby rubygems
+gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
+</pre></td>
+</tr></table>
+</div>
+
+<ul>
+  <li>Jekyll - Rubybasierter static site generator  </li>
+  <li>Kramdown - ein Markdown superset (sowas wie LaTeX, nur einfacher)</li>
+  <li>Sass - CSS-Preprocessor, -Syntax +Variablen +fancy Funktionen</li>
+  <li>Coderay - Syntax Highlighting</li>
+  <li>jekyll-assets - eine Asset-Pipeline für Jekyll</li>
+</ul>
+
+<h2 id="get-the-git">Get the git</h2>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="befehle">Befehle</h2>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>jekyll serve --watch
+</pre></td>
+</tr></table>
+</div>
+<p>Startet einen Webserver auf Port 4000 und generiert die Seite nach Änderungen 
+automatisch neu</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>jekyll build
+</pre></td>
+</tr></table>
+</div>
+<p>Wie oben, nur nicht automatisch und ohne Webserver ;)</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>git commit -am '$Beschreibung'
+git push
+</pre></td>
+</tr></table>
+</div>
+<p>Um die Änderungen auf den Server hochzuladen, sollte nach 5sec sichtbar sein.</p>
+
+<p>Wenn das Ganze am Anfang nicht klappt hilft ein einmaliges</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git push origin master
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="aufbau">Aufbau</h2>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+</pre></td>
+  <td class="code"><pre>.
+├── _config.yml - Konfigurationsdatei, z.B. für die Menüstruktur
+├── _source - Quelldateien
+|    ├── _assets
+|    |   ├── stylesheets
+|    |    |   ├── main.sass - Hauptstylesheet
+|    |    |   └── icons.sass, normalize.css - don't touch this!
+|    |   ├── images - alle Bilder kommen hier rein
+|    |   └── fonts
+|    ├── _includes - Code snippets die häufig verwendet werden
+|    |   └── ...
+|    ├── _layouts - Layouts, werden im header einer Datei definiert
+|    |   ├── default.html - Layout der gesamten Seite 
+|    |   └── post.html - Layout für die Seite eines Blogposts
+|    ├── _posts
+|    |   ├── YYYY-MM-DD-Name_mit_underscores_statt_spaces.markdown
+|    |   └── YYYY-MM-DD-Anderer_Beitrag
+|    ├── index.html - Startseite
+|    └── $name - z.B. hasi.it/blog/
+|        └── index.html - Unterseite
+└── _site - Zielverzeichnis, don't touch this!
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="docs">Docs</h2>
+<p><a href="http://jekyllrb.com/docs/home/">Jekyll</a><br />
+<a href="http://kramdown.rubyforge.org/">Kramdown</a>  </p>
+
+<h2 id="misc-info">Misc. Info</h2>
+
+<p>Markdown tut manchmal komische Dinge, Zeilenumbrüche werden mit 2x Space am Ende
+der Zeile erzeugt.</p>
+
+</article>
+<aside>
+	
+    
+
+
+<div class="pull-right">
+	<ul>
+		<li><a href="https://twitter.com/intent/tweet?url=http://www.l3kn.de/blog/2013/05/23/Guidelines.html&via=l3kn" target="_blank"><i class="twitter"></i>Tweet</a></li>
+		<li><a href="https://flattr.com/submit/auto?user_id=l3kn&url=http://www.l3kn.de/blog/2013/05/23/Guidelines.html&title=Guidelines" target="_blank"><i class="flattr"></i>Flattr this</a></li>
+	</ul>
+</div>	
+</aside>
+
+
+
+			</section>
+			<footer>
+				<a href="/site_notice/">Impressum</a>
+				<p>Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on asteroids by <a href="https://uberspace.de">Uberspace</a></p>
+			</footer>
+		</section>
+	</body>
+</html>
+
