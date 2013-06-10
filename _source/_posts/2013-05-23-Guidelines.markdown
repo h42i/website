@@ -4,8 +4,6 @@ title: Guidelines
 category: blog
 ---
 
-# Guidelines
-
 ## Philosophie / Meta
 
 * Alle verwendeten Tools sollten Open-Source sein  
