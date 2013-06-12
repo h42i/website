@@ -59,18 +59,24 @@ footer
 
 nav
   width: 100%
-  font-size: 1.5em
+  font-size: 1.0em
   text-align: center
   background: $color_back_light
   ul
-    margin: 0
-    padding: 0.1em 0.5em
+    margin: 0.0em 0.0em
+    padding: 0.4em 0.1em
+    display: block
   li
-    padding: 0 0.2em
+    margin: 0.8em 0.0em
+    padding: 0.1em 0.0em
   a
+    width: 100%
+    padding: 0.4em 0.6em
     color: $color_text_light
+    background: $color_back
     &:hover
-      color: $color_text_contrast
+      //color: $color_text_contrast
+      background: $color_back_contrast
 
 article
   text-align: justify
@@ -150,8 +156,15 @@ code
 
   nav
     text-align: left
+    ul
+      margin: 0.0em 0.0em
+      padding: 0.4em 0.1em
     li
+      margin: 0.6em 0.0em
+      padding: 0.6em 0.0em
       display: inline
+    a
+      width: auto
 
 .tag
   float: left

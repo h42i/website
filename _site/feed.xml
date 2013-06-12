@@ -41,7 +41,7 @@ gewählte Ansatz sinnvoll ist.  &lt;/li&gt;
 &lt;h2 id=&quot;grab-the-tools&quot;&gt;Grab the tools&lt;/h2&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$paketmanager $install ruby rubygems
@@ -61,7 +61,7 @@ gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
 &lt;h2 id=&quot;get-the-git&quot;&gt;Get the git&lt;/h2&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
 &lt;/pre&gt;&lt;/td&gt;
@@ -71,7 +71,7 @@ gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
 &lt;h2 id=&quot;befehle&quot;&gt;Befehle&lt;/h2&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;jekyll serve --watch
 &lt;/pre&gt;&lt;/td&gt;
@@ -81,7 +81,7 @@ gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
 automatisch neu&lt;/p&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;jekyll build
 &lt;/pre&gt;&lt;/td&gt;
@@ -90,10 +90,10 @@ automatisch neu&lt;/p&gt;
 &lt;p&gt;Wie oben, nur nicht automatisch und ohne Webserver ;)&lt;/p&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git commit -am '$Beschreibung'
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git commit -am &#39;$Beschreibung&#39;
 git push
 &lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
@@ -103,7 +103,7 @@ git push
 &lt;p&gt;Wenn das Ganze am Anfang nicht klappt hilft ein einmaliges&lt;/p&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git push origin master
 &lt;/pre&gt;&lt;/td&gt;
@@ -113,7 +113,7 @@ git push
 &lt;h2 id=&quot;aufbau&quot;&gt;Aufbau&lt;/h2&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == &#39;&#39;) ? &#39;none&#39; : &#39;&#39; }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
 &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
@@ -141,7 +141,7 @@ git push
 |    ├── _assets
 |    |   ├── stylesheets
 |    |    |   ├── main.sass - Hauptstylesheet
-|    |    |   └── icons.sass, normalize.css - don't touch this!
+|    |    |   └── icons.sass, normalize.css - don&#39;t touch this!
 |    |   ├── images - alle Bilder kommen hier rein
 |    |   └── fonts
 |    ├── _includes - Code snippets die häufig verwendet werden
@@ -155,7 +155,7 @@ git push
 |    ├── index.html - Startseite
 |    └── $name - z.B. hasi.it/blog/
 |        └── index.html - Unterseite
-└── _site - Zielverzeichnis, don't touch this!
+└── _site - Zielverzeichnis, don&#39;t touch this!
 &lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;

@@ -17,9 +17,9 @@ to contact me: hello(at)l3kn.de
 		<![endif]-->
 		<section id="wrapper">
 			<header id="page-header">
-				<div class="image-header">
-					<h1 class="huge">HaSi e.V.</h1>
-					<p>Dein hackspace in Siegen</p>
+				<div class="image-header"> 
+					<h1 class="huge">{{ site.name }}</h1>
+					<p>{{ site.description }}</p>
 				</div>
 			</header>
 			<section>
@@ -27,9 +27,9 @@ to contact me: hello(at)l3kn.de
 					<ul>
 					{% for link in site.navigation %}
 						{% if page.url == link.url %}
-							<li class="active"><a href="{{link.url}}">{{link.title}}</a></li>
+							<li class="active"><a href="{{link.url}}">{{ link.title }}</a></li>
 						{% else %}
-							<li><a href="{{link.url}}">{{link.title}}</a></li>
+							<li><a href="{{link.url}}">{{ link.title }}</a></li>
 						{% endif %}
 					{% endfor %}
 					</ul>
