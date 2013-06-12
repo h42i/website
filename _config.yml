@@ -21,7 +21,7 @@ assets:
   compress:
     js:   uglifier
     css:  yui
-
+	cachebust: none
 info:
   name: Leon Rische
   mail: hello@l3kn.de
