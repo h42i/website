@@ -40,15 +40,9 @@ gewählte Ansatz sinnvoll ist.  &lt;/li&gt;
 
 &lt;h2 id=&quot;grab-the-tools&quot;&gt;Grab the tools&lt;/h2&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$paketmanager $install ruby rubygems git
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$paketmanager $install ruby rubygems git
 gem install jekyll sass jekyll-assets coderay kramdown
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Jekyll - Rubybasierter static site generator  &lt;/li&gt;
@@ -60,105 +54,54 @@ gem install jekyll sass jekyll-assets coderay kramdown
 
 &lt;h2 id=&quot;get-the-git&quot;&gt;Get the git&lt;/h2&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;befehle&quot;&gt;Befehle&lt;/h2&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;jekyll serve --watch
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Startet einen Webserver auf Port 4000 und generiert die Seite nach Änderungen 
 automatisch neu&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;jekyll build
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;jekyll build
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Wie oben, nur nicht automatisch und ohne Webserver ;)&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git commit -am '$Beschreibung'
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git commit -am &#39;$Beschreibung&#39;
 git push
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Um die Änderungen auf den Server hochzuladen, sollte nach 5sec sichtbar sein.&lt;/p&gt;
 
 &lt;p&gt;Wenn das Ganze am Anfang nicht klappt hilft ein einmaliges&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git push origin master
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;aufbau&quot;&gt;Aufbau&lt;/h2&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
-  &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
-&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
-&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
-&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
-&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
-&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
-&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
-&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
-&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
-&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
-&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
-&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
-&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
-&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
-&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
-&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
-&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
-&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
-&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
-&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
-&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
-&lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;.
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;.
 ├── _config.yml - Konfigurationsdatei, z.B. für die Menüstruktur
 ├── _source - Quelldateien
-|    ├── _assets
-|    |   ├── stylesheets
-|    |    |   ├── main.sass - Hauptstylesheet
-|    |    |   └── icons.sass, normalize.css - don't touch this!
-|    |   ├── images - alle Bilder kommen hier rein
-|    |   └── fonts
-|    ├── _includes - Code snippets die häufig verwendet werden
-|    |   └── ...
-|    ├── _layouts - Layouts, werden im header einer Datei definiert
-|    |   ├── default.html - Layout der gesamten Seite 
-|    |   └── post.html - Layout für die Seite eines Blogposts
-|    ├── _posts
-|    |   ├── YYYY-MM-DD-Name_mit_underscores_statt_spaces.markdown
-|    |   └── YYYY-MM-DD-Anderer_Beitrag
-|    ├── index.html - Startseite
-|    └── $name - z.B. hasi.it/blog/
-|        └── index.html - Unterseite
-└── _site - Zielverzeichnis, don't touch this!
-&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
+|	├── _assets
+|	|   ├── stylesheets
+|	|	|   ├── main.sass - Hauptstylesheet
+|	|	|   └── icons.sass, normalize.css - don&#39;t touch this!
+|	|   ├── images - alle Bilder kommen hier rein
+|	|   └── fonts
+|	├── _includes - Code snippets die häufig verwendet werden
+|	|   └── ...
+|	├── _layouts - Layouts, werden im header einer Datei definiert
+|	|   ├── default.html - Layout der gesamten Seite 
+|	|   └── post.html - Layout für die Seite eines Blogposts
+|	├── _posts
+|	|   ├── YYYY-MM-DD-Name_mit_underscores_statt_spaces.markdown
+|	|   └── YYYY-MM-DD-Anderer_Beitrag
+|	├── index.html - Startseite
+|	└── $name - z.B. hasi.it/blog/
+|	    └── index.html - Unterseite
+└── _site - Zielverzeichnis, don&#39;t touch this!
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;docs&quot;&gt;Docs&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;

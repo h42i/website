@@ -80,15 +80,9 @@ gewählte Ansatz sinnvoll ist.  </li>
 
 <h2 id="grab-the-tools">Grab the tools</h2>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>$paketmanager $install ruby rubygems git
+<pre><code class="language-bash">$paketmanager $install ruby rubygems git
 gem install jekyll sass jekyll-assets coderay kramdown
-</pre></td>
-</tr></table>
-</div>
+</code></pre>
 
 <ul>
   <li>Jekyll - Rubybasierter static site generator  </li>
@@ -100,105 +94,54 @@ gem install jekyll sass jekyll-assets coderay kramdown
 
 <h2 id="get-the-git">Get the git</h2>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
-</pre></td>
-</tr></table>
-</div>
+<pre><code class="language-bash">git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
+</code></pre>
 
 <h2 id="befehle">Befehle</h2>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>jekyll serve --watch
-</pre></td>
-</tr></table>
-</div>
+<pre><code class="language-bash">jekyll serve --watch
+</code></pre>
 <p>Startet einen Webserver auf Port 4000 und generiert die Seite nach Änderungen 
 automatisch neu</p>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>jekyll build
-</pre></td>
-</tr></table>
-</div>
+<pre><code class="language-bash">jekyll build
+</code></pre>
 <p>Wie oben, nur nicht automatisch und ohne Webserver ;)</p>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>git commit -am '$Beschreibung'
+<pre><code class="language-bash">git commit -am '$Beschreibung'
 git push
-</pre></td>
-</tr></table>
-</div>
+</code></pre>
 <p>Um die Änderungen auf den Server hochzuladen, sollte nach 5sec sichtbar sein.</p>
 
 <p>Wenn das Ganze am Anfang nicht klappt hilft ein einmaliges</p>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>git push origin master
-</pre></td>
-</tr></table>
-</div>
+<pre><code class="language-bash">git push origin master
+</code></pre>
 
 <h2 id="aufbau">Aufbau</h2>
 
-<div><table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-<a href="#n18" name="n18">18</a>
-<a href="#n19" name="n19">19</a>
-<strong><a href="#n20" name="n20">20</a></strong>
-<a href="#n21" name="n21">21</a>
-</pre></td>
-  <td class="code"><pre>.
+<pre><code class="language-text">.
 ├── _config.yml - Konfigurationsdatei, z.B. für die Menüstruktur
 ├── _source - Quelldateien
-|    ├── _assets
-|    |   ├── stylesheets
-|    |    |   ├── main.sass - Hauptstylesheet
-|    |    |   └── icons.sass, normalize.css - don't touch this!
-|    |   ├── images - alle Bilder kommen hier rein
-|    |   └── fonts
-|    ├── _includes - Code snippets die häufig verwendet werden
-|    |   └── ...
-|    ├── _layouts - Layouts, werden im header einer Datei definiert
-|    |   ├── default.html - Layout der gesamten Seite 
-|    |   └── post.html - Layout für die Seite eines Blogposts
-|    ├── _posts
-|    |   ├── YYYY-MM-DD-Name_mit_underscores_statt_spaces.markdown
-|    |   └── YYYY-MM-DD-Anderer_Beitrag
-|    ├── index.html - Startseite
-|    └── $name - z.B. hasi.it/blog/
-|        └── index.html - Unterseite
+|	├── _assets
+|	|   ├── stylesheets
+|	|	|   ├── main.sass - Hauptstylesheet
+|	|	|   └── icons.sass, normalize.css - don't touch this!
+|	|   ├── images - alle Bilder kommen hier rein
+|	|   └── fonts
+|	├── _includes - Code snippets die häufig verwendet werden
+|	|   └── ...
+|	├── _layouts - Layouts, werden im header einer Datei definiert
+|	|   ├── default.html - Layout der gesamten Seite 
+|	|   └── post.html - Layout für die Seite eines Blogposts
+|	├── _posts
+|	|   ├── YYYY-MM-DD-Name_mit_underscores_statt_spaces.markdown
+|	|   └── YYYY-MM-DD-Anderer_Beitrag
+|	├── index.html - Startseite
+|	└── $name - z.B. hasi.it/blog/
+|	    └── index.html - Unterseite
 └── _site - Zielverzeichnis, don't touch this!
-</pre></td>
-</tr></table>
-</div>
+</code></pre>
 
 <h2 id="docs">Docs</h2>
 <p><a href="http://jekyllrb.com/docs/home/">Jekyll</a><br />
