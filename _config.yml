@@ -18,9 +18,6 @@ assets:
   - _assets/stylesheets
   - _assets/webfonts
   - _assets/images
-  compress:
-    js:   uglifier
-    css:  yui
 	cachebust: none
 info:
   name: Leon Rische
