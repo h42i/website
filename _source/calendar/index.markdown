@@ -1,3 +1,8 @@
+---
+layout: post
+title: Termine
+---
+
 ## Regelmäßig
 
 ### HaSi-Schwimmen
