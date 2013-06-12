@@ -1,0 +1,40 @@
+i {
+  font-family: "icons";
+  font-style: normal;
+  margin-right: 0.5em; }
+
+.pen:before {
+  content: "\21"; }
+
+.tags:before {
+  content: "\22"; }
+
+.social:before {
+  content: "\23"; }
+
+.comment:before {
+  content: "\24"; }
+
+.twitter:before {
+  content: "\25"; }
+
+.github:before {
+  content: "\26"; }
+
+.flattr:before {
+  content: "\27"; }
+
+.rss:before {
+  content: "\28"; }
+
+.coding:before {
+  content: "\29"; }
+
+.doc:before {
+  content: "\2a"; }
+
+.css:before {
+  content: "\2b"; }
+
+.html:before {
+  content: "\2c"; }

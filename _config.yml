@@ -18,7 +18,8 @@ assets:
   - _assets/stylesheets
   - _assets/webfonts
   - _assets/images
-	cachebust: none
+  cachebust: none
+
 info:
   name: Leon Rische
   mail: hello@l3kn.de
