@@ -20,8 +20,8 @@ gewählte Ansatz sinnvoll ist.
 ## Grab the tools
 
 ~~~ bash
-$paketmanager $install ruby rubygems
-gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
+$paketmanager $install ruby rubygems git
+gem install jekyll sass jekyll-assets coderay kramdown
 ~~~
 
 * Jekyll - Rubybasierter static site generator  

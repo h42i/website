@@ -44,8 +44,8 @@ gewählte Ansatz sinnvoll ist.  &lt;/li&gt;
   &lt;td class=&quot;line-numbers&quot; title=&quot;double click to toggle&quot; ondblclick=&quot;with (this.firstChild.style) { display = (display == '') ? 'none' : '' }&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
-  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$paketmanager $install ruby rubygems
-gem install jekyll sass jekyll-assets yui-compressor coderay kramdown
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$paketmanager $install ruby rubygems git
+gem install jekyll sass jekyll-assets coderay kramdown
 &lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
