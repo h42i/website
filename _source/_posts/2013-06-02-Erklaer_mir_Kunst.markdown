@@ -2,6 +2,7 @@
 layout: post
 title: Erklär mir Kunst
 category: talk
+author: hybr1s
 file: http://files.hasi.it/podcast/Hybr1s-Erklaer_mir_Kunst.mp3
 video: http://www.youtube.com/watch?v=S9QcOZX256g
 slides: http://www.slideshare.net/hybr1s/erklar-mir-kunst

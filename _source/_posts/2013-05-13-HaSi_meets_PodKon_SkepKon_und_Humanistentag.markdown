@@ -2,6 +2,7 @@
 layout: post
 title: HaSi meets PodKon, SkepKon und Humanistentag
 category: blog
+author: hybr1s
 ---
 Auf der PodKon trafen sich am 10. Mai 10 der deutschen Podcast-Größen mit ihren Hörern in Köln. Darunter waren etwa die Podcasts “[Hoaxilla](http://www.hoaxilla.com/)“, “[Viva Britannia](http://www.vivabritannia.de/)“, der “[Bartocast](http://bartocast.moepmoep.com/)“, “[Psychotalk](http://psychotalk.moepmoep.com/)“, der “[PottCast](http://pottcast.moepmoep.com/)” und und und…  
 
