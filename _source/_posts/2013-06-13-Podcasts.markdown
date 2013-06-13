@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Podcast und was sonst noch wichtig ist
+title: Podcasts und was sonst noch wichtig ist
 category: blog
 author: l3kn
 ---
