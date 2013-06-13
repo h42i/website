@@ -4,8 +4,9 @@
 # TEAM
 
     Leon Rische -- Main Developer -- @l3kn
-    Du          -- Was du tust    -- Nickname
+		Mister DanB -- Chief Exexutive Designer -- @misterdanb
+		Du          -- Was du tust -- Nickname
 
 # TECHNOLOGY COLOPHON
-
     HTML5, CSS3
+		Jekyll
