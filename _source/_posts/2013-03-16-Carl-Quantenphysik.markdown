@@ -7,6 +7,3 @@ slides: http://de.slideshare.net/hybr1s/quantenphysik
 auhor: Hybr1s
 ---
 [Carl](http://hasi.it/wiki/Benutzer:naturalismus) hat uns etwas über Quantenmechanik erzählt.
-
-<!-- break -->
-
