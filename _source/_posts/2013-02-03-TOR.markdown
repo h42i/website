@@ -1,0 +1,13 @@
+---
+layout: post
+title: TOR &#151; The Onion Router
+category: talk
+author: Hybr1s
+file: http://files.hasi.it/podcast/P91-TOR.mp3
+slides: http://de.slideshare.net/hybr1s/tor-the-onion-router-16691976
+---
+Anonymität im Internet ist so ein Problem.
+
+<!-- break -->
+
+“The Onion Router”, kurz TOR, ist ein Projekt, um anonyme Kommunikation im Internet zu ermöglichen. Wie das funktioniert, wo die Grenzen liegen und wie man es nutzt, hat uns P91 durch seinen Vortrag am 31. Januar 2013 näher gebracht.
