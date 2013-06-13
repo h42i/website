@@ -1,0 +1,12 @@
+---
+layout: post
+title: Podcast und was sonst noch wichtig ist
+category: blog
+author: l3kn
+---
+
+Eines der Konzepte, die ich mit/auf der neuen HaSi-Website durchsetzen möchte, ist es Inhalt und Layout besser zu trennen.
+Wichtige Dateien wie z.B. die Podcasts sollten deshalb vom dem Kontext der Website gelöst werden ->  keine verschachtelten wp-include-wtfs mehr.
+Dabei sollten nach Möglichkeit auch einige Regel bei der Benennung einghalten werden.
+
+Für alle wichtigen und oft genutzten Dateien _(u.U. vergleichbar mit dem HaSi-hg)_ läuft auf der Subdomain <http://files.hasi.it/> eine Version vom [Apaxy](http://adamwhitcroft.com/apaxy/), die entsprechenden Dateien auf dem Server liegen in `html/files`. Ein positiver Nebeneffekt ist, dass so auch Logos o.Ä. einfacher zugänglich gemacht werden können.
