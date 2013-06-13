@@ -3,7 +3,7 @@ layout: post
 title: HaSi meets PodKon, SkepKon und Humanistentag
 category: blog
 ---
-Auf der PodKon trafen sich am 10. Mai der deutschen Podcast-Größen mit ihren Hörern in Köln. Darunter waren etwa die Podcasts “[Hoaxilla](http://www.hoaxilla.com/)“, “[Viva Britannia](http://www.vivabritannia.de/)“, der “[Bartocast](http://bartocast.moepmoep.com/)“, “[Psychotalk](http://psychotalk.moepmoep.com/)“, der “[PottCast](http://pottcast.moepmoep.com/)” und und und…  
+Auf der PodKon trafen sich am 10. Mai 10 der deutschen Podcast-Größen mit ihren Hörern in Köln. Darunter waren etwa die Podcasts “[Hoaxilla](http://www.hoaxilla.com/)“, “[Viva Britannia](http://www.vivabritannia.de/)“, der “[Bartocast](http://bartocast.moepmoep.com/)“, “[Psychotalk](http://psychotalk.moepmoep.com/)“, der “[PottCast](http://pottcast.moepmoep.com/)” und und und…  
 
 Silkimon und unser HaSi-Papa Cheboo haben sich also auf Achse gemacht, um die Bekanntheit unseres bescheidenen Siegener Hackspaces zu steigern (und um die Menschen hinter den Stimmen kennen zu lernen, aber das nur nebenbei ;-) ).  
 
