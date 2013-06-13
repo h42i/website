@@ -3,7 +3,7 @@ destination: ./_site
 
 name: HaSi e.V.
 description: Dein Hackspace in Siegen
-url: http://www.hasi.it/
+url: http://www.jekyll.hasi.it/
 
 excerpt_separator: "<!-- break -->"
 
