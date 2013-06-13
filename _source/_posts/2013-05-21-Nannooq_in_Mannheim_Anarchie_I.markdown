@@ -2,6 +2,7 @@
 layout: post
 title: Nannooq in Mannheim – Anarchie I
 category: talk
+author: hybr1s
 video: http://www.youtube.com/watch?v=qfegYaaaJ8s
 ---
 In Bestreben des HaSis Wissen jeglicher Art zu verbreiten verleihen wir gern Mitglieder an andere Hackspaces und Interessengruppen.  

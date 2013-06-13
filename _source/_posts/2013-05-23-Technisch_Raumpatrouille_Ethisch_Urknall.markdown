@@ -2,6 +2,7 @@
 layout: post
 title: Technisch Raumpatrouille – Ethisch Urknall
 category: talk
+author: hybr1s
 file: http://files.hasi.it/podcast/Cheboo-Technisch_Raumpatrouille_Ethisch_Urknall.mp3
 ---
 [Cheboo](http://hasi.it/wiki/Benutzer:Cheboo) (Bernd Shure) demonstriert einige Tools aus dem Werkzeugkasten des Evolutionären Humanismus, die grundlegende Anforderungen an logische Konsistenz, empirische Erkenntnisse und ethische Tragfähigkeit erfüllen.  
