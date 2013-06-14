@@ -39,7 +39,7 @@ Dafür jedenfalls ist diese Rubrik.
  
 ## Das Wiki
 Das zweite Kernstück stellt das Wiki dar.  
-Zu finden ist es unter [wiki.h42i.de](http://hasi.it/wiki) oder einfach über das Untermenü des Home-Eintrags des Blogs:  
+Zu finden ist es unter [hasi.it/wiki](http://hasi.it/wiki) oder einfach über das Untermenü des Home-Eintrags des Blogs:  
 
 Das Wiki ist primär für die interne Kommunikation und Dokumentation gedacht, steht aber ebenfalls allen Interessierten offen.  
 Wie das ja bekannt ist, führt das Wiki tief in die (technischen) Abgründe und Details des Kaninchenbaus.  
