@@ -12,6 +12,6 @@ Mit seinem Vortrag gab er uns einen Überblick über die Geschichte sowie der gr
 
 Der Mitschnitt in voller Länge:  
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/nfnxbaPicpM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/nfnxbaPicpM?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Der Vortrag fand am 23. August 2012 im Hackspace Siegen (HaSi e.V.) statt.
