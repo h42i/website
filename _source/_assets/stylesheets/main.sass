@@ -31,11 +31,11 @@ body
   color: $color_text
 
 #page-header
-  background: $color_back_contrast
   padding: 1em
   margin: 0
-  background-image: url(asset_path('noise_loops.png')) !important
-  background-repeat: repeat
+  background-color: darken($color_back_contrast, 10%)
+  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
+  background-size: 13px, 29px, 37px, 53px 
   h1
     color: $color_text_light
   p
