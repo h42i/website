@@ -12,7 +12,11 @@ Einigen konnten die beiden einen HaSi-Aufkleber in die Hand drücken und ablicht
 
 <!-- break -->
 
-![Sven Rudolff](/images/HaSi_Meets_Sven_Rudolff.jpg) ![Mark Benecke](/images/HaSi_Meets_Mark_Benecke.jpg) ![Sebastian Bartoschek](/images/HaSi_Meets_Sebastian_Bartoschek.jpg)
+| <img src="/images/HaSi_Meets_Sven_Rudolff.jpg" alt="Sven Rudolff" style="width: 200px;"/> | <img src="/images/HaSi_Meets_Mark_Benecke.jpg" alt="Mark Benecke" style="width: 200px;"/> | <img src="/images/HaSi_Meets_Sebastian_Bartoschek.jpg" alt="Sebastian Bartoschek" style="width: 200px;"/> |
+|:--------|:-------:|--------:|
+| Sven Rudolff  | Mark Benecke  | Sebastian Bartoschek  |
+|=====
+{: rules="groups"}
 
 Sven Rudloff -  ”[Viva Britannia](http://www.vivabritannia.de/)” und ”[Psychotalk](http://psychotalk.moepmoep.com/)”  
 

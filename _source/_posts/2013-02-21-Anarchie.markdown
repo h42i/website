@@ -16,4 +16,4 @@ Eine “hall of fame” der Anarchie-Literaten ist optional. Ein bunter Kessel a
 
 Die angesprochene Doku über den Anarchismus in Spanien:  
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/zvF7PoB-438?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/zvF7PoB-438?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>

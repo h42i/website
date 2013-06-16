@@ -11,4 +11,4 @@ Das ganze soll eine vierteilige Vortragsreihe werden. Hier der erste Teil:
 
 <!-- break -->
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/qfegYaaaJ8s?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/qfegYaaaJ8s?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>
