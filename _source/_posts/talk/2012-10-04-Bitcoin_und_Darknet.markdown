@@ -3,7 +3,8 @@ layout: post
 title: Bitcoin und Darknet
 category: talk
 author: hybr1s
-file: http://files.hasi.it/podcast/Shguro_und_DrVallinger-Bitcoin_und_Darknet.mp3
+talk:
+  file: http://files.hasi.it/podcast/Shguro_und_DrVallinger-Bitcoin_und_Darknet.mp3
 ---
 @Shguro und @DrVallinger (beides HaSi-Mitglieder), sind tief in die Abgründe des Darknets und dessen Bezahlsystem, den Bitcoins, eingetaucht.  
 Was sind Bitcoins, was kann man mit denen machen und was ist das Darknet?  

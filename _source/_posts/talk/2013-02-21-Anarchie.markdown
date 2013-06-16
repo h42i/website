@@ -3,7 +3,8 @@ layout: post
 title: Anarchie!
 category: talk
 author: hybr1s
-file: http://files.hasi.it/podcast/Nanooq-Anarchie.mp3
+talk:
+  file: http://files.hasi.it/podcast/Nanooq-Anarchie.mp3
 ---
 Der nächste HaSi-Vortrag steht vor der Tür. Am 28. Februar um 20.30 Uhr. Das Thema: ANARCHIE!  
 
@@ -16,4 +17,4 @@ Eine “hall of fame” der Anarchie-Literaten ist optional. Ein bunter Kessel a
 
 Die angesprochene Doku über den Anarchismus in Spanien:  
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/zvF7PoB-438?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>
+{% youtube zvF7PoB-438 %}

@@ -3,8 +3,9 @@ layout: post
 title: TOR &#151; The Onion Router
 category: talk
 author: Hybr1s
-file: http://files.hasi.it/podcast/P91-TOR.mp3
-slides: http://de.slideshare.net/hybr1s/tor-the-onion-router-16691976
+talk:
+  file: http://files.hasi.it/podcast/P91-TOR.mp3
+  slides: http://de.slideshare.net/hybr1s/tor-the-onion-router-16691976
 ---
 Anonymität im Internet ist so ein Problem.
 

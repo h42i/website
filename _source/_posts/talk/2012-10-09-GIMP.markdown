@@ -3,7 +3,8 @@ layout: post
 title: GIMP
 category: talk
 author: hybr1s
-video: http://www.youtube.com/watch?v=nfnxbaPicpM
+talk:
+  video: http://www.youtube.com/watch?v=nfnxbaPicpM
 ---
 Simon ist seit langem an der Entwicklung von GIMP beteiligt.  
 Mit seinem Vortrag gab er uns einen Überblick über die Geschichte sowie der grundlegenden Bedienung des Projekts.  
@@ -12,6 +13,6 @@ Mit seinem Vortrag gab er uns einen Überblick über die Geschichte sowie der gr
 
 Der Mitschnitt in voller Länge:  
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/nfnxbaPicpM?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>
+{% youtube nfnxbaPicpM %}
 
 Der Vortrag fand am 23. August 2012 im Hackspace Siegen (HaSi e.V.) statt.

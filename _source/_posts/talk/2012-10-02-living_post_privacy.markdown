@@ -3,7 +3,8 @@ layout: post
 title: living post-privacy
 category: talk
 author: hybr1s
-file: http://files.hasi.it/podcast/Hybr1s-Living_post_privacy.mp3
+talk:
+  file: http://files.hasi.it/podcast/Hybr1s-Living_post_privacy.mp3
 ---
 Hybr1s (HaSi-Mitglied) hat einen Spontanvortrag über “post-privacy” gehalten, den er 20 min vor der Session vorbereitet hat.  
 Daher übernimmt er kein Gewähr, ob alle Aussagen richtig waren oder genug gerechtfertigt wurden, zudem war er sehr verschnupft.  

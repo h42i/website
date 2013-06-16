@@ -7,9 +7,10 @@ title: talks
 	<article class="group">
 		<header><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></header>
 		{{ post.excerpt }}
-		<p><a class="button" href="{{ post.url }}">Read more...</a></p>
+		{% include break.html %}
 	</article>
 </section>
+{% if post.talk.file %}
 <aside>
 	<article class="group">
 		<header><h2>media</h2></header>
@@ -19,4 +20,5 @@ title: talks
 		</audio>
 	</article>
 </aside>
+{% endif %}
 {% endfor %}

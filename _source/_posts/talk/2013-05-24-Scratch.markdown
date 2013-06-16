@@ -3,7 +3,8 @@ layout: post
 title: Scratch – Grafisches Programmieren von Kindesbeinen an
 category: talk
 author: hybr1s
-file: http://files.hasi.it/NA-Scratch.mp3
+talk:
+  file: http://files.hasi.it/NA-Scratch.mp3
 ---
 Scratch ist eine noch relativ neue, leicht zu erlernende, grafisch orientierte Programmiersprache für Einsteiger.  
 Unter dem Motto “Ausdenken, Programmieren, Mitteilen” werden eigene Spiele, Steuerungen und Multimediaanwendungen möglich.  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: August 2012 Anstehende Veranstaltungen
-category: blog
+category: archive
 author: hybr1s
 ---
 __20 August ab 18.00 Uhr__

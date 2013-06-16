@@ -3,9 +3,10 @@ layout: post
 title: Urban Gardening
 category: talk
 author: inj4n
-file: http://files.hasi.it/podcast/Maike-Urban_Gardening.mp3
-video: http://vimeo.com/64870156
-slides: http://de.slideshare.net/hybr1s/vortrag-urban-gardening-klein
+talk:
+  file: http://files.hasi.it/podcast/Maike-Urban_Gardening.mp3
+  video: http://vimeo.com/64870156
+  slides: http://de.slideshare.net/hybr1s/vortrag-urban-gardening-klein
 ---
 Maike ist Mitinitiatorin des Siegener Stadtgarten am Effertsufer. Mit diesem Projekt versucht sie Konzepte des “Urban Gardenings” nach Siegen zu bringen.  
 Am Donnerstag den 25. April um 20.30 Uhr berichtet sie davon im Hackspace Siegen und lädt zur offenenDiskussion ein.  
