@@ -5,7 +5,7 @@ category: talk
 author: hybr1s
 talk:
   file: http://files.hasi.it/podcast/Hybr1s-Erklaer_mir_Kunst.mp3
-  video: http://www.youtube.com/watch?v=S9QcOZX256g
+  video: http://www.youtube.com/watch?v=S9QcOZX256g&html5=1
   slides: http://www.slideshare.net/hybr1s/erklar-mir-kunst
 ---
 [Hybr1s](http://hasi.it/wiki/Benutzer:Hybr1s) ist Regisseur bei der Theatergruppe [tollMut](http://www.tollmut-theater.de/).  

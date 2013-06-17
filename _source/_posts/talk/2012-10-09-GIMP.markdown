@@ -4,7 +4,7 @@ title: GIMP
 category: talk
 author: hybr1s
 talk:
-  video: http://www.youtube.com/watch?v=nfnxbaPicpM
+  video: http://www.youtube.com/watch?v=nfnxbaPicpM&html5=1
 ---
 Simon ist seit langem an der Entwicklung von GIMP beteiligt.  
 Mit seinem Vortrag gab er uns einen Überblick über die Geschichte sowie der grundlegenden Bedienung des Projekts.  
