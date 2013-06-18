@@ -19,4 +19,4 @@ Hybr1s wird euch in die Welt der Kunst geleiten.
 
 <!-- break -->
 
-<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/S9QcOZX256g?html5=1&rel=0" frameborder="0" allowfullscreen></iframe>
+{% youtube S9QcOZX256g %}
