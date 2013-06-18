@@ -20,7 +20,7 @@ class YouTube < Liquid::Tag
   end
  
   def render(context)
-    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.nocookie.com/embed/#{@id}?html5=1&rel=0\"></iframe>"
+    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube-nocookie.com/embed/#{@id}?html5=1&rel=0\"></iframe>"
   end
  
   Liquid::Template.register_tag "youtube", self
