@@ -52,7 +52,7 @@ title: Termine
 
 > ### Maker Faire Hannover
 
->> 3. August vom 10 bis 19 Uhr
+>> Samstag, 3. August (10 bis 19 Uhr)
 
 >> Heise veranstaltet in Hannover die erste Maker Faire in Deutschland.
 >> [Oh, ein Link!](http://de.amiando.com/makerfaire2013.html)
