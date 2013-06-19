@@ -5,6 +5,7 @@ category: talk
 author: inj4n
 talk:
   file: http://files.hasi.it/podcast/Maike-Urban_Gardening.mp3
+  duration: 00:37:22
   video: http://vimeo.com/64870156
   slides: http://de.slideshare.net/hybr1s/vortrag-urban-gardening-klein
 ---

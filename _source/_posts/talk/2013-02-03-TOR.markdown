@@ -5,6 +5,7 @@ category: talk
 author: Hybr1s
 talk:
   file: http://files.hasi.it/podcast/P91-TOR.mp3
+  duration: 01:04:48
   slides: http://de.slideshare.net/hybr1s/tor-the-onion-router-16691976
 ---
 Anonymität im Internet ist so ein Problem.
