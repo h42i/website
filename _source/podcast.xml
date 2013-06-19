@@ -1,0 +1,78 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+
+<title>From The Pub</title>
+
+<link>http://www.fromthepub.com/</link>
+
+<language>de</language>
+
+<copyright>&#xA9; 2013 Darren Scott &amp; Adam Wilcox</copyright>
+
+<itunes:subtitle>HaSi Talks</itunes:subtitle>
+
+<itunes:author>HaSi e.V.-Hackspace Siegen</itunes:author>
+
+<itunes:keywords>hacking,technology,programming,</itunes:keywords>
+
+<itunes:summary>Der Podcast des HaSi e.V.</itunes:summary>
+
+<description>Technik respektlos begegnen! Das HaSi ist eine Gemeinschaft von technikinteressierten Menschen, die an Hard- und Software herumbasteln, versuchen sie zu verstehen und sich gegenseitig erklären. Mit diesem Podcast wollen wir auch den Rest der Welt daran Teil haben lassen.</description>
+
+<itunes:owner>
+
+<itunes:name>Adam Wilcox</itunes:name>
+
+<itunes:email>fromthepub@adamwilcox.org</itunes:email>
+
+</itunes:owner>
+
+<itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
+
+<itunes:category text="Comedy" />
+
+<itunes:category text="Society &amp; Culture" />
+
+<itunes:category text="Technology" />
+
+<itunes:category text="TV &amp; Film" />
+
+<itunes:new-feed-url>http://www.fromthepub.com/podcast.xml</itunes:new-feed-url>
+
+ {% for post in site.categories.talk limit:10 %}
+ 
+ <item>
+ 
+ <title>{{ post.title }}</title>
+ 
+ <itunes:author>Darren Scott &amp; Adam Wilcox</itunes:author>
+ 
+ <itunes:subtitle>From The Pub: {{ post.title }}</itunes:subtitle>
+ 
+ <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+ 
+ <itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
+ 
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+ 
+ <guid>{{ post.link }}</guid>
+ 
+ <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+ <itunes:duration>{{ post.talk.duration }}</itunes:duration>
+ 
+ <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix96,eagle,radio</itunes:keywords>
+ 
+ </item>
+
+ {% endfor %}
+
+</channel>
+
+</rss>
