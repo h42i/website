@@ -6,8 +6,8 @@
 	Leon Rische -- Main Developer -- @l3kn
 	Mister DanB -- Chief Exexutive Designer -- @misterdanb
 	Dulnefni -- Human Wordpressimporter
-	Du          -- Was du tust -- Nickname
+	Du -- Was du tust -- Nickname
 
 # TECHNOLOGY COLOPHON
     HTML5, CSS3
-		Jekyll
+	Jekyll

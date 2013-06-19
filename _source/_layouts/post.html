@@ -14,15 +14,15 @@ l3 default layout for a single blogpage
 </article>
 <aside>
 	{% include social.html %}	
-	{% if post.talk.file %}
+	{% if page.talk.file %}
 	<aside>
 		<article class="group">
 			<header><h2>media</h2></header>
 			<audio controls>
-				<source src={{ post.talk.file }} type="audio/mpeg">
+				<source src={{ page.talk.file }} type="audio/mpeg">
 				Your browser does not support this audio format.
 			</audio>
-			<a href="{{ post.talk.file }}" class="button">Play (or download)</a>
+			<a href="{{ page.talk.file }}" class="button">Play (or download)</a>
 		</article>
 	</aside>
 	{% endif %}
