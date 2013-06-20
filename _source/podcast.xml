@@ -67,7 +67,7 @@ layout: nil
  <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
  <itunes:duration>{{ post.talk.duration }}</itunes:duration>
  
- <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix96,eagle,radio</itunes:keywords>
+ <itunes:keywords>hasi,talk,technology,web</itunes:keywords>
  
  </item>
 

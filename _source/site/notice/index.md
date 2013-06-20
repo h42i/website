@@ -1,9 +1,7 @@
 ---
 layout: post
-title: impressum
+title: Impressum
 ---
-
-# Impressum
 
 ## Angaben gemäß § 5 TMG:
 >{{ site.info.name }}  

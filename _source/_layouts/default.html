@@ -15,8 +15,9 @@
 			<section>
 				<nav>
 					<ul>
+					{% assign url = page.url|remove:'index.html' %}
 					{% for link in site.navigation %}
-						<li {% if page.url == link.url %}class="active"{% endif %}><a href="{{link.url}}">{{ link.title }}</a></li>
+						<li {% if url == link.url %}class="active"{% endif %}><a href="{{link.url}}">{{ link.title }}</a></li>
 					{% endfor %}
 					</ul>
 				</nav>	
@@ -25,7 +26,8 @@
 				{{ content }}
 			</section>
 			<footer>
-				<a href="/site_notice/">Impressum</a>
+				<a href="/site/notice/">Impressum</a>
+				<a href="/site/satzung/">Vereinssatzung</a>
 			</footer>
 		</section>
 	</body>

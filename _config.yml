@@ -30,7 +30,7 @@ safe: false
 
 navigation:
 - title: Home
-  url: /index.html
+  url: /
 - title: Blog
   url: /blog/
 - title: Vorträge
