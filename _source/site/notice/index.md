@@ -9,7 +9,7 @@ title: Impressum
 >{{ site.info.country }}  
 
 ## Kontakt
-* E-Mail: hello(at)l3kn(dot)de
+* E-Mail: kontakt@hasi.it
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 >{{ site.info.name }}  
