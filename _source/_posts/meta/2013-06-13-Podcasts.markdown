@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Podcasts und was sonst noch wichtig ist
-category: blog
+category: meta
 author: l3kn
 ---
 

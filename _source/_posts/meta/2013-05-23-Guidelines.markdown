@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guidelines
-category: blog
+category: meta
 ---
 
 ## Philosophie / Meta
