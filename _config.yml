@@ -41,3 +41,11 @@ navigation:
   url: http://h42i.tumblr.com/
 - title: Wiki
   url: http://hasi.it/wiki/Hauptseite
+
+navigation_bottom:
+- title: Impressum
+  url: /site/notice/
+- title: Vereinssatzug
+  url: /site/satzung/
+- title: Mate
+  url: /meta/

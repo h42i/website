@@ -25,10 +25,9 @@
 			<section id="main" class="group">
 				{{ content }}
 			</section>
-			<footer>
-				<a href="/site/notice/">Impressum</a>
-				<a href="/site/satzung/">Vereinssatzung</a>
-				<a href="/meta/">Meta</a>
+			{% for link in site.navigation_bottom %}
+				<a href="{{link.url}}">{{ link.title }}</a>
+			{% endfor %}
 			</footer>
 		</section>
 	</body>
