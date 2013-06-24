@@ -45,7 +45,7 @@ navigation:
 navigation_bottom:
 - title: Impressum
   url: /site/notice/
-- title: Vereinssatzug
+- title: Vereinssatzung
   url: /site/satzung/
-- title: Mate
+- title: Meta
   url: /meta/
