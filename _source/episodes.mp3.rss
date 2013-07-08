@@ -33,7 +33,7 @@ layout: nil
     {% for post in site.categories.talk %}
     <item>
       <title>{{ post.title }}</title>
-      <link>{{ site.url }}{{ post.url }}</link>
+<!--       <link>{{ site.url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       {% for category in post.categories %}
       <category><![CDATA[{{ category }}]]></category>
@@ -47,7 +47,7 @@ layout: nil
       <itunes:summary>{{ post.summary }}</itunes:summary>
       <itunes:author>{{ post.author | otherwise:site.author }}</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:duration>{{ post.talk.duration }}</itunes:duration>
+      <itunes:duration>{{ post.talk.duration }}</itunes:duration> -->
     </item>
     {% endfor %}
   </channel>
