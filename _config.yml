@@ -9,12 +9,12 @@ license: CC BY-NC-SA 3.0
 excerpt_separator: "<!-- break -->"
 
 podcast:
-	description: bar
+  description: bar
   subtitle: foo
-	author: HaSi e.V.
-	mail: podcast@hasi.it
-	keywords: [octopod, podcast, magic] 
-	itunes_categories: [Technology]
+  author: HaSi e.V.
+  mail: podcast@hasi.it
+  keywords: [octopod, podcast, magic] 
+  itunes_categories: [Technology]
 
 markdown: kramdown
 kramdown:
