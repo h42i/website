@@ -63,7 +63,7 @@ module Jekyll
     #   {{ "example.m4a" | file_size }} => 4242
     def file_size(path, rel = nil)
       return 0 if path.nil?
-      path = path =~ /\// ? path : File.join('episodes', path)
+      path = path =~ /\// ? path : File.join('podcast', path)
       path = rel + path if rel
       File.size(path)
     end
