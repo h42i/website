@@ -11,20 +11,19 @@ layout: nil
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>de</language>
     <itunes:summary>{{ site.description | markdownify | strip_html }}</itunes:summary>
-    <itunes:author>{{ site.author }}</itunes:author>
-    <itunes:explicit>{{ site.explicit }}</itunes:explicit>
-    <itunes:image href="{{ site.url }}/img/logo.jpg" />
+    <itunes:author>HaSi e.V.</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="{{ site.url }}images/HaSi_Logo.png" />
     <itunes:owner>
-      <itunes:name>{{ site.author }}</itunes:name>
-      <itunes:email>{{ site.podcast.mail }}</itunes:email>
+      <itunes:name>HaSi e.V.</itunes:name>
+      <itunes:email>kontakt@hasi.it</itunes:email>
     </itunes:owner>
-    <managingEditor>{{site.email}} ({{site.author}})</managingEditor>
     <copyright>{{ site.license }}</copyright>
     <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
     <itunes:keywords>{{ site.podcast.keywords | join:', ' }}</itunes:keywords>
     <image>
       <title>{{ site.title }}</title>
-      <url>{{ site.url }}/imagesg/HaSi_Logo.png</url>
+      <url>{{ site.url }}images/HaSi_Logo.png</url>
       <link>{{ site.url }}</link>
     </image>
     {% for category in site.podcast.itunes_categories %}
