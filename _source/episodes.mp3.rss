@@ -41,7 +41,7 @@ layout: nil
       <guid isPermaLink="false">{{ site.url }}{{ post.url }}</guid>
       <description>{{ post.talk.description }}</description>
       <content:encoded>{{ post.content }}</content:encoded>
-      <enclosure url="{{ post.talk.file }}" length="{{ post.talk.file | file_size }}" type="{{ mpeg | mime_type }}" />
+      <enclosure url="{{ site.podcast.path }}{{ post.talk.file }}" type="{{ mpeg | mime_type }}" />
       <itunes:keywords>{{ post.tags }}</itunes:keywords>
       <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
       <itunes:summary>{{ post.summary }}</itunes:summary>

@@ -4,7 +4,7 @@ title: Mikrocontroller
 category: talk
 author: hybr1s
 talk:
-  file: /podcast/Ole_und_Shguro-Mikrocontroller.mp3
+  file: Ole_und_Shguro-Mikrocontroller.mp3
   duration: 00:53:13
 ---
 Ole und @Shguro (beides HaSi-Mitglieder) philosophieren über Mikrocontroller.  

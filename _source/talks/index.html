@@ -19,7 +19,7 @@ title: talks
 			<source src={{ post.talk.file }} type="audio/mpeg">
 			Your browser does not support this audio format.
 			</audio>
-			<a href="{{ post.talk.file }}" class="button">Play (or download)</a>
+			<a href="{{ site.podcast.path }}{{ post.talk.file }}" class="button">Play (or download)</a>
 		{% endif %}
 		{% if post.talk.video %}
 			<a href="{{ post.talk.video }}" class="button">Video</a>

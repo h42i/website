@@ -4,7 +4,7 @@ title: Anarchie!
 category: talk
 author: hybr1s
 talk:
-  file: /podcast/Nanooq-Anarchie.mp3
+  file: Nanooq-Anarchie.mp3
   duration: 02:19:07
 ---
 Der nächste HaSi-Vortrag steht vor der Tür. Am 28. Februar um 20.30 Uhr. Das Thema: ANARCHIE!  

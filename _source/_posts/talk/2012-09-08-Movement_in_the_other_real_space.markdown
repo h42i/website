@@ -4,7 +4,7 @@ title: Movement in the other real space
 category: talk
 author: hybr1s
 talk:
-  file: /podcast/inj4n-Movement_in_the_other_real_space.mp3
+  file: inj4n-Movement_in_the_other_real_space.mp3
   duration: 00:57:49
 ---
 > Movement in the other real space.

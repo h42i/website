@@ -4,7 +4,7 @@ title: Quantenphysik
 category: talk
 auhor: Hybr1s
 talk:
-  file: /podcast/Carl-Quantenphysik.mp3
+  file: Carl-Quantenphysik.mp3
   duration: 01:09:21
   slides: http://de.slideshare.net/hybr1s/quantenphysik
 ---

@@ -4,7 +4,7 @@ title: Regular Expressions
 category: talk
 author: hybr1s
 talk:
-  file: /podcast/Nomis-Regular-Expressions.mp3
+  file: Nomis-Regular-Expressions.mp3
   duration: 00:33:40
 ---
 Simon hat einen kleinen Spontanvortrag über “Regular Expressions” gehalten.  
