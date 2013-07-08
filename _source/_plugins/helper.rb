@@ -56,20 +56,6 @@ module Jekyll
       end
     end
 
-    # Returns the MIME-Type of a given file format.
-    #
-    #   {{ "m4a" | mime_type }} => "audio/mp4a-latm"
-    def mime_type(format)
-      types = {
-        'mp3'  => 'mpeg',
-        'm4a'  => 'mp4a-latm',
-        'ogg'  => 'ogg; codecs=vorbis',
-        'opus' => 'ogg; codecs=opus'
-      }
-
-      "audio/#{types[format]}"
-    end
-
     # Returns the size of a given file in bytes. If there is just a filename
     # without a path, this method assumes that the file is an episode audio file
     # which lives in /episodes.
