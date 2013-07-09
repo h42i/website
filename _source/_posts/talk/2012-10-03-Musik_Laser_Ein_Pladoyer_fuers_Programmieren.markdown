@@ -4,7 +4,7 @@ title: Musik! Laser! – Ein Plädoyer fürs Programmieren
 category: talk
 author: hybr1s
 talk:
-  file: http://files.hasi.it/podcast/Nomis-Musik_Laser_Ein_Pladoyer_fuers_Programmieren.mp3
+  file: Nomis-Musik_Laser_Ein_Pladoyer_fuers_Programmieren.mp3
   duration: 00:33:33
 ---
 Simon Budig (unser HaSi-Vati) hat auf dem BarCamp erzählt, warum Programmieren können sich lohnt.  

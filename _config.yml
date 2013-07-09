@@ -4,8 +4,16 @@ destination: ./_site
 name: HaSi e.V.
 description: Dein Hackspace in Siegen
 url: http://www.jekyll.hasi.it/
+license: CC BY-NC-SA 3.0
 
 excerpt_separator: "<!-- break -->"
+
+podcast:
+  path: http://files.hasi.it/podcast/
+  description: bar
+  subtitle: foo
+  keywords: [octopod, podcast, magic] 
+  itunes_categories: [Technology]
 
 markdown: kramdown
 kramdown:

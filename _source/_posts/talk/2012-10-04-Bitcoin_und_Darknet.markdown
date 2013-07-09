@@ -4,7 +4,7 @@ title: Bitcoin und Darknet
 category: talk
 author: hybr1s
 talk:
-  file: http://files.hasi.it/podcast/Shguro_und_DrVallinger-Bitcoin_und_Darknet.mp3
+  file: Shguro_und_DrVallinger-Bitcoin_und_Darknet.mp3
   duration: 00:47:27
 ---
 @Shguro und @DrVallinger (beides HaSi-Mitglieder), sind tief in die Abgründe des Darknets und dessen Bezahlsystem, den Bitcoins, eingetaucht.  
