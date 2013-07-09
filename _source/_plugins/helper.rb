@@ -61,11 +61,15 @@ module Jekyll
     # which lives in /episodes.
     #
     #   {{ "example.m4a" | file_size }} => 4242
-    def file_size(path, rel = nil)
+    def file_size(path)
       return 0 if path.nil?
-      path = path =~ /\// ? path : File.join('_source/podcast', path)
-      path = rel + path if rel
-      File.size(path)
+      if File.directory? '_source/podcast'
+        path = path =~ /\// ? path : File.join('_source/podcast', path)
+        path = rel + path if rel
+        File.size(path)
+      else
+        1337
+      end
     end
 
     # Returns a slug based on the id of a given page.
