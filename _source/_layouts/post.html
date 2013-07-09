@@ -17,7 +17,7 @@ l3 default layout for a single blogpage
 	<article class="group">
 		<header><h2>media</h2></header>
 		<audio controls>
-			<source src={{ page.talk.file }} type="audio/mpeg">
+			<source src={{ site.podcast.path }}{{ page.talk.file }} type="audio/mpeg">
 			Your browser does not support this audio format.
 		</audio>
 		<a href="{{ page.talk.file }}" class="button">Play (or download)</a>
