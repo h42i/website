@@ -12,15 +12,23 @@ l3 default layout for a single blogpage
 	</header>	
 	{{ content}}
 </article>
-{% if page.talk.file %}
+{% if page.talk.file or page.talk.video or page.talk.slides %}
 <aside>
 	<article class="group">
 		<header><h2>media</h2></header>
-		<audio controls>
+		{% if page.talk.file %}		
+			<audio controls>
 			<source src={{ site.podcast.path }}{{ page.talk.file }} type="audio/mpeg">
 			Your browser does not support this audio format.
-		</audio>
-		<a href="{{ site.podcast.path }}{{ page.talk.file }}" class="button">Play (or download)</a>
+			</audio>
+			<a href="{{ site.podcast.path }}{{ page.talk.file }}" class="button">Play (or download)</a>
+		{% endif %}
+		{% if page.talk.video %}
+			<a href="{{ page.talk.video }}" class="button">Video</a>
+		{% endif %}
+		{% if page.talk.slides %}
+			<a href="{{ page.talk.slides }}" class="button">Slides</a>
+		{% endif %}
 	</article>
 </aside>
 {% endif %}
