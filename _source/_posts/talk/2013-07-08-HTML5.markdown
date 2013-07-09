@@ -4,7 +4,7 @@ title: HTML5
 category: talk
 author: Eliah Shure
 talk:
-  file: http://files.hasi.it/podcast/barcamp2013/Renate_Hermanns-HTML5.mp3
+  file: barcamp2013/Renate_Hermanns-HTML5.mp3
   duration: 00:44:51
 ---
 Beim diesjährigen [Barcamp Siegen](http://barcamp-siegen.de/) sprach [@renaade](https://twitter.com/Renaade) über HTML5.  

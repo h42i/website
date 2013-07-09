@@ -4,7 +4,7 @@ title: Google Glass taken apart
 category: talk
 author: Eliah Shure
 talk:
-  file: http://files.hasi.it/podcast/barcamp2013/Ertraeglichkeit-Google_Glass_taken_apart.mp3
+  file: barcamp2013/Ertraeglichkeit-Google_Glass_taken_apart.mp3
   duration: 00:48:03
   slides: http://de.slideshare.net/vadimn/google-glass-taken-apart
 ---

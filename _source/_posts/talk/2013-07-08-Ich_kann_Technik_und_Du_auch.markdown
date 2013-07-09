@@ -4,7 +4,7 @@ title: Ich kann Technik und Du auch!
 category: talk
 author: Eliah Shure
 talk:
-  file: http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3
+  file: barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3
   duration: 00:51:23
 ---
 In einer Session von [Frank Sperber](https://twitter.com/DL6DBN) beim diesjährigen [Barcamp Siegen](http://barcamp-siegen.de/) stand das Thema “Ich kann Technik – und Du auch!” mit dem Hintergrund offener Lernangebote im Vordergrund.  

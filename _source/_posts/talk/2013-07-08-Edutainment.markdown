@@ -4,7 +4,7 @@ title: Edutainment
 category: talk
 author: Eliah Shure
 talk:
-  file: http://files.hasi.it/podcast/barcamp2013/Sebastian_Funk-Edutainment.mp3
+  file: barcamp2013/Sebastian_Funk-Edutainment.mp3
   duration: 00:48:35
 ---
 Wer wissen möchte wie man mit einem Magneten das Eisen aus seinem Müsli zieht sollte sich den [Youtubekanal von @HerrFunk](https://www.youtube.com/user/MrHrFunk) ansehen.  

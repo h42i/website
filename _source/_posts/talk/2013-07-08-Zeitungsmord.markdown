@@ -4,7 +4,7 @@ title: Zeitungsmord
 category: talk
 author: Eliah Shure
 talk:
-  file: http://files.hasi.it/podcast/barcamp2013/Ertraeglichkeit-Zeitungsmord.mp3
+  file: barcamp2013/Ertraeglichkeit-Zeitungsmord.mp3
   duration: 00:36:49
 ---
 [@Ertraeglichkeit](https://twitter.com/Ertraeglichkeit) sprach auf dem [Barcamp Siegen](http://barcamp-siegen.de/) über Onlinepranger.  
