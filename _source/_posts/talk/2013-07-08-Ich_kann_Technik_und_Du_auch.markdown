@@ -21,6 +21,6 @@ Hier wurde angeregt, Kontakt aufzunehmen.
 Auch für den Bereich dieser Offenen Lernangebote gilt – wie für die Scratch-Aktivitäten: Wer sich angesprochen fühlt, irgendetwas beitragen zu können (als Coach/Mentor, im Hintergrund als Organisator, bei der Beschaffung von Mitteln, Material und Räumen), sollte sich [bei ihm melden](https://scratchdaysiegen.wordpress.com/impressum/).  
 Dabei sind Überschneidungen zur Scratch-Initiative durchaus denkbar und helfen möglicherweise, Synergien zu schaffen.  
 
-Das erfreuliche Ergebnis sind also viele neue Kontakte und wie es aussieht wird die Diskussion und die Planungen dazu demnöchst bei uns im HaSi Fortgesetzt.  
+Das erfreuliche Ergebnis sind also viele neue Kontakte und wie es aussieht wird die Diskussion und die Planungen dazu demnächst bei uns im HaSi Fortgesetzt.  
 
 [Stichwortzettel zur Session(PDF)](http://scratchdaysiegen.files.wordpress.com/2013/07/barcamp13-dl6dbn.pdf)
