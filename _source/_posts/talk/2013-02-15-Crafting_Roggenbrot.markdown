@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crafting Roggenbrot
-category: talk
+category: talk_nocast
 author: hybr1s
 ---
 Für Eilige, hier das Rezept:  

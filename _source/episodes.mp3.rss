@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>{{ site.title }}</title>
+    <title>HaSi e.V. Podcast</title>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/episodes.mp3.rss" rel="self" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
-    <description>{{ site.description | markdownify | strip_html }}</description>
+    <description>{{ site.podcast.description }}</description>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>de</language>
-    <itunes:summary>{{ podcast.description }}</itunes:summary>
-    <itunes:author>HaSi e.V.</itunes:author>
+    <itunes:summary>Der offizielle und einzig wahre Podcast des HaSi</itunes:summary>
+    <itunes:author>HaSi e.V.-Hackspace Siegen</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="{{ site.url }}images/HaSi_Logo.png" />
     <itunes:owner>
@@ -22,13 +22,11 @@ layout: nil
     <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
     <itunes:keywords>{{ site.podcast.keywords | join:', ' }}</itunes:keywords>
     <image>
-      <title>{{ site.title }}</title>
+      <title>HaSi e.V. Podcast</title>
       <url>{{ site.url }}images/HaSi_Logo.png</url>
       <link>{{ site.url }}</link>
     </image>
-    {% for category in site.podcast.itunes_categories %}
-    <itunes:category text="{{ category }}">
-    {% endfor %}
+    <itunes:category text="Technology">
     </itunes:category>
     {% for post in site.categories.talk %}
     <item>
@@ -40,8 +38,8 @@ layout: nil
       {% endfor %}
       <guid isPermaLink="false">{{ site.url }}{{ post.url }}</guid>
       <description>{{ post.talk.description }}</description>
-      <content:encoded>{{ post.content }}</content:encoded>
-      <enclosure url="{{ site.podcast.path }}{{ post.talk.file }}" length="{{ post.talk.file | file_size }}" type="mpeg" />
+      <content:encoded>{{ post.content | strip_html }}</content:encoded>
+      <enclosure url="{{ site.podcast.path }}{{ post.talk.file }}" length="{{ post.talk.file | file_size }}" type="audio/mpeg" />
       <itunes:keywords>{{ post.tags }}</itunes:keywords>
       <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
       <itunes:summary>{{ post.summary }}</itunes:summary>

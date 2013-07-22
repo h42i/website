@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nannooq in Mannheim – Anarchie II
-category: talk
+category: talk_nocast
 author: hybr1s
 talk:
   video: http://www.youtube.com/watch?v=k2IrzmDEg7M&html5=1

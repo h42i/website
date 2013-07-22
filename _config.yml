@@ -10,10 +10,10 @@ excerpt_separator: "<!-- break -->"
 
 podcast:
   path: http://files.hasi.it/podcast/
-  description: Techink respektlos begegnen! Das Hasi ist eine Gemeinschaft vom technikinteressierten Menschen, die an Hard- und Software rumbasteln, versuchen sie zu verstehen uns sich gegenseitig zu erklären.
+  description: "Techink respektlos begegnen! Das Hasi ist eine Gemeinschaft vom technikinteressierten Menschen, die an Hard- und Software rumbasteln, versuchen sie zu verstehen uns sich gegenseitig zu erklären."
   subtitle: In diesem Podcast wollen sie den Rest der Welt daran teil haben lassen
   keywords: [Hacking, Technologie, Magie] 
-  itunes_categories: [Technologie, Software-Tipps]
+  itunes_categories: [Education, Software How-To, Training]
 
 markdown: kramdown
 kramdown:
