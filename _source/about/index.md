@@ -2,7 +2,7 @@
 layout: post
 title: Wer sind wir?
 ---
-!()[/images/HaSi_Logo.png]  
+!()[/images/pixelhasi-text-weiß.png]  
 Wir sind der HaSi e.V.!  
 Wir sind dein Hackspace in Siegen und Umgebung.  
 
