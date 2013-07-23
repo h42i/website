@@ -1,0 +1,37 @@
+
+
+#
+# Dies hier ist die richtige .htaccess für hasi.it
+#
+
+RewriteEngine On
+
+# Wiki
+# Prettify sitenames for wiki-pages
+# /wiki/index.php?title=$foo -> /wiki/$foo
+# (t3o)
+RewriteCond %{REQUEST_URI}  !^/wiki/index\.php.*
+RewriteCond %{REQUEST_URI}  !^/wiki/load\.php.*
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wiki/(.*)$ /wiki/index.php?title=$1 [PT,L,QSA]
+
+# Wordpress
+# Redirect urls to non-existant files to index.php
+# (t3o)
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
