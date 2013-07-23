@@ -14,7 +14,7 @@ title: talks
 	<article class="group">
 		<header><h2>{{ post.date | date: "%d %B %Y"}}</h2></header>
 		{% if post.author %}
-    	<p> by {{ post.author }}</p>
+		<p> by <a href="/wiki/Benutzer:{{ post.author }}">{{ post.author }}</a></p>
 		{% endif %}
 	</article>
 </aside>
