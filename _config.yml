@@ -10,9 +10,9 @@ excerpt_separator: "<!-- break -->"
 
 podcast:
   path: http://files.hasi.it/podcast/
-  description: "Techink respektlos begegnen! Das Hasi ist eine Gemeinschaft vom technikinteressierten Menschen, die an Hard- und Software rumbasteln, versuchen sie zu verstehen uns sich gegenseitig zu erklären."
-  subtitle: In diesem Podcast wollen sie den Rest der Welt daran teil haben lassen
-  keywords: [Hacking, Technologie, Magie] 
+  description: "Techink respektlos begegnen! Das Hasi ist eine Gemeinschaft vom technikinteressierten Menschen, die an Hard- und Software rumbasteln, versuchen sie zu verstehen uns sich gegenseitig zu erklären. In diesem Podcast wollen sie den Rest der Welt daran teil haben lassen"
+  subtitle: "foo"
+  keywords: [Hacking, Technologie, Bildung, Kultur, Magie] 
   itunes_categories: [Education, Software How-To, Training]
 
 markdown: kramdown
@@ -41,14 +41,14 @@ navigation:
   url: /
 - title: Blog
   url: /blog/
-- title: Vorträge
+- title: Talks
   url: /talks/
 - title: Termine
   url: /calendar/
 - title: Ideenalbum
   url: http://h42i.tumblr.com/
 - title: Wiki
-  url: http://hasi.it/wiki/Hauptseite
+  url: http://hasi.it/wiki
 
 navigation_bottom:
 - title: Impressum
