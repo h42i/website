@@ -2,7 +2,7 @@
 layout: post
 title: Wer sind wir?
 ---
-<img src="/images/pixelhasi-text-weiß-200px.png" align="right" >
+<img src="/images/pixelhasi-text-weiß-200px.png" align="right" margin-top="-60px" >
 Wir sind der HaSi e.V.!  <br />
 Wir sind dein Hackspace in Siegen und Umgebung.  
 
