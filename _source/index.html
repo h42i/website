@@ -3,12 +3,12 @@ layout: default
 title: Dein Hackspace in Siegen
 ---
 <section class="wside">
-		{% for post in site.categorie.blog limit: 1 %}
+		{% for post in site.posts limit: 1 %}
 		<article>
 			<header>
 				<h1>{{ post.title }}</h1>
 			</header>
-			{{ post.content}}
+			{{ post.content }}
 		</article>
 		{% endfor %}
 		<hr />
