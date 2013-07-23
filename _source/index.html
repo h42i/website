@@ -3,9 +3,20 @@ layout: default
 title: Dein Hackspace in Siegen
 ---
 <section class="wside">
-    <header><h1>Wir sind dein Hackspace in Siegen und Umgebung.</h1></header>
+		{% for post in site.categorie.blog limit: 1 %}
+		<article>
+			<header>
+				<h1>{{ page.title }}</h1>
+			</header>
+			{{ content}}
+		</article>
+		{% endfor %}
+		<hr />
+		<header><h1>Wir sind dein Hackspace in Siegen und Umgebung.</h1></header>
 <!--     <img src="/images/HaSi_Logo.png" alt=""> -->
-    <p>Der HaSi e.V. wurde Anfang 2012 gegründet und inzwischen haben wir etwa 25 Mitglieder im Alter zwischen 17 und 50 Jahren – Tendenz steigend (sowohl die Anzahl an Mitglieder, als auch deren Alter).</p><p>Du findest uns in Siegen am {{ site.info.street }}. Dort begrüßt dich gut sichtbar unser Blinkinvader.</p>
+    <p>Der HaSi e.V. wurde Anfang 2012 gegründet und inzwischen haben wir etwa 
+		25 Mitglieder im Alter zwischen 18 und 50 Jahren – Tendenz steigend (sowohl 
+		die Anzahl an Mitglieder, als auch deren Alter).</p><p>Du findest uns in Siegen am {{ site.info.street }}. Dort begrüßt dich gut sichtbar unser Blinkinvader.</p>
 </section>
 <aside>
     <article>
