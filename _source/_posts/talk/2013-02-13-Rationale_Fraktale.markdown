@@ -2,7 +2,7 @@
 layout: post
 title: Rationale Fraktale
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Nomis-Rationale_Fraktale.mp3
   duration: 01:21:12

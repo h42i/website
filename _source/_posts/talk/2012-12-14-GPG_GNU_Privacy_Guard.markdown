@@ -2,7 +2,7 @@
 layout: post
 title: GPG – GNU Privacy Guard
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: inj4n-GPG.mp3
   duration: 01:30:53

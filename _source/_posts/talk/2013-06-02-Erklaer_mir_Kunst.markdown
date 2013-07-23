@@ -2,7 +2,7 @@
 layout: post
 title: Erklär mir Kunst
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Hybr1s-Erklaer_mir_Kunst.mp3
   duration: 01:27:13

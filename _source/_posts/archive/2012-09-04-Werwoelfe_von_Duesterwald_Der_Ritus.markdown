@@ -2,7 +2,7 @@
 layout: post
 title: Werwölfe von Düsterwald – Der Ritus
 category: archive
-author: hybr1s
+author: Hybr1s
 video: http://www.youtube.com/watch?v=09-Tn8M8QR0&html5=1
 ---
 Die Zeichen mehren sich: Lykanthrophenblut breitet sich aus.  

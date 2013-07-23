@@ -2,7 +2,7 @@
 layout: post
 title: Mikrocontroller
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Ole_und_Shguro-Mikrocontroller.mp3
   duration: 00:53:13

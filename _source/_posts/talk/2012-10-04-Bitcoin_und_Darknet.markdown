@@ -2,7 +2,7 @@
 layout: post
 title: Bitcoin und Darknet
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Shguro_und_DrVallinger-Bitcoin_und_Darknet.mp3
   duration: 00:47:27

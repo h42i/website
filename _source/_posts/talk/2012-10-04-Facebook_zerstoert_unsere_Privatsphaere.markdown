@@ -2,7 +2,7 @@
 layout: post
 title: Facebook zerstört unsere Privatsphäre
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Jan_Kristian_Jessen-Facebook_zerstoert_unsere_Privatsphare.mp3
   duration: 00:39:51

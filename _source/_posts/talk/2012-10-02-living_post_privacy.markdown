@@ -2,7 +2,7 @@
 layout: post
 title: living post-privacy
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Hybr1s-Living_post_privacy.mp3
   duration: 00:50:00

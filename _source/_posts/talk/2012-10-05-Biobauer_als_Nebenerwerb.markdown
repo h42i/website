@@ -2,7 +2,7 @@
 layout: post
 title: Biobauer als Nebenerwerb
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Thorsten_Junge-Biobauer_als_Nebenerwerb.mp3
   duration: 00:44:01

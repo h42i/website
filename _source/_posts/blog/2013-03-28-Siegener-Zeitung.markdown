@@ -2,7 +2,7 @@
 layout: post
 title: Hallo Ihr Zeitungsleser!
 category: blog
-author: simon
+author: Simon
 ---
 Herzliche Grüße an alle Leser der [Siegener Zeitung](http://www.siegener-zeitung.de/a/665673/34hasis34-wollen-mehr-wissen).  
 Wir freuen uns über Euer Interesse.  

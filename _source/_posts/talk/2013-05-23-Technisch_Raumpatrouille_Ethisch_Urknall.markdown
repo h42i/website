@@ -2,7 +2,7 @@
 layout: post
 title: Technisch Raumpatrouille – Ethisch Urknall
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Cheboo-Technisch_Raumpatrouille_Ethisch_Urknall.mp3
   duration: 01:08:26

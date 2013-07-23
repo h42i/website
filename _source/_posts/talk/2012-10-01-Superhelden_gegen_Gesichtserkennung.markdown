@@ -2,7 +2,7 @@
 layout: post
 title: Superhelden gegen Gesichtserkennung
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Ertraglichkeit-Superhelden_gegen_Gesichtserkennung.mp3
   duration: 00:36:47

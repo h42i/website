@@ -2,7 +2,7 @@
 layout: post
 title: Pro Privacy
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Procrastonos-Pro_Privacy.mp3
   duration: 01:59:43

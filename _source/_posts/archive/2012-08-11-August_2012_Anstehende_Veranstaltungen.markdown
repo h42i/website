@@ -2,7 +2,7 @@
 layout: post
 title: August 2012 Anstehende Veranstaltungen
 category: archive
-author: hybr1s
+author: Hybr1s
 ---
 __20 August ab 18.00 Uhr__
 Werwölfe von Düsterwald Spielerunde im Kultcaff  

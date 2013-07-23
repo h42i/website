@@ -2,7 +2,7 @@
 layout: post
 title: Regular Expressions
 category: talk
-author: hybr1s
+author: Hybr1s
 talk:
   file: Nomis-Regular-Expressions.mp3
   duration: 00:33:40
