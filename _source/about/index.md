@@ -17,7 +17,7 @@ Der Hackerspace, bzw gegendert „Hackspace“ oder „Hackingspace“, ist ein 
 Aus der Geschichte heraus dreht sich das primäre Interesse um Computer und Technik. Sekundär gibt es keine Grenzen: Nähen, Bierbrauen oder auch Politik und Kunst – alles ist möglich.  
 Das, was alle Hackspaces vereint, ist die Grundphilosophie des Verstehen-Wollens und des Selber-Machens: Dinge auseinander nehmen, untersuchen, wieder zusammen setzen, verändern, zusammenführen, weiter entwickeln…  
 Der Hackspace schafft einen kreativen Freiraum, indem er Geräte und Werkzeuge bereitstellt. So ist er ein Treffpunkt für Menschen mit Interesse an Wissenschaft, Technologie und Kunst, wo sie sich treffen, austauschen und gemeinsame Projekte umsetzen können.  
-Jeder tut das, was er möchte und ihn interessiert: Einfach nur gemütlich hinsetzen, Mate trinken und ein Spiel spielen? Kein Problem! Du kannst aber auch versuchen die Mate selbst zu brauen oder dir eine Lampe zusammenlöten. Ach! Lieber gleich eine eigene LED-Matrix, die du dann auch selbst animieren kannst. Oder, wenn du gerade dabei bist, warum nicht gleich einen eigenen [Satelliten](http://www.spiegel.de/netzwelt/web/netzwelt-ticker-hacker-wollen-sich-ueber-satellit-vernetzen-a-806675.html).?  
+Jeder tut das, was er möchte und ihn interessiert: Einfach nur gemütlich hinsetzen, Mate trinken und ein Spiel spielen? Kein Problem! Du kannst aber auch versuchen die Mate selbst zu brauen oder dir eine Lampe zusammenlöten. Ach! Lieber gleich eine eigene LED-Matrix, die du dann auch selbst animieren kannst. Oder, wenn du gerade dabei bist, warum nicht gleich einen eigenen [Satelliten](http://www.spiegel.de/netzwelt/web/netzwelt-ticker-hacker-wollen-sich-ueber-satellit-vernetzen-a-806675.html)?  
 
 Wie ihr seht: Alles ist möglich.
 
