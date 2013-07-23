@@ -5,7 +5,7 @@ category: blog
 author: inj4n
 ---
 
-![](images/cryptoparty.svg)
+![](/images/cryptoparty.svg)
 
 Am 10. August 2013 um 17 Uhr veranstaltet das [Chaostreff Siegen](http://chaostreff-siegen.de) im Hasi die vermutlich erste Crypto-Party Siegens.   
 
