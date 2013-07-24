@@ -5,6 +5,7 @@
 
 	Leon Rische -- Main Developer -- @l3kn
 	Mister DanB -- Chief Exexutive Designer -- @misterdanb
+	Hybr1s -- Content Producer and Event Organizer -- @Hybr1s
 	Dulnefni -- Human Wordpressimporter
 	Du -- Was du tust -- Nickname
 
