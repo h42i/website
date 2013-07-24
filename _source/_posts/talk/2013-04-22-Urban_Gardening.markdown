@@ -19,7 +19,7 @@ Die Initiative ist Teil des [Transition Town Siegen](http://transition-siegen.de
 <iframe src="http://player.vimeo.com/video/64870156" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/64870156">Maikes "Urban Gardening" Vortrag im HaSi am 25.05.2013</a> from <a href="http://vimeo.com/user17953599">Esteban Shure</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 * [Ron Finley: Ein Guerilla-Gärtner in South Central LA](http://www.ted.com/talks/ron_finley_a_guerilla_gardener_in_south_central_la.html)
-* [Andernach - essbare Stadt 3sat Bericht](http://www.youtube.com/watch?v=3C4cLxwMBOk)
+* [Andernach – essbare Stadt 3sat Bericht](http://www.youtube.com/watch?v=3C4cLxwMBOk)
 * [nette Rechnung: wieviele Menschen können wir ernähren](http://cyberwaves.wordpress.com/2011/11/07/wieviel-essen-braucht-ein-mensch-pro-jahr-how-much-food-does-one-person-need-per-year/)
 * [Majora Carter: Greening the ghetto](http://www.ted.com/talks/majora_carter_s_tale_of_urban_renewal.html)
 * [Britta Riley: A garden in my apartment](http://www.ted.com/talks/britta_riley_a_garden_in_my_apartment.html)

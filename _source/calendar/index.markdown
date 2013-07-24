@@ -7,16 +7,16 @@ title: Termine
 
 > ### HaSi-Schwimmen
 
->> Wann? - Jeden Montag von 19:00 bis 21:00  
->> Wo? - Netphen  
+>> Wann? – Jeden Montag von 19:00 bis 21:00  
+>> Wo? – Netphen  
 >> Fahrgelegenheiten ab / bis Weidenau stehen normalerweise zur Verfügung.  
 >> Anmeldung für Mitfahrgelegenheit auf ML / Channel / bei Ole / Simon  
 >> Mail: ole.reinhardt@r-web.de  
 
 > ### Greenspace Meeting
 
->> Wann? - Jeden Samstag von 17:00 bis 21:30  
->> Wo? - Grünanlage Effertsufer
+>> Wann? – Jeden Samstag von 17:00 bis 21:30  
+>> Wo? – Grünanlage Effertsufer
 
 
 ## Vorträge, Workshops, Veranstaltungen 
