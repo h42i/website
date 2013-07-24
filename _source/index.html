@@ -27,6 +27,22 @@ title: Dein Hackspace in Siegen
         <header><h1>status</h1></header>
 
         <?php
+                $fc = file_get_contents('http://www.stats.l3kn.de/api/bool'); // kann auch FALSE liefern
+                $fc = trim($fc); // nun ists ein string
+                $color = 'gelb';
+                if (in_array($fc, array('true', 'false')))
+                    {
+                        $color = ($fc === 'true') ? 'gruen' : 'rot';
+                    }
+    echo '<img id="statusimg" src="http://hasi.it/images/ampel_' . $color . '.png"'
+     . 'title="Diese Ampel zeigt den Raumstatus an. Gr&uuml;n = der Raum ist ge&ouml;ffnet." />';
+    // echo '<style>#statusimg{left:0px;position: fixed;top: 135px;}</style>';
+
+
+
+
+
+
             $fc = file_get_contents('http://www.stats.l3kn.de/api/bool'); // kann auch FALSE liefern
             $fc = trim($fc); // nun ists ein string
             $color = 'gelb';
