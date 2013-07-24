@@ -2,8 +2,6 @@
 layout: post
 title: Nimm Kontakt auf!
 ---
-![](/images/pixelhasi-text-weiß-200px.png)  
-
 ## Ansprechpartner
 ![](/images/180px-Der_Hybr1s.jpg)  
 [David Penndorf (@Hybr1s)](http://hasi.it/wiki/Benutzer:Hybr1s)  
@@ -18,10 +16,10 @@ E-Mail: <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>
 ## Digitale Präsenz
 Du findest uns auf:  
 *[Twitter (@h42i)](http://twitter.com/h42i)  
-*[Facebook](https://www.facebook.com/pages/H42i/205372236255814)   *[Google+](https://plus.google.com/110841244355299176140/posts)  
+*[Facebook](https://www.facebook.com/pages/H42i/205372236255814)  
+*[Google+](https://plus.google.com/110841244355299176140/posts)  
 *[Github](https://www.github.com/h42i)  
 *[tumblr](http://h42i.tumblr.com/)  
-*[Youtube]()  
 *[Podcast-Feed](http://hasi.it/episodes.mp3.rss)
 
 ### IRC
