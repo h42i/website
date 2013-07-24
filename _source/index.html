@@ -3,7 +3,12 @@ layout: default
 title: Dein Hackspace in Siegen
 ---
 <section class="wside">
-		{% for post in site.posts limit: 1 %}
+		<h1>Was bitte ist ein Hackspace?</h1>
+        <p>Kurz gefasst: Kreativ-produktives Chaos.<br/>
+        Eine detailiertere Erklärung findest du <a href="/about/">hier</a>.
+        </p>
+
+        {% for post in site.posts limit: 1 %}
 		<article>
 			<header>
 				<h1>{{ post.title }}</h1>
@@ -12,14 +17,6 @@ title: Dein Hackspace in Siegen
 		</article>
 		{% endfor %}
 		<hr />
-		<header><h1>HaSi e.V. - dein Hackspace in Siegen</h1></header>
-        Du findest uns in Siegen am <a href="http://www.openstreetmap.org/?lat=50.8690655&lon=8.0046585&zoom=18&layers=M&mlat=50.86921&mlon=8.00490" target="_blank">{{ site.info.street }}</a>. <br />
-        Wir treffen uns regelmäßige jeden Dienstag und Donnerstag ab 18 Uhr.<br />
-    Komm einfach mal vorbei! 
-    <p><br/><br/><br/>Was bitte ist ein Hackspace?</p>
-    <p>Kurz gefasst: Kreativ-produktives Chaos.<br/>
-    Zu einer umfassenderen Erklärung: <a href="/about/">Link</a><br/>
-    </p>
 </section>
 <aside>
     <article>
@@ -37,7 +34,7 @@ title: Dein Hackspace in Siegen
     </article>
      <article>
         <header><h1>news</h1></header>
-        {% for post in site.posts limit: 3 %}
+        {% for post in site.posts limit: 4 %}
             <h3><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h3>
         {% endfor %}
     </article>
