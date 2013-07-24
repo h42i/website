@@ -23,7 +23,7 @@ Wie ihr seht: Alles ist möglich.
 # Wo?
 Du findest uns hinter dem Schlachthof in der ehemaligen Pelzfabrik. [Effertsufer 104 in 57072 Siegen](http://www.openstreetmap.org/?lat=50.869065&lon=8.003988&zoom=18&layers=M).
 
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.002644,50.867965,8.006673,50.870166&amp;layer=mapnik&amp;marker=50.86921,8.00490" style="border: 1px solid black"></iframe><br /><small><a href="http://www.openstreetmap.org/?lat=50.8690655&amp;lon=8.0046585&amp;zoom=18&amp;layers=M&amp;mlat=50.86921&amp;mlon=8.00490">Gr&#246;&#223;ere Karte anzeigen</a></small>
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.00375,50.86801,8.00722,50.8698&amp;layer=mapnik&amp;marker=50.86919,8.00490" style="border: 1px solid black"></iframe><br /><small><a href="http://www.openstreetmap.org/?lat=50.868905&amp;lon=8.005485&amp;zoom=18&amp;layers=M&amp;mlat=50.86919&amp;mlon=8.00490">Gr&#246;&#223;ere Karte anzeigen</a></small>
 
 # Wann?
 
