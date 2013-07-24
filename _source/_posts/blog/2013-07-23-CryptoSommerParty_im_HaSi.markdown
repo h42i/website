@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CryptoSommerParty im HaSi
+title: Crypto-Sommer-Party
 category: blog
 author: inj4n
 ---
