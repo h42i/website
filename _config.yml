@@ -47,6 +47,7 @@ navigation:
   url: /talks/
 - title: Termine
   url: /calendar/
+  break: </span><span class="menuline">
 - title: Holon
   url: /holon/
 - title: Wiki
