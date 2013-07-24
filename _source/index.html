@@ -20,11 +20,6 @@ title: Dein Hackspace in Siegen
 		{% endfor %}
         <br />
         <img src="/images/pixelhasi-text-weiß.png">
-        <br />
-        <header><h1>news</h1></header>
-        {% for post in site.posts limit: 4 %}
-            <h4><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h4>
-        {% endfor %}
 
 </section>
 <aside>
@@ -72,6 +67,12 @@ title: Dein Hackspace in Siegen
         </ul>
 
 
+    </article>
+    <article>
+        <header><h1>news</h1></header>
+        {% for post in site.posts limit: 4 %}
+            <h4><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h4>
+        {% endfor %}
     </article>
 </aside>
 <section class="wside">
