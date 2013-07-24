@@ -13,13 +13,12 @@ E-Mail: <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>
 <iframe width="700" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.00375,50.86801,8.00722,50.8698&amp;layer=mapnik&amp;marker=50.86918,8.00489" style="border: 1px solid black"></iframe><br /><small><a href="http://www.openstreetmap.org/?lat=50.868905&amp;lon=8.005485&amp;zoom=18&amp;layers=M&amp;mlat=50.86918&amp;mlon=8.00489">Gr&#246;&#223;ere Karte anzeigen</a></small>
 
  
-## Digitale Präsenz
-Du findest uns auf:  
-* [Twitter (@h42i)](http://twitter.com/h42i)  
-* [Facebook](https://www.facebook.com/pages/H42i/205372236255814)  
-* [Google+](https://plus.google.com/110841244355299176140/posts)  
-* [Github](https://www.github.com/h42i)  
-* [tumblr](http://h42i.tumblr.com/)  
+## Digitale Präsenz  
+* [Twitter (@h42i)](http://twitter.com/h42i)
+* [Facebook](https://www.facebook.com/pages/H42i/205372236255814)
+* [Google+](https://plus.google.com/110841244355299176140/posts)
+* [Github](https://www.github.com/h42i)
+* [tumblr](http://h42i.tumblr.com/)
 * [Podcast-Feed](http://hasi.it/episodes.mp3.rss)
 
 ### IRC
