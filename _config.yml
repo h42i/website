@@ -32,13 +32,15 @@ info:
   name: Hasi e.V.
   mail: kontakt@hasi.it
   street: Effertsufer 104
-  country: 57076 Siegen (NRW)
+  country: 57072 Siegen (NRW)
 
 safe: false
 
 navigation:
 - title: Home
   url: /
+- title: Wer sind wir?
+  url: /about/
 - title: Blog
   url: /blog/
 - title: Talks
