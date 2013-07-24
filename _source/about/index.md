@@ -29,3 +29,47 @@ Du findest uns hinter dem Schlachthof in der ehemaligen Pelzfabrik. [Effertsufer
 Mitglieder haben 24/7 Zugang zum Hackspace. Sind HaSis anwesend, ist der Hackspace “geöffnet” und der Blinkinvader erstrahlt in seiner ganzen Pracht!
 Ein regelmäßiges Treffen findet jeden Donnerstag gegen 19:00 Uhr statt. Aber auch an den anderen Abenden der Woche ist meist ein HaSi im Clubraum anzutreffen. Events wie Vorträge, Spielrunden oder Workshops kannst du unserem Kalender entnehmen.
 Um nicht vor verschlossener Tür zu stehen, kontaktier uns doch einfach, wie findest du auf der Seite [Kontakte](/contact).
+
+# Mitglied werden
+
+Um Mitglied zu werden, musst du mit unserer [Satzung]() einverstanden sein. 
+
+# Spenden
+
+Als gemeinnütziger Verein finanzieren wir uns rein aus Spenden. Hilf uns dabei Raum und Projekte zu finanzieren.
+
+<table>
+    <tr>
+        <td>Empfänger:</td>
+        <td>HaSi e.V.</td>
+    </tr>
+    <tr>
+        <td>Kontonummer:</td>
+        <td>815989900</td>
+    </tr>
+        <tr>
+        <td>Bankleitzahl:</td>
+        <td>46040033</td>
+    </tr>
+        <tr>
+        <td>Institut:</td>
+        <td>Commerzbank Siegen</td>
+    </tr>
+        <tr>
+        <td>Verwendungszweck:</td>
+        <td>Spende</td>
+    </tr>
+        <tr>
+        <td>BIC:</td>
+        <td>COBADEFFXXX (Siegen)</td>
+    </tr>
+        <tr>
+        <td>IBAN:</td>
+        <td>DE13460400330815989900</td>
+    </tr>
+</table>
+
+  
+
+
+
