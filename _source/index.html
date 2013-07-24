@@ -26,8 +26,7 @@ title: Dein Hackspace in Siegen
           <br />
         <header><h1>status</h1></header>
 
-        <?php
-                $fc = file_get_contents('http://www.stats.l3kn.de/api/bool'); // kann auch FALSE liefern
+        <?php   $fc = file_get_contents('http://www.stats.l3kn.de/api/bool'); // kann auch FALSE liefern
                 $fc = trim($fc); // nun ists ein string
                 $color = 'gelb';
                 if (in_array($fc, array('true', 'false')))
@@ -35,8 +34,7 @@ title: Dein Hackspace in Siegen
                         $color = ($fc === 'true') ? 'gruen' : 'rot';
                     }
                 echo '<img id="statusimg" src="http://hasi.it/images/ampel_' . $color . '.png"'
-                    . 'title="Diese Ampel zeigt den Raumstatus an. Gr&uuml;n = der Raum ist ge&ouml;ffnet." />';
-        ?>
+                    . 'title="Diese Ampel zeigt den Raumstatus an. Gr&uuml;n = der Raum ist ge&ouml;ffnet." />';?>
 
         <!--<img src="http://stats.l3kn.de/api/image" alt="Stausanzeige">-->
         <header><h1>news</h1></header>
