@@ -30,10 +30,6 @@ Mitglieder haben 24/7 Zugang zum Hackspace. Sind HaSis anwesend, ist der Hackspa
 Ein regelmäßiges Treffen findet jeden Donnerstag gegen 19:00 Uhr statt. Aber auch an den anderen Abenden der Woche ist meist ein HaSi im Clubraum anzutreffen. Events wie Vorträge, Spielrunden oder Workshops kannst du unserem Kalender entnehmen.
 Um nicht vor verschlossener Tür zu stehen, kontaktier uns doch einfach, wie findest du auf der Seite [Kontakte](/contact).
 
-# Mitglied werden
-
-Um Mitglied zu werden, musst du mit unserer [Satzung]() einverstanden sein. 
-
 # Spenden
 
 Als gemeinnütziger Verein finanzieren wir uns rein aus Spenden. Hilf uns dabei Raum und Projekte zu finanzieren.
