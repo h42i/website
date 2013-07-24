@@ -23,26 +23,32 @@ title: Dein Hackspace in Siegen
 </section>
 <aside>
     <article>
-        <img src="/images/pixelhasi-text-weiß-200px.png"><br />
-        <header><h1>Social</h1></header>
+        <!--<img src="/images/pixelhasi-text-weiß-200px.png"><br /> -->
+        <header><h1>social</h1></header>
         <ul id="social">
             <li><a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a></li>
             <li><a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a></li>
             <li><a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a></li>
         </ul>
         <br />
-        <header><h1>Status</h1></header>
+        <header><h1>status</h1></header>
         <img src="http://stats.l3kn.de/api/image" alt="Stausanzeige">
 
     </article>
+     <article>
+        <header><h1>news</h1></header>
+        {% for post in site.posts limit: 3 %}
+            <h3><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h3>
+        {% endfor %}
+    </article>
 </aside>
 <section class="wside">
-    <article>
+    <!--<article>
         <header><h1>news</h1></header>
         {% for post in site.posts limit: 4 %}
             <h3><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h3>
         {% endfor %}
-    </article>
+    </article>-->
 </section>
 <aside>
     <article>
