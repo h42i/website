@@ -10,11 +10,10 @@ title: Dein Hackspace in Siegen
         </p>
         <hr />
         <br />
-        <h1>HaSi-Aktuell</h1>
         {% for post in site.posts limit: 1 %}
 		<article>
 			<header>
-				<h2>{{ post.title }}</h2>
+				<h1>{{ post.title }}</h1>
 			</header>
 			{{ post.content }}
 		</article>
