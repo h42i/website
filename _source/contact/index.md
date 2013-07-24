@@ -15,16 +15,16 @@ E-Mail: <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>
  
 ## Digitale Präsenz
 Du findest uns auf:  
-*[Twitter (@h42i)](http://twitter.com/h42i)  
-*[Facebook](https://www.facebook.com/pages/H42i/205372236255814)  
-*[Google+](https://plus.google.com/110841244355299176140/posts)  
-*[Github](https://www.github.com/h42i)  
-*[tumblr](http://h42i.tumblr.com/)  
-*[Podcast-Feed](http://hasi.it/episodes.mp3.rss)
+* [Twitter (@h42i)](http://twitter.com/h42i)  
+* [Facebook](https://www.facebook.com/pages/H42i/205372236255814)  
+* [Google+](https://plus.google.com/110841244355299176140/posts)  
+* [Github](https://www.github.com/h42i)  
+* [tumblr](http://h42i.tumblr.com/)  
+* [Podcast-Feed](http://hasi.it/episodes.mp3.rss)
 
 ### IRC
-*Server: irc.freenode.net  
-*Channel: #hasi
+* Server: irc.freenode.net  
+* Channel: #hasi
 
 ### Mailingliste:
 Die Mailingliste ist ein wichtiges Kommunikations- und Koordinationsorgan des HaSis. Hier werden Projekte und Strategien detailliert besprochen. Sie ist somit weniger verspielt als der IRC-Channel.  
