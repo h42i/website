@@ -70,10 +70,16 @@ title: Dein Hackspace in Siegen
     </article>
     <article>
         <header><h1>news</h1></header>
+        <ul>
         {% for post in site.posts limit: 4 %}
-            <h4><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h4>
+            <li><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></li>
         {% endfor %}
+        </ul>
     </article>
+    <article>
+        <header><h1>mitglied werden</h1></header>
+        <ul><li><a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Beitrittsformular</li></ul>
+     </article>
 </aside>
 <section class="wside">
     <!--<article>
