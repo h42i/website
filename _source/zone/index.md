@@ -5,15 +5,28 @@ title: Die Zone
 Individuen und Projekte aus und um den HaSi
 
 ##Fnordbedarf
-
-<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="alt text" align="middle" target="_blank"></a>
-Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft [Getränke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr. Kontakt gibt es unter [hallo@fnordbedarf.de](mailto:hallo@fnordbedarf.de).
-
+<table>
+    <tr>
+        <td>
+		<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="fnordbedarf" align="middle" target="_blank"></a>
+		</td>
+		<td>
+Der <a href="http://www.fnordbedarf.de">Fnordbedarf</a> verkauft <a href="http://fnordbedarf.de/core/index.php?title=Getränke">Getränke</a> und mehr. Kontakt gibt es unter <a href="mailto:hallo@fnordbedarf.de">hallo@fnordbedarf.de</a>.
+        </td>
+    </tr>
+</table>
 
 ##Transition Siegen
-
-<a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="alt text" align="middle" target="_blank"></a>
-Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es [Greenspaces (Stadtteilgärten)](http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace) für alle anzulegen: "Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
+<table>
+    <tr>
+        <td>
+<a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="Transition Siegen" align="middle" target="_blank"></a>
+		</td>
+        <td>
+Die Idee von <a href="http://transition-siegen.de/blog/">Transition Siegen</a> ist es <a href="http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace">Greenspaces (Stadtteilgärten)</a> für alle anzulegen: <br />"Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
+		</td>
+    </tr>
+</table>
 
 ##Projekte
 Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http://hasi.it/wiki/Kategorie:Projekt).
@@ -38,17 +51,38 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 ##HaSi-Faces
 
 ###Le Leon: 
-[![alt text](/images/leLeon.png)](http://hasi.it/wiki/Benutzer:L3kn)
+<table>
+    <tr>
+        <td>
+                <a href="http://hasi.it/wiki/Benutzer:L3kn"><img src="/images/leLeon.png" alt="L3kn"></a>
 
-* Ruby 
-* Webdesign
-* Elektrokram
+</td>
+		<td>
+		<ul>
+		<li>Ruby</li> 
+		<li>Webdesign</li>
+		<li>Elektrokram</li>
+		</ul>
+		</td>
+    </tr>
+</table>
 
 ----------------
 
 ###Der Hybr1s
-[![alt text](/images/180px-Der_Hybr1s.jpg)](http://hasi.it/wiki/Benutzer:Hybr1s)
+<table>
+    <tr>
+        <td>
+        
+        <a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s"></a>
+		</td>
+		<td>
+		<ul>
+		<li>Regie</li> 
+		<li>Sozioinformatik</li>
+		<li>Philosophie</li>
+		</ul>
+		</td>
+    </tr>
+</table>
 
-* Regie 
-* Sozioinformatik
-* Philosophie
