@@ -19,7 +19,7 @@ Der <a href="http://www.fnordbedarf.de">Fnordbedarf</a> verkauft <a href="http:/
 ##Transition Siegen
 <table>
     <tr>
-        <td>
+        <td width="400px">
 <a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="Transition Siegen" align="middle" target="_blank" width="400px"></a>
 		</td>
         <td>
@@ -50,7 +50,11 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ##HaSi-Faces
 
-###Le Leon: 
+
+<table> 
+<tr>
+<td>
+<h3>Le Leon:</h3>
 <table>
     <tr>
         <td>
@@ -66,10 +70,10 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 		</td>
     </tr>
 </table>
+</td>
+<td>
 
-----------------
-
-###Der Hybr1s
+<h3>Der Hybr1s</h3>
 <table>
     <tr>
         <td>
@@ -84,5 +88,8 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 		</ul>
 		</td>
     </tr>
-</table>
+</td>
+</tr>
 
+</table>
+</table>
