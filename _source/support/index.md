@@ -24,8 +24,6 @@ Sachspenden sind aber bitte immer im Voraus abzusprechen. Wende dich dazu bitte 
 
 ## Geldspenden
 
-Du kannst uns:
-
 <a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a>
 
 <form class="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
