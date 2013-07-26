@@ -51,6 +51,8 @@ navigation:
   url: http://hasi.it/wiki
 - title: Kontakt
   url: /contact/
+- title: Unterstützen
+  url: /support/
 
 navigation_bottom:
 - title: Archiv
