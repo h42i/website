@@ -10,18 +10,14 @@ title: Die Zone
   
 Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft [Getränke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr. Kontakt gibt es unter [hallo@fnordbedarf.de](mailto:hallo@fnordbedarf.de).
 
+-------------------------
 ##Transition Siegen
 
 [![alt text](/images/transition.jpg)](http://transition-siegen.de/blog/)
   
 Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es [Greenspaces (Stadtteilgärten)](http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace) für alle anzulegen: "Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
 
-#Blogs
-
-* [james](http://james.hasi.it) - "a decadent game boy emulator" von [MisterDanB](http://hasi.it/wiki/Benutzer:Danb)
-* [L3kn](http://www.l3kn.de)
-* [procrastonos](http://procrastonos.org)
-* [Hybr1s](http://hybr1s.de)
+-------------
 
 #Projekte
 Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http://hasi.it/wiki/Kategorie:Projekt).
@@ -35,6 +31,15 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Minecraft](http://hasi.it/wiki/Minecraft)
 * [Soylent](http://hasi.it/wiki/Soylent)
 
+--------------------------
+#Blogs
+
+* [james](http://james.hasi.it) - "a decadent game boy emulator" von [MisterDanB](http://hasi.it/wiki/Benutzer:Danb)
+* [L3kn](http://www.l3kn.de)
+* [procrastonos](http://procrastonos.org)
+* [Hybr1s](http://hybr1s.de)
+
+--------------------
 #HaSi-Faces
 
 ##Le Leon: 
