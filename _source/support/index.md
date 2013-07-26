@@ -24,7 +24,20 @@ Sachspenden sind aber bitte immer im Voraus abzusprechen. Wende dich dazu bitte 
 
 ## Geldspenden
 
-<a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>flattr</a>
+Du kannst uns:
+
+<a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a>
+
+<form class="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="spende@hasi.it">
+<input type="hidden" name="lc" value="DE">
+<input type="hidden" name="item_name" value="HaSi e.V. - Dein Hackspace in Siegen">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+<input type="submit" class="paypal" name="submit" value="PayPal">
+</form>
 
 <table border="1">
     <tr>
