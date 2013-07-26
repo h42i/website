@@ -78,7 +78,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
     <tr>
         <td>
         
-        <a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s"></a>
+        <a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s" width="146"></a>
 		</td>
 		<td>
 		<ul>
