@@ -10,8 +10,9 @@ title: talks
 		{% include break.html %}
 	</article>
 </section>
-{% if post.talk.file or post.talk.video or post.talk.slides %}
 <aside>
+	{% include social.html %}
+	{% if post.talk.file or post.talk.video or post.talk.slides %}
 	<article class="group">
 		<header><h2>media</h2></header>
 		{% if post.talk.file %}		
@@ -28,6 +29,6 @@ title: talks
 			<a href="{{ post.talk.slides }}" class="button">Slides</a>
 		{% endif %}
 	</article>
+	{% endif %}
 </aside>
-{% endif %}
 {% endfor %}
