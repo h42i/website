@@ -9,7 +9,7 @@ RewriteCond %{REQUEST_URI}  !^/wiki/load\.php.*
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^wiki/(.*)$ /wiki/index.php?title=$1 [PT,L,QSA]
 
-<FilesMatch ".(peng|png)$">
+<FilesMatch ".(peng)$">
 FileETag None
 Header unset ETag
 Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
