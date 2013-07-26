@@ -3,7 +3,6 @@ layout: post
 title: Termine
 ---
 
-<iframe id='cv_if5' src='http://cdn.instantcal.com/cvir.html?id=cv_nav5&file=webcal%3A%2F%2Fp06-calendarws.icloud.com%2Fca%2Fsubscribe%2F1%2FUBv-TIGJfFoHvGX1Y3IAW_b_RH1l2kaXsN7A1WWNeRCCJBhheEGTp0MqKpds2EJzUaEwhJoFM9iieG9_M3ygAD2RXJWFgSv4Yr6PYPzVUgA&theme=XGR&ccolor=%23ffffc0&dims=1&gtype=cv_monthgrid&gcloseable=0&gnavigable=1&gperiod=month&itype=cv_simpleevent' allowTransparency=true scrolling='no' frameborder=0 height=400 width=600></iframe>
 
 # Regelmäßige Termine
 
