@@ -11,6 +11,7 @@ title: Die Zone
 Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft [Getränke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr. Kontakt gibt es unter [hallo@fnordbedarf.de](mailto:hallo@fnordbedarf.de).
 
 -------------------------
+
 ##Transition Siegen
 
 [![alt text](/images/transition.jpg)](http://transition-siegen.de/blog/)
@@ -32,6 +33,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Soylent](http://hasi.it/wiki/Soylent)
 
 --------------------------
+
 #Blogs
 
 * [james](http://james.hasi.it) - "a decadent game boy emulator" von [MisterDanB](http://hasi.it/wiki/Benutzer:Danb)
@@ -40,6 +42,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Hybr1s](http://hybr1s.de)
 
 --------------------
+
 #HaSi-Faces
 
 ##Le Leon: 
