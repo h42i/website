@@ -12,7 +12,8 @@ Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft [Getränke](http://fnordbe
 
 ##Transition Siegen
 
-[![alt text](/images/transition.png)](http://transition-siegen.de/blog/)
+[![alt text](/images/transition.jpg)](http://transition-siegen.de/blog/)
+  
 Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es [Greenspaces (Stadtteilgärten)](http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace) für alle anzulegen: "Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
 
 #Blogs
@@ -38,12 +39,14 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ##Le Leon: 
 [![alt text](/images/leLeon.png)](http://hasi.it/wiki/Benutzer:L3kn)
+
 * Ruby 
 * Webdesign
 * Elektrokram
 
 ##Der Hybr1s
 [![alt text](/images/180px-Der_Hybr1s.jpg)](http://hasi.it/wiki/Benutzer:Hybr1s)
+
 * Regie 
 * Sozioinformatik
 * Philosophie
