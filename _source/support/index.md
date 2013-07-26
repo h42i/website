@@ -2,9 +2,7 @@
 layout: post
 title: Unterstützung
 ---
-Der HaSi e.V. ist ein eingetragener gemeinnütziger Verein und wird allein aus Spenden am Laufen gehalten.
-
-Du kannst uns auf verschiedenste Arten unterstützen:
+Der HaSi e.V. ist ein eingetragener gemeinnütziger Verein und wird allein aus Spenden am Laufen gehalten. Du kannst uns auf verschiedenste Arten unterstützen:
 
 ## Taten
 Du hast ein spannendes Thema, worüber schon lange mal geredet werden sollte - warum hältst du nicht einen Vortrag oder gibts einen Workshop?
