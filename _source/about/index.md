@@ -34,7 +34,7 @@ Um nicht vor verschlossener Tür zu stehen, kontaktier uns doch einfach, wie fin
 
 Als gemeinnütziger Verein finanzieren wir uns rein aus Spenden. Hilf uns dabei Raum und Projekte zu finanzieren.
 
-<table>
+<table border="1">
     <tr>
         <td>Empfänger:</td>
         <td>HaSi e.V.</td>

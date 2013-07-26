@@ -8,7 +8,7 @@ Individuen und Projekte aus und um den HaSi
 <table>
     <tr>
         <td>
-		<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="fnordbedarf" align="middle" target="_blank"></a>
+		<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="fnordbedarf" align="middle" target="_blank" width="400"></a>
 		</td>
 		<td>
 Der <a href="http://www.fnordbedarf.de">Fnordbedarf</a> verkauft <a href="http://fnordbedarf.de/core/index.php?title=Getränke">Getränke</a> und mehr. Kontakt gibt es unter <a href="mailto:hallo@fnordbedarf.de">hallo@fnordbedarf.de</a>.
@@ -20,7 +20,7 @@ Der <a href="http://www.fnordbedarf.de">Fnordbedarf</a> verkauft <a href="http:/
 <table>
     <tr>
         <td>
-<a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="Transition Siegen" align="middle" target="_blank"></a>
+<a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="Transition Siegen" align="middle" target="_blank" width="400"></a>
 		</td>
         <td>
 Die Idee von <a href="http://transition-siegen.de/blog/">Transition Siegen</a> ist es <a href="http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace">Greenspaces (Stadtteilgärten)</a> für alle anzulegen: <br />"Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
