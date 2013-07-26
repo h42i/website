@@ -13,7 +13,7 @@ title: Dein Hackspace in Siegen
         {% for post in site.posts limit: 1 %}
 		<article>
 			<header>
-				<h1>{{ post.title }}</h1>
+				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			</header>
 			{{ post.content }}
 		</article>
@@ -25,13 +25,13 @@ title: Dein Hackspace in Siegen
 <aside>
      <article>
           <br />
-        <header><h1>status</h1></header>
+        <header><h2>status</h2></header>
 
         <img src="http://stats.l3kn.de/api/hasi.peng" alt="Stausanzeige">
     
     </article>
       <article>
-        <header><h1>social</h1></header>
+        <header><h2>social</h2></header>
         <ul id="social">
             <li><a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a></li>
             <li><a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a></li>
@@ -53,7 +53,7 @@ title: Dein Hackspace in Siegen
 
     </article>
     <article>
-        <header><h1>news</h1></header>
+        <header><h2>news</h2></header>
         <ul>
         {% for post in site.posts limit: 4 %}
             <li><a href="{{ post.url }}">{{ post.category}}: {{ post.title }}</a></li>
@@ -61,7 +61,7 @@ title: Dein Hackspace in Siegen
         </ul>
     </article>
     <article>
-        <header><h1>mitglied werden</h1></header>
+        <header><h2>mitglied werden</h2></header>
         <ul><li><a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Beitrittsformular</li></ul>
      </article>
 </aside>
