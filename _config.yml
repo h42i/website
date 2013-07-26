@@ -41,23 +41,23 @@ navigation:
   url: /
 - title: Wer sind wir?
   url: /about/
-- title: Blog
-  url: /blog/
 - title: Talks
   url: /talks/
 - title: Termine
   url: /calendar/
-- title: Ideenalbum
-  url: http://h42i.tumblr.com/
+- title: Zone
+  url: /zone/
 - title: Wiki
   url: http://hasi.it/wiki
 - title: Kontakt
   url: /contact/
 
 navigation_bottom:
-- title: Impressum
-  url: /site/notice/
+- title: Archiv
+  url: /blog/
 - title: Vereinssatzung
   url: /site/satzung/
 - title: Meta
   url: /meta/
+- title: Impressum
+  url: /site/notice/
