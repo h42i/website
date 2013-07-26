@@ -6,13 +6,13 @@ Individuen und Projekte aus und um den HaSi
 
 ##Fnordbedarf
 
-[![alt text](/images/fnordbedarf.png)](http://www.fnordbedarf.de)
+<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="alt text" align="middle" target="_blank"></a>
 Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft [Getränke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr. Kontakt gibt es unter [hallo@fnordbedarf.de](mailto:hallo@fnordbedarf.de).
 
 
 ##Transition Siegen
 
-[![alt text](/images/transition.jpg)](http://transition-siegen.de/blog/)
+<a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="alt text" align="middle" target="_blank"></a>
 Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es [Greenspaces (Stadtteilgärten)](http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace) für alle anzulegen: "Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."
 
 ##Projekte
