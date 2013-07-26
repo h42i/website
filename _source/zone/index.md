@@ -7,7 +7,7 @@ Individuen und Projekte aus und um den HaSi
 ##Fnordbedarf
 <table>
     <tr>
-        <td>
+        <td width="40%">
 		<a href="http://www.fnordbedarf.de"><img src="/images/fnordbedarf.png" alt="fnordbedarf" align="middle" target="_blank" width="400px"></a>
 		</td>
 		<td>
@@ -19,7 +19,7 @@ Der <a href="http://www.fnordbedarf.de">Fnordbedarf</a> verkauft <a href="http:/
 ##Transition Siegen
 <table>
     <tr>
-        <td width="400px">
+        <td width="40%">
 <a href="http://transition-siegen.de/blog/"><img src="/images/transition.jpg" alt="Transition Siegen" align="middle" target="_blank" width="400px"></a>
 		</td>
         <td>
