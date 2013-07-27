@@ -43,7 +43,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ##Blogs
 
-* [james](http://james.hasi.it) - "a decadent game boy emulator" von [MisterDanB](http://hasi.it/wiki/Benutzer:Danb)
+* [james](http://james.hasi.it) - "a decadent game boy emulator" von [misterdanb](http://hasi.it/wiki/Benutzer:Danb)
 * [L3kn](http://www.l3kn.de)
 * [procrastonos](http://procrastonos.org)
 * [Hybr1s](http://hybr1s.de)
@@ -91,7 +91,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 	</tr>
 	<tr>
 		<td>
-		<h3>Der Hybr1s</h3>
+		<h3>Misterdanb</h3>
 		<table>
     		<tr>
         		<td>
