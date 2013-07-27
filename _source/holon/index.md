@@ -59,7 +59,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 		<table>
     		<tr>
         		<td>
-                <a href="http://hasi.it/wiki/Benutzer:L3kn"><img src="/images/leLeon.png" alt="L3kn"></a>
+                <a href="http://hasi.it/wiki/Benutzer:L3kn"><img src="/images/leLeon.png" alt="L3kn" width="146"></a>
 				</td>
 				<td>
 					<ul>
@@ -76,7 +76,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 		<table>
     		<tr>
         		<td>
-        			<a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s" width="146"></a>
+        			<a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/hybr1s.jpg" alt="Der Hybr1s" width="146"></a>
 				</td>
 				<td>
 					<ul>
