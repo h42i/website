@@ -2,7 +2,7 @@
 layout: post
 title: Holon
 ---
-Eim Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
+Ein Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
 Hier werden Projekte und Individuen aus und um den HaSi e. V. vorgestellt.
 
 ##Fnordbedarf
@@ -53,44 +53,63 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 
 <table> 
-<tr>
-<td>
-<h3>Le Leon:</h3>
-<table>
-    <tr>
-        <td>
+	<tr>
+		<td>
+		<h3>Le Leon:</h3>
+		<table>
+    		<tr>
+        		<td>
                 <a href="http://hasi.it/wiki/Benutzer:L3kn"><img src="/images/leLeon.png" alt="L3kn"></a>
-
-</td>
-		<td>
-		<ul>
-		<li>Ruby</li> 
-		<li>Webdesign</li>
-		<li>Elektrokram</li>
-		</ul>
-		</td>
-    </tr>
-</table>
-</td>
-<td>
-
-<h3>Der Hybr1s</h3>
-<table>
-    <tr>
-        <td>
-        
-        <a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s" width="146"></a>
+				</td>
+				<td>
+					<ul>
+						<li>Ruby</li> 
+						<li>Webdesign</li>
+						<li>Elektrokram</li>
+					</ul>
+				</td>
+    		</tr>
+		</table>
 		</td>
 		<td>
-		<ul>
-		<li>Regie</li> 
-		<li>Sozioinformatik</li>
-		<li>Philosophie</li>
-		</ul>
+		<h3>Der Hybr1s</h3>
+		<table>
+    		<tr>
+        		<td>
+        			<a href="http://hasi.it/wiki/Benutzer:Hybr1s"><img src="/images/180px-Der_Hybr1s.jpg" alt="Der Hybr1s" width="146"></a>
+				</td>
+				<td>
+					<ul>
+						<li>Regie</li> 
+						<li>Sozioinformatik</li>
+						<li>Philosophie</li>
+					</ul>
+				</td>
+    		</tr>
+    	</table>
 		</td>
-    </tr>
-</td>
-</tr>
+	</tr>
+	<tr>
+		<td>
+		<h3>Der Hybr1s</h3>
+		<table>
+    		<tr>
+        		<td>
+        			<a href="http://hasi.it/wiki/Benutzer:danb"><img src="/images/danb.png" alt="danb" width="146"></a>
+				</td>
+				<td>
+					<ul>
+						<li>C, C++, Haskell</li> 
+						<li>Flauschist</li>
+						<li>Koffein</li>
+					</ul>
+				</td>
+    		</tr>
+    	</table>
+		</td>
+		<td>
 
-</table>
+		</td>
+	</tr>
+
 </table>
