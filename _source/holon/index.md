@@ -56,7 +56,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ### Der Leon ([@l3kn](http://twitter.com/l3kn))
 
-[<img src="/images/leLeon.png" alt="L3kn"
+[<img src="/images/l3kn.png" alt="L3kn"
 width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Hochperformantes Echtzeitruby
