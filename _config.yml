@@ -21,6 +21,7 @@ kramdown:
   coderay:
     coderay_line_numbers: table
   parse_block_html: true
+
 assets:
   sources:
   - _assets/stylesheets

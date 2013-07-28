@@ -49,8 +49,8 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Procrastonos](http://procrastonos.org)
 * [Hybr1s](http://hybr1s.de)
 
-
 ## HaSi-Faces
+<div class="half">
 
 ### Der Leon ([@l3kn](http://twitter.com/l3kn))
 
@@ -61,6 +61,8 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * Webdesign (Jekyll)
 * Elektronik
 
+</div><div class="half">
+
 ### Der Hybr1s ([@hybr1s](http://twitter.com/hybr1s))
 
 [<img src="/images/hybr1s.jpg" alt="Der Hybr1s" width="146">](http://hasi.it/wiki/Benutzer:Hybr1s)
@@ -69,6 +71,8 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * Sozioinformatik
 * Philosophie
 		
+</div><div class="half">
+
 ### Mister DanB ([@misterdanb](http://twitter.com/misterdanb))
 
 [<img src="/images/danb.png" alt="danb" width="146">](http://hasi.it/wiki/Benutzer:danb)
@@ -76,3 +80,5 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * C, C++, Haskell 
 * Flauschist
 * Koffein
+
+</div>
