@@ -91,6 +91,6 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Prokrastination 
 * ...
-* - to do - 
+* _to do_
 
 </div>
