@@ -18,9 +18,9 @@ podcast:
 markdown: kramdown
 kramdown:
   use_coderay: true
+  parse_block_html: true
   coderay:
     coderay_line_numbers: table
-  parse_block_html: true
 
 assets:
   sources:

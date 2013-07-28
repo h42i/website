@@ -3,6 +3,8 @@ layout: post
 title: Holon
 ---
 
+{::options parse_block_html="true" /}
+
 Ein Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
 Hier werden Projekte und Individuen aus und um den HaSi e. V. vorgestellt.
 
