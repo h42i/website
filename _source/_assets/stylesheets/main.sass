@@ -42,9 +42,9 @@ body
     margin: 0
     margin-left: 8px
   img
-    float: right
-    margin-top: -65px
- 
+    position: absolute
+    right: 0
+
 #wrapper
   background: $color_back
   // sorry, but thats not how to fix our problem
@@ -177,6 +177,24 @@ img
   max-width: 100%
   margin: 15px
 
+.tag
+  float: left
+  background: $color_back_contrast
+  color: $color_text_light
+  padding: 5px
+  margin: 5px 0 0px 5px
+  &:hover
+    color: $color_text_highlight
+
+.button
+  float: left
+  background: $color_back_light
+  color: $color_text_light
+  padding: 5px
+  margin: 10px 5px 10px 5px
+  &:hover
+    color: $color_text_highlight
+
 // media foo
 
 @media screen and (min-width: 768px)
@@ -200,24 +218,8 @@ img
       display: inline
     a
       width: auto
-
-.tag
-  float: left
-  background: $color_back_contrast
-  color: $color_text_light
-  padding: 5px
-  margin: 5px 0 0px 5px
-  &:hover
-    color: $color_text_highlight
-
-.button
-  float: left
-  background: $color_back_light
-  color: $color_text_light
-  padding: 5px
-  margin: 10px 5px 10px 5px
-  &:hover
-    color: $color_text_highlight
+    #page-header > img
+      right: 10%
 
 @media screen and (min-width: 1024px)
   body
@@ -226,7 +228,8 @@ img
     width: 90%
     margin-left: auto
     margin-right: auto
-
+  #page-header > img
+    right: 25%
 @media screen and (min-width: 1440px)
   #wrapper
     width: 90%
