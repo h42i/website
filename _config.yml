@@ -28,6 +28,7 @@ assets:
   - _assets/webfonts
   - _assets/images
   cachebust: none
+  css_compressor: sass
 
 info:
   name: Hasi e.V.
