@@ -95,6 +95,16 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 </div><div class="half">
 
+### cheboo ([@mengbrecht](http://twitter.com/mengbrecht))
+
+[<img src="/images/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
+
+* Willkürliche Mathematik 
+* Weltraumsoziologie
+* Redundanzinstitut für <br />Redundanz und Redundanz
+
+</div><div class="half">
+
 ### procrastonos ([@procrastonos](http://twitter.com/procrastonos))
 
 [<img src="/images/procrastonos.png" alt="procrastonos" width="146">](http://hasi.it/wiki/Benutzer:Seth)
@@ -102,16 +112,6 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * Prokrastination 
 * ...
 * _to do_
-
-</div><div class="half">
-
-### cheboo ([@nmengbrecht](http://twitter.com/mengbrecht))
-
-[<img src="/images/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
-
-* Willkürliche Mathematik 
-* Weltraumsoziologie
-* Redundanzinstitut für Redundanz und Redundanz
 
 </div>
 
