@@ -93,4 +93,15 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * ...
 * _to do_
 
+</div><div class="half">
+
+### nanooq ([@nanooq_](http://twitter.com/nanooq_))
+
+[<img src="/images/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
+
+* computer supported
+* collaborative hacking
+* anarchism
+
 </div>
+
