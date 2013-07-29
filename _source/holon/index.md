@@ -85,6 +85,16 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 </div><div class="half">
 
+### nanooq ([@nanooq_ ](http://twitter.com/nanooq_))
+
+[<img src="/images/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
+
+* computer supported
+* collaborative hacking
+* anarchism
+
+</div><div class="half">
+
 ### procrastonos ([@procrastonos](http://twitter.com/procrastonos))
 
 [<img src="/images/procrastonos.png" alt="procrastonos" width="146">](http://hasi.it/wiki/Benutzer:Seth)
@@ -95,13 +105,13 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 </div><div class="half">
 
-### nanooq ([@nanooq_ ](http://twitter.com/nanooq_))
+### cheboo ([@nmengbrecht](http://twitter.com/mengbrecht))
 
-[<img src="/images/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
+[<img src="/images/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
 
-* computer supported
-* collaborative hacking
-* anarchism
+* Willkürliche Mathematik 
+* Weltraumsoziologie
+* Redundanzinstitut für Redundanz und Redundanz
 
 </div>
 
