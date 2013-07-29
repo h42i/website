@@ -65,7 +65,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 </div><div class="half">
 
-### Der Hybr1s ([@hybr1s](http://twitter.com/hybr1s))
+### Hybr1s ([@hybr1s](http://twitter.com/hybr1s))
 
 [<img src="/images/hybr1s.jpg" alt="Der Hybr1s" width="146">](http://hasi.it/wiki/Benutzer:Hybr1s)
 
@@ -75,7 +75,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 		
 </div><div class="half">
 
-### Mister DanB ([@misterdanb](http://twitter.com/misterdanb))
+### Danb ([@misterdanb](http://twitter.com/misterdanb))
 
 [<img src="/images/danb.png" alt="danb" width="146">](http://hasi.it/wiki/Benutzer:danb)
 
@@ -101,7 +101,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Willkürliche Mathematik 
 * Weltraumsoziologie
-* Redundanzinstitut für   Redundanz und Redundanz
+* Redundanzinstitut für <br />Redundanz und Redundanz
 
 </div><div class="half">
 
