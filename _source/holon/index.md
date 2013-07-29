@@ -95,7 +95,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 </div><div class="half">
 
-### nanooq ([@nanooq_](http://twitter.com/nanooq_))
+### nanooq ([@nanooq_ ](http://twitter.com/nanooq_))
 
 [<img src="/images/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
 
