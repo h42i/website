@@ -27,7 +27,7 @@ Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es
 [Greenspaces (Stadtteilgärten)](http://transition-siegen.de/wiki/index.php?title=Kategorie:Greenspace) für alle anzulegen. 
 
  
-_"Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern."_
+_„Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern.“_
 
 <hr>{: .full .hidden}
  
@@ -46,7 +46,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ## Blogs
 
-* [james](http://james.hasi.it) - "a decadent game boy emulator" von [misterdanb](http://hasi.it/wiki/Benutzer:Danb)
+* [james](http://james.hasi.it) - “a decadent game boy emulator” von [misterdanb](http://hasi.it/wiki/Benutzer:Danb)
 * [Neuland!](http://www.l3kn.de)
 * [Procrastonos](http://procrastonos.org)
 * [Hybr1s](http://hybr1s.de)

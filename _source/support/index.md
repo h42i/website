@@ -5,9 +5,9 @@ title: Unterstützen
 Der HaSi e.V. ist ein eingetragener gemeinnütziger Verein und wird allein aus Spenden am Laufen gehalten. Du kannst uns auf verschiedenste Arten unterstützen:
 
 ## Taten
-Du hast ein spannendes Thema, worüber schon lange mal geredet werden sollte - warum hältst du nicht einen Vortrag oder gibts einen Workshop?
+Du hast ein spannendes Thema, worüber schon lange mal geredet werden sollte – warum hältst du nicht einen Vortrag oder gibts einen Workshop?
 
-Unterstütze Andere bei Ihren Projekten - zu tun gibt es genug!
+Unterstütze Andere bei Ihren Projekten – zu tun gibt es genug!
 Komm doch einfach mal in der ehemaligen Pelzfabrik [Effertsufer 104 in 57072 Siegen](http://www.openstreetmap.org/?lat=50.869065&lon=8.003988&zoom=18&layers=M) vorbei oder wende dich an <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>.
 
 ## Mitglied werden
@@ -30,7 +30,7 @@ Sachspenden sind aber bitte immer im Voraus abzusprechen. Wende dich dazu bitte 
 <input type="hidden" name="cmd" value="_donations">
 <input type="hidden" name="business" value="spende@hasi.it">
 <input type="hidden" name="lc" value="DE">
-<input type="hidden" name="item_name" value="HaSi e.V. - Dein Hackspace in Siegen">
+<input type="hidden" name="item_name" value="HaSi e.V. – Dein Hackspace in Siegen">
 <input type="hidden" name="no_note" value="0">
 <input type="hidden" name="currency_code" value="EUR">
 <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
