@@ -56,7 +56,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 
 ### Der Leon ([@l3kn](http://twitter.com/l3kn))
 
-[<img src="/images/l3kn.png" alt="L3kn"
+[<img src="/images/holon/l3kn.png" alt="L3kn"
 width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Hochperformantes Echtzeitruby
@@ -67,7 +67,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 ### Hybr1s ([@hybr1s](http://twitter.com/hybr1s))
 
-[<img src="/images/hybr1s.jpg" alt="Der Hybr1s" width="146">](http://hasi.it/wiki/Benutzer:Hybr1s)
+[<img src="/images/holon/hybr1s.jpg" alt="Der Hybr1s" width="146">](http://hasi.it/wiki/Benutzer:Hybr1s)
 
 * Regie
 * Sozioinformatik
@@ -77,7 +77,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 ### Danb ([@misterdanb](http://twitter.com/misterdanb))
 
-[<img src="/images/danb.png" alt="danb" width="146">](http://hasi.it/wiki/Benutzer:danb)
+[<img src="/images/holon/danb.png" alt="danb" width="146">](http://hasi.it/wiki/Benutzer:danb)
 
 * C, C++, Haskell 
 * Flauschist
@@ -87,7 +87,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 ### nanooq ([@nanooq_ ](http://twitter.com/nanooq_))
 
-[<img src="/images/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
+[<img src="/images/holon/nanooq.gif" alt="nanooq" width="146">](http://hasi.it/wiki/Benutzer:Nanooq)
 
 * computer supported
 * collaborative hacking
@@ -97,7 +97,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 ### cheboo ([@mengbrecht](http://twitter.com/mengbrecht))
 
-[<img src="/images/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
+[<img src="/images/holon/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
 
 * Redundanz
 * Willkürliche Mathematik 
@@ -108,11 +108,21 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 ### procrastonos ([@procrastonos](http://twitter.com/procrastonos))
 
-[<img src="/images/procrastonos.png" alt="procrastonos" width="146">](http://hasi.it/wiki/Benutzer:Seth)
+[<img src="/images/holon/procrastonos.png" alt="procrastonos" width="146">](http://hasi.it/wiki/Benutzer:Seth)
 
 * Prokrastination 
 * ...
 * _to do_
+
+</div><div class="half">
+
+### Simon ([nomis](irc://irc.freenode.net/hasi))
+
+[<img src="/images/holon/simon.png" alt="simon" width="146">](http://hasi.it/wiki/Benutzer:Nomis)
+
+* Gimp
+* LEDs/µCs
+* Woof
 
 </div>
 
