@@ -99,9 +99,10 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 [<img src="/images/cheboo.jpg" alt="cheboo" width="146">](http://hasi.it/wiki/Benutzer:Cheboo)
 
+* Redundanz
 * Willkürliche Mathematik 
 * Weltraumsoziologie
-* Redundanzinstitut für Redundanz und Redundanz
+* Redundanz
 
 </div><div class="half">
 
