@@ -13,22 +13,49 @@ $color_text_light: white
 $color_text_contrast: #55d400
 $color_back_contrast: #55d400
 
+
 // fonts
 @font-face
   font-family: "icons"
-  src: url(asset_path('icomoon.ttf'))
+  src: url(asset_path('icomoon.woff')) format('woff'), url(asset_path('icomoon.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 400
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(asset_path('SourceSansPro-Regular.woff')) format('woff'), url(asset_path('SourceSansPro-Regular.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 700
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(asset_path('SourceSansPro-Bold.woff')) format('woff'), url(asset_path('SourceSansPro-Bold.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: italic
+  font-weight: 400
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(asset_path('SourceSansPro-It.woff')) format('woff'), url(asset_path('SourceSansPro-It.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: italic
+  font-weight: 700
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(asset_path('SourceSansPro-BoldIt.woff')) format('woff'), url(asset_path('SourceSansPro-BoldIt.ttf')) format('truetype')
+
 
 // basic
 *
   margin: 0
   padding: 0
+  font-family: 'Source Sans Pro', sans-serif
 
 body 
   background: black
   font-family: sans-serif
   font-size: 100%
   color: $color_text
-  line-height: 1.6
+  line-height: 1.4
 
 h3
   padding-top: 30px
