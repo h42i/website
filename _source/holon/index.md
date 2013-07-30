@@ -101,7 +101,7 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Willkürliche Mathematik 
 * Weltraumsoziologie
-* Redundanzinstitut für <br />Redundanz und Redundanz
+* Redundanzinstitut für Redundanz und Redundanz
 
 </div><div class="half">
 
