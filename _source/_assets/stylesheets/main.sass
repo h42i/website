@@ -90,32 +90,21 @@ footer
 
 nav
   width: 100%
-  font-size: 1.0em
   text-align: center
   background: $color_back_light
-  ul
-    padding: 1px 0
-    margin: 0
-    display: block
-  li
+  .menuline
     display: inline-block
-    padding: 11px
-    // background: $color_back
+    padding: 0px
+  a
+    display: block
+    padding: 6px 13px
+    color: $color_text_light
     &:hover
       background: $color_back_contrast
-  a
-    width: 100%
-    color: $color_text_light
-
-.menuline
-  display: inline-block
-  padding: 0px
-  margin: 0px
-  li
-    display: block
 
 .active
   font-weight: bold
+
 aside
   ul
     list-style: none
@@ -227,10 +216,9 @@ img
 
 // media foo
 
-@media screen and (min-width: 350px)
-  .menuline
-    li
-      display: inline-block
+@media screen and (min-width: 360px)
+  nav a
+    display: inline-block
 
 @media screen and (min-width: 768px)
   .m-hidden
@@ -247,8 +235,8 @@ img
     width: 25%
   nav
     text-align: left
-    #page-header > img
-      right: 10%
+  #page-header > img
+    right: 10%
 
 @media screen and (min-width: 1024px)
   body

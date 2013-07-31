@@ -15,12 +15,12 @@
 			</header>
 			<section>
 				<nav>
-					<ul><span class="menuline">
+					<span class="menuline">
 					{% assign url = page.url|remove:'index.html' %}
 					{% for link in site.navigation %}
-						<li {% if url == link.url %}class="active"{% endif %}><a href="{{link.url}}">{{ link.title }}</a></li>{{ link.break }}
+						<a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %}>{{ link.title }}</a>{{ link.break }}
 					{% endfor %}
-					</span></ul>
+					</span>
 				</nav>	
 			</section>
 			<section id="main" class="group">
