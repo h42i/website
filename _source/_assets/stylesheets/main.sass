@@ -48,16 +48,38 @@ $color_back_contrast: #55d400
 *
   margin: 0
   padding: 0
-  font-family: 'Source Sans Pro', sans-serif
 
 body 
-  background: black
-  font-size: 100%
-  color: $color_text
+  font-family: 'Source Sans Pro', sans-serif
   line-height: 1.4
+  font-size: 12pt
+  background: black
+  color: $color_text
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+  padding-top: 0.5ex
+  clear: both
+
+h1
+  font-size: 140%
+  font-weight: bold
+  padding-top: 1ex
+
+h2
+  font-size: 120%
+  font-weight: bold
+  padding-top: 1ex
 
 h3
-  padding-top: 30px
+  font-size: 120%
+  font-weight: normal
+
+h4
+  font-size: 100%
+  font-weight: bold
+
 
 #page-header
   position: relative
@@ -65,9 +87,15 @@ h3
   background-color: darken($color_back_contrast, 10%)
   background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
   background-size: 13px, 29px, 37px, 53px
+  min-height: 60px  /* ensures that the logo fits */
   h1
     color: $color_text_light
     margin: 0
+    font-size: 240%
+    padding-top: 0
+    line-height: 1.0
+  p
+    font-weight: bold
   img
     position: absolute
     margin: 0px
@@ -114,7 +142,7 @@ aside
 
 audio
   width: 100%
-  
+
 .post
   margin-bottom: 2em
   padding-bottom: 1em
@@ -127,16 +155,16 @@ audio
     font-family: "icons"
     font-style: normal
   &:hover
-    color: white
+    color: $color_text_highlight
 
 .paypal
   color: inherit
   border: none
   background: none
-  margin-right: 0.5em
+  margin-left: 0.25em
 
 #social
-  font-size: 1.5em
+  font-size: 120%
 // helper
 
 .group:after
@@ -254,6 +282,5 @@ img
 ul 
   text-indent: 0px 
   // text-indent war mal 5px
-  list-style-position: outside
   list-style-type: square
-  margin-left: 8%
+  margin-left: 2em
