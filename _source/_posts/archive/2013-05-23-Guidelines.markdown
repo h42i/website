@@ -34,7 +34,7 @@ gem install jekyll sass jekyll-assets coderay kramdown
 ## Get the git
 
 ~~~ bash
-git clone ssh://h42i@hasi.it/home/hasi/git/jekyll.git
+git clone ssh://h42i@hasi.it/home/h42i/git/jekyll.git
 ~~~
 
 ## Befehle
