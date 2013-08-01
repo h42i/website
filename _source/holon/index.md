@@ -124,5 +124,16 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * LEDs/µCs
 * Woof
 
+</div><div class="half">
+
+### Ole ([ole](irc://irc.freenode.net/hasi))
+
+[<img src="/images/holon/ole.png" alt="simon" width="146">](http://hasi.it/wiki/Benutzer:Ole)
+
+* Nut/OS
+* µCs
+* Kaffee
+* High Voltage / Tesla Coils
+
 </div>
 
