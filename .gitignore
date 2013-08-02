@@ -2,3 +2,4 @@ _site/
 _source/podcast
 _drafts/
 .DS_Store*
+_env.yml
