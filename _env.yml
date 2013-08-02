@@ -1,1 +1,1 @@
-piwik: true
+environment: 'production'

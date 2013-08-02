@@ -32,8 +32,7 @@
 			{% endfor %}
 			</footer>
 		</section>
-		{% if site.env.piwik %}
-		
+		{% if site.environment == 'production' %}
 		<!-- Piwik -->
 		<script type="text/javascript"> 
 			var _paq = _paq || [];
