@@ -32,6 +32,8 @@
 			{% endfor %}
 			</footer>
 		</section>
+		{% if site.env.piwik %}
+		
 		<!-- Piwik -->
 		<script type="text/javascript"> 
 			var _paq = _paq || [];
@@ -44,10 +46,10 @@
 				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
 				g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 			})();
-
 		</script>
 		<noscript><p><img src="http://piwik.hasi.it/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
 		<!-- End Piwik Code -->	
+		{% endif %}
 	</body>
 </html>
 
