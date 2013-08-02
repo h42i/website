@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Crypto-Sommer-Party
+banner: /images/cryptoparty.svg
 category: blog
 author: inj4n
 ---
 
 ## Party like it's 1984
-
-![Cryptoparty](/images/cryptoparty.svg)
 
 Am 10. August 2013 um 17 Uhr veranstaltet das [Chaostreff Siegen](http://chaostreff-siegen.de) im Hasi die vermutlich erste Crypto-Party Siegens.   
 
