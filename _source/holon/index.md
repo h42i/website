@@ -50,6 +50,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Neuland!](http://www.l3kn.de)
 * [Procrastonos](http://procrastonos.org)
 * [Hybr1s](http://hybr1s.de)
+* [t4b nerdblog](http://t4b.taponet.de/blog/)
 
 ## HaSi-Faces
 <div class="half">
