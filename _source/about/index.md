@@ -7,17 +7,19 @@ Wir sind dein Hackspace in Siegen und Umgebung.
 
 # Und was bitte ist ein Hackspace?
 
-Der Hackerspace, bzw gegendert „Hackspace“ oder „Hackingspace“, ist ein Raum. Was dort passiert, hängt allein von den Mitgliedern ab.  
+Der Hackerspace, bzw. gegendert „Hackspace“ oder „Hackingspace“, ist ein Raum
+und noch mehr. Was dort passiert, hängt allein von den Mitmachenden ab.  
 <br />
 <img src="/images/270px-Erweiterte_Produkterfassung.jpg" width="206" height="135"> 
 <img class="alignnone hoverZoomLink" alt="" src="/images/270px-LED-Throwies.jpg" width="239" height="135">
 <img class="alignnone" alt="" src="/images/270px-First_mate.jpg" width="205" height="135">  
 <br />
 Aus der Geschichte heraus dreht sich das primäre Interesse um Computer und Technik. Sekundär gibt es keine Grenzen: Nähen, Bierbrauen oder auch Politik und Kunst – alles ist möglich.  
-Das, was alle Hackspaces vereint, ist die Grundphilosophie des Verstehen-Wollens und des Selber-Machens: Dinge auseinander nehmen, untersuchen, wieder zusammen setzen, verändern, zusammenführen, weiter entwickeln…  
+Das, was alle Hackspaces vereint, ist die Grundphilosophie des Verstehenwollens
+und des Selbermachens: Dinge auseinander nehmen, untersuchen, wieder zusammensetzen, verändern, zusammenführen, weiter entwickeln…  
 Der Hackspace schafft einen kreativen Freiraum, indem er Geräte und Werkzeuge bereitstellt. So ist er ein Treffpunkt für Menschen mit Interesse an Wissenschaft, Technologie und Kunst, wo sie sich treffen, austauschen und gemeinsame Projekte umsetzen können.  
 Jeder tut das, was er möchte und ihn interessiert: Einfach nur gemütlich hinsetzen, Mate trinken und ein Spiel spielen? Kein Problem! Du kannst aber auch versuchen die Mate selbst zu brauen oder dir eine Lampe zusammenlöten. Ach! Lieber gleich eine eigene LED-Matrix, die du dann auch selbst animieren kannst. Oder, wenn du gerade dabei bist, warum nicht gleich einen eigenen [Satelliten](http://www.spiegel.de/netzwelt/web/netzwelt-ticker-hacker-wollen-sich-ueber-satellit-vernetzen-a-806675.html)?  
-Wie ihr seht: Alles ist möglich.
+Wie du siehst: Alles ist möglich.
 
 # Wo?
 Du findest uns hinter dem Schlachthof in der ehemaligen Pelzfabrik. [Effertsufer 104 in 57072 Siegen](http://www.openstreetmap.org/?lat=50.869065&lon=8.003988&zoom=18&layers=M).
@@ -32,7 +34,7 @@ Um nicht vor verschlossener Tür zu stehen, kontaktier uns doch einfach, wie fin
 
 # Spenden
 
-Als gemeinnütziger Verein finanzieren wir uns rein aus Spenden. Hilf uns dabei Raum und Projekte zu finanzieren.
+Als gemeinnütziger Verein finanzieren wir uns rein durch Spenden. Hilf' uns dabei Raum und Projekte zu finanzieren.
 
 <a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a>
 
