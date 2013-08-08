@@ -51,18 +51,30 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Procrastonos](http://procrastonos.org)
 * [Hybr1s](http://hybr1s.de)
 * [t4b nerdblog](http://t4b.taponet.de/blog/)
+* [Shure nerd porn](http://etemu.com/blog)
 
 ## HaSi-Faces
 <div class="half">
 
-### Der Leon ([@l3kn](http://twitter.com/l3kn))
+### Shure One ([@AlexShure](http://twitter.com/AlexShure))
+
+[<img src="/images/holon/shure_one.jpeg" alt="Shure One"
+width="146">](http://hasi.it/wiki/Benutzer:shure)
+
+* Hochperformantes Echtzeitgärtnern
+* Zerspanungsmechanik (nicht Jekyll)
+* Analogelektronik
+
+</div><div class="half">
+
+### Shure Two ([@l3kn](http://twitter.com/l3kn))
 
 [<img src="/images/holon/l3kn.png" alt="L3kn"
 width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 
 * Hochperformantes Echtzeitruby
 * Webdesign (Jekyll)
-* Elektronik
+* Digitalelektronik
 
 </div><div class="half">
 
