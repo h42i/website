@@ -4,13 +4,13 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>HaSi e.V. Podcast</title>
+    <title>HaSi Talks</title>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}episodes.mp3.rss" rel="self" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
     <description>{{ site.podcast.description }}</description>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>de</language>
-    <itunes:summary>Der offizielle und einzig wahre Podcast des HaSi</itunes:summary>
+    <itunes:summary>{{ site.podcast.description }}</itunes:summary>
     <itunes:author>HaSi e.V.-Hackspace Siegen</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="{{ site.url }}images/HaSi_Logo.png" />
@@ -22,11 +22,11 @@ layout: nil
     <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
     <itunes:keywords>{{ site.podcast.keywords | join:', ' }}</itunes:keywords>
     <image>
-      <title>HaSi e.V. Podcast</title>
+      <title>HaSi Talks</title>
       <url>{{ site.url }}images/HaSi_Logo.png</url>
       <link>{{ site.url }}</link>
     </image>
-    <itunes:category text="Technology">
+    <itunes:category text="Education, Software How-To, Training">
     </itunes:category>
     {% for post in site.categories.talk %}
     <item>
