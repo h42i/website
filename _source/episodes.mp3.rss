@@ -11,7 +11,7 @@ layout: nil
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>de</language>
     <itunes:summary>{{ site.podcast.description }}</itunes:summary>
-    <itunes:author>HaSi e.V.-Hackspace Siegen</itunes:author>
+    <itunes:author>HaSi e.V.- Dein Hackspace in Siegen</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="{{ site.url }}images/HaSi_Logo.png" />
     <itunes:owner>
@@ -26,7 +26,7 @@ layout: nil
       <url>{{ site.url }}images/HaSi_Logo.png</url>
       <link>{{ site.url }}</link>
     </image>
-    <itunes:category text="Education, Software How-To, Training">
+    <itunes:category text="Education">
     </itunes:category>
     {% for post in site.categories.talk %}
     <item>
