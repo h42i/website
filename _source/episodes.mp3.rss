@@ -20,7 +20,7 @@ layout: nil
     </itunes:owner>
     <copyright>{{ site.license }}</copyright>
     <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
-    <itunes:keywords>{{ site.podcast.keywords | join:', ' }}</itunes:keywords>
+    <itunes:keywords>{{ site.podcast.keywords | join:',' }}</itunes:keywords>
     <image>
       <title>HaSi Talks</title>
       <url>{{ site.url }}images/HaSi_Logo.png</url>
