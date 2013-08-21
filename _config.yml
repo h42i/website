@@ -3,7 +3,7 @@ destination: ./_site
 
 name: HaSi e.V.
 description: Dein Hackspace in Siegen
-url: http://www.hasi.it/
+url: http://hasi.it/
 license: CC BY-NC-SA 3.0
 
 excerpt_separator: "<!-- break -->"
