@@ -37,12 +37,10 @@ layout: nil
       <category>{{ category }}</category>
       {% endfor %}
       <guid isPermaLink="false">{{ site.url }}{{ post.url }}</guid>
-      <description>{{ post.content | strip_html | truncatewords: 20 }}</description>
-      <content:encoded>{{ post.content | strip_html }}</content:encoded>
       <enclosure url="{{ site.podcast.path }}{{ post.talk.file }}" length="{{ post.talk.file | file_size }}" type="audio/mpeg" />
       <itunes:keywords>{{ post.tags }}</itunes:keywords>
       <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
-      <itunes:summary>{{ post.summary }}</itunes:summary>
+      <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
       <itunes:author>{{ post.author | otherwise:site.author }}</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>{{ post.talk.duration }}</itunes:duration>
