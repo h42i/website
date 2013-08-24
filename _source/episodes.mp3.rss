@@ -13,7 +13,7 @@ layout: nil
     <itunes:summary>{{ site.podcast.description }}</itunes:summary>
     <itunes:author>HaSi e.V.- Dein Hackspace in Siegen</itunes:author>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="{{ site.url }}images/HaSi_Logo.png" />
+    <itunes:image href="{{ site.url }}images/HaSi_Cover.png" />
     <itunes:owner>
       <itunes:name>HaSi e.V.</itunes:name>
       <itunes:email>kontakt@hasi.it</itunes:email>
