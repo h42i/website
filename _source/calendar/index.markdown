@@ -27,8 +27,8 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alle
 
 ### Ligthingtalks
 
-Jeden ersten Donnerstag im Monat um 20.30 Uhr
-Die nächsten Termine sind am:
+Jeden ersten Donnerstag im Monat um 20.30 Uhr. <br>
+Die nächsten Termine sind am: <br>
 - 5. September 2013
 - 3. Oktober 2013
 
@@ -38,23 +38,21 @@ Mehr Infos gibt es im [Wiki](http://hasi.it/wiki/LightningTalks).
 ### Crypto Party
 
 Jeden letzten Mittwoch im Monat ab 18:00 Uhr im Hackspace Siegen. 
-Der nächste Termin ist am:
-25 Sep 2013 » CryptoIndianSummerParty 2013
+Der nächste Termin ist am: <br />
+25 Sep 2013 » CryptoIndianSummerParty 2013 <br>
 Mehr Infos unter: [Link](http://chaostreff-siegen.de/veranstaltungen/cryptoparty/)
 
 
 ### Greenspace Meeting
 
-Jeden Samstag von 17:00 bis 21:30  
-in der Grünanlage am Effertsufer 21
+Jeden Samstag von 17:00 bis 21:30  in der Grünanlage am Effertsufer 21 <br />
 Mehr Infos unter: [www.transition-siegen.de](http://transition-siegen.de/blog/2013/04/16/regelmasige-treffen/)
 
 
 ### HaSi-Schwimmen
 
-Jeden Montag von 19:00 bis 21:00 in Netphen  
-Fahrgelegenheiten stehen normalerweise ab / bis Weidenau zur Verfügung.  
-Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei Ole (ole.reinhardt@r-web.de) 
+Jeden Montag von 19:00 bis 21:00 in Netphen  <br>
+Fahrgelegenheiten stehen normalerweise ab / bis Weidenau zur Verfügung.  Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei Ole (ole.reinhardt@r-web.de) 
 
 <hr>
 
@@ -63,23 +61,23 @@ Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei
 
 ## Tinkercamp
 
->>Sa/So 12. und 13. Oktober
->>In Essen
->>[Link](http://www.tinkercamp.de/)
+- Sa/So 12. und 13. Oktober
+- In Essen
+- [Link](http://www.tinkercamp.de/)
 
 
 
 ## Trollcon
->>Sa/So 26. und 27. Oktober
->>Die Trollcon des RaumZeitLabors Mannheim
->>[Link](https://wiki.raumzeitlabor.de/wiki/Trollcon/2013)
+- Sa/So 26. und 27. Oktober
+- Die Trollcon des RaumZeitLabors Mannheim
+- [Link](https://wiki.raumzeitlabor.de/wiki/Trollcon/2013)
 
 
 
 ## 30C3
->>Freitag den 27. bis Montag den 30. Dezember
->>In Hamburg
->>[Link](http://events.ccc.de/category/30c3/)
+- Freitag den 27. bis Montag den 30. Dezember
+- In Hamburg
+- [Link](http://events.ccc.de/category/30c3/)
 
 <hr>
 
