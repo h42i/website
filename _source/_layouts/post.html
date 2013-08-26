@@ -14,7 +14,6 @@ l3 default layout for a single blogpage
 	{{ content}}
 </article>
 <aside>
-	{% include social.html %}
 	{% if page.talk.file or page.talk.video or page.talk.slides %}
 	<article class="group">
 		<header><h2>media</h2></header>
@@ -33,6 +32,7 @@ l3 default layout for a single blogpage
 		{% endif %}
 	</article>
 	{% endif %}
+ {% include social.html %}
 </aside>
 
 
