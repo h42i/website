@@ -13,7 +13,8 @@ Mehr Infos zu den HaSi-Talks findest du im [Wiki](http://hasi.it/wiki/Kategorie:
 
 ### 26. September: haggl - Git
 
-Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. 
+Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. <br />
+(Mit anschließendem Workshop. Dafür ist ein eigener Rechner notwendig.)
 
 ### 10. Oktober: Gloria Shure - Alternativmedizin
 
