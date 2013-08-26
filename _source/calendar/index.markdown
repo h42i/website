@@ -63,23 +63,23 @@ Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei
 
 ## Tinkercamp
 
-Sa/So 12. und 13. Oktober
-In Essen
-[Link](http://www.tinkercamp.de/)
+>>Sa/So 12. und 13. Oktober
+>>In Essen
+>>[Link](http://www.tinkercamp.de/)
 
 
 
 ## Trollcon
-Sa/So 26. und 27. Oktober
-Die Trollcon des RaumZeitLabors Mannheim
-[Link](https://wiki.raumzeitlabor.de/wiki/Trollcon/2013)
+>>Sa/So 26. und 27. Oktober
+>>Die Trollcon des RaumZeitLabors Mannheim
+>>[Link](https://wiki.raumzeitlabor.de/wiki/Trollcon/2013)
 
 
 
 ## 30C3
-27. - 30. Dezember
-In Hamburg
-[Link](http://events.ccc.de/category/30c3/)
+>>Freitag den 27. bis Montag den 30. Dezember
+>>In Hamburg
+>>[Link](http://events.ccc.de/category/30c3/)
 
 <hr>
 
