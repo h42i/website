@@ -46,13 +46,13 @@ Mehr Infos unter: [Link](http://chaostreff-siegen.de/veranstaltungen/cryptoparty
 ### Greenspace Meeting
 
 Jeden Samstag von 17:00 bis 21:30  in der Grünanlage am Effertsufer 21 <br />
-Mehr Infos unter: [www.transition-siegen.de](http://transition-siegen.de/blog/2013/04/16/regelmasige-treffen/)
+Mehr Infos unter: [Link](http://transition-siegen.de/blog/2013/04/16/regelmasige-treffen/)
 
 
 ### HaSi-Schwimmen
 
 Jeden Montag von 19:00 bis 21:00 in Netphen  <br>
-Fahrgelegenheiten stehen normalerweise ab / bis Weidenau zur Verfügung.  Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei Ole (ole.reinhardt@r-web.de) 
+Fahrgelegenheiten stehen normalerweise ab / bis Weidenau zur Verfügung.  Anmeldung für Mitfahrgelegenheit auf der Mailing-Liste, im IRC-Channel oder bei Ole [ole.reinhardt@r-web.de](mailto:ole.reinhardt@r-web.de) 
 
 <hr>
 
