@@ -7,6 +7,8 @@ talk:
   file: barcamp2013/Ertraeglichkeit-Zeitungsmord.mp3
   duration: 00:36:49
 ---
+
+<br />
 <html>
 <head>
 <meta charset="utf-8" />
@@ -27,7 +29,7 @@ talk:
 		<script>
 			$('#testplayer1').podlovewebplayer({
 				<!--poster: 'samples/coverimage.png',-->
-				title: '@Erträglichkeit - Zeitungsmord',
+				title: '@Ertraeglichkeit - Zeitungsmord',
 				permalink: 'http://hasi.it/talk/2013/07/08/Zeitungsmord.html',
 				summary: '<p>Das Namensgebende Beispiel ist die Geschichte einer Zeitung die frei verfügbare Informationen visualisiert und plötzlich den Lynchmob vor der Tür stehen hat, die Zeitung ist ruiniert, __Zeitungsmord!__  
 Was in der Zwischenzeit passiert ist damit es soweit kommen konnte erfahrt ihr in diesem Vortrag.  </p>',
@@ -45,8 +47,6 @@ Was in der Zwischenzeit passiert ist damit es soweit kommen konnte erfahrt ihr i
 	</p>
 </body>
 </html>
-<br />
-<br />
 <br />
 
 [@Ertraeglichkeit](https://twitter.com/Ertraeglichkeit) sprach auf dem [Barcamp Siegen](http://barcamp-siegen.de/) über Onlinepranger.  
