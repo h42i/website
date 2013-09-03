@@ -7,45 +7,7 @@ talk:
   file: barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3
   duration: 00:51:23
 ---
-<html>
-<br />
-<head>
-<meta charset="utf-8" />
 
-	<link href="http://hasi.it/podlove-web-player/static/podlove-web-player.css" rel="stylesheet" media="screen" type="text/css" />
-
-	<script src="http://hasi.it/podlove-web-player/libs/html5shiv.js"></script>
-	<script src="http://hasi.it/podlove-web-player/libs/jquery-1.9.1.min.js"></script>
-	<script src="http://hasi.it/podlove-web-player/static/podlove-web-player.js"></script>
-</head>
-
-<body>
-	<p>
-		<audio id="testplayer">
-			<source src="http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3" type="audio/mpeg"></source>
-		</audio>
-
-		<script>
-			$('#testplayer1').podlovewebplayer({
-				<!--poster: 'samples/coverimage.png',-->
-				title: 'Frank Sperber - Ich kann Technik und Du auch!',
-				permalink: 'http://hasi.it/talk/2013/07/08/Ich_kann_Technik_und_Du_auch.html',
-				summary: '<p>In einer Session von Frank Sperber beim diesjährigen Barcamp Siegen stand das Thema “Ich kann Technik – und Du auch!” mit dem Hintergrund offener Lernangebote im Vordergrund.  </p>',
-				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 58725,"url": "http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3","dlurl": "http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3"}],
-				duration: '51:23.400',
-				alwaysShowHours: true,
-				startVolume: 0.8,
-				width: 'auto',
-				summaryVisible: false,
-				timecontrolsVisible: false,
-				sharebuttonsVisible: false,
-				chaptersVisible: false
-			});
-		</script>
-	</p>
-</body>
-</html>
-<br />
 In einer Session von [Frank Sperber](https://twitter.com/DL6DBN) beim diesjährigen [Barcamp Siegen](http://barcamp-siegen.de/) stand das Thema “Ich kann Technik – und Du auch!” mit dem Hintergrund offener Lernangebote im Vordergrund.  
 
 <!-- break -->
