@@ -7,6 +7,8 @@ talk:
   file: Kati-Der_erste_Eindruck.mp3
   duration: 01:29:04
 ---
+
+<br>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -45,9 +47,6 @@ talk:
 	</p>
 </body>
 </html>
-
-<br />
-<br />
 <br />
 
 Der erste Eindruck - Du hast nur eine Chance!
