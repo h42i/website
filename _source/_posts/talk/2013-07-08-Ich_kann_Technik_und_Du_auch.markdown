@@ -24,3 +24,45 @@ Dabei sind Überschneidungen zur Scratch-Initiative durchaus denkbar und helfen 
 Das erfreuliche Ergebnis sind also viele neue Kontakte und wie es aussieht wird die Diskussion und die Planungen dazu demnächst bei uns im HaSi Fortgesetzt.  
 
 [Stichwortzettel zur Session(PDF)](http://scratchdaysiegen.files.wordpress.com/2013/07/barcamp13-dl6dbn.pdf)
+
+<br />
+<br />
+<br />
+<html>
+<head>
+<meta charset="utf-8" />
+
+	<link href="http://hasi.it/podlove-web-player/static/podlove-web-player.css" rel="stylesheet" media="screen" type="text/css" />
+
+	<script src="http://hasi.it/podlove-web-player/libs/html5shiv.js"></script>
+	<script src="http://hasi.it/podlove-web-player/libs/jquery-1.9.1.min.js"></script>
+	<script src="http://hasi.it/podlove-web-player/static/podlove-web-player.js"></script>
+</head>
+
+<body>
+	<p>
+		<audio id="testplayer1">
+			<source src="http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3" type="audio/mpeg"></source>
+		</audio>
+
+		<script>
+			$('#testplayer1').podlovewebplayer({
+				<!--poster: 'samples/coverimage.png',-->
+				title: 'Frank Sperber - Ich kann Technik und Du auch!',
+				permalink: 'http://hasi.it/talk/2013/07/08/Ich_kann_Technik_und_Du_auch.html',
+				subtitle: 'Du hast nur eine Chance!',
+				summary: '<p>In einer Session von Frank Sperber beim diesjährigen Barcamp Siegen stand das Thema “Ich kann Technik – und Du auch!” mit dem Hintergrund offener Lernangebote im Vordergrund.  </p>',
+				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 58725,"url": "http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3","dlurl": "http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3"}],
+				duration: '51:23.400',
+				alwaysShowHours: true,
+				startVolume: 0.8,
+				width: 'auto',
+				summaryVisible: false,
+				timecontrolsVisible: false,
+				sharebuttonsVisible: false,
+				chaptersVisible: false
+			});
+		</script>
+	</p>
+</body>
+</html>

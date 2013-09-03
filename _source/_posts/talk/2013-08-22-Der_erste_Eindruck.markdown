@@ -35,7 +35,6 @@ Kati hat uns an ihrer langjährigen Erfahrung der Selbstdarstellung und Präsent
 				title: 'Kati - Der erste Eindruck',
 				permalink: 'http://hasi.it/talk/2013/08/22/Der_erste_Eindruck.html',
 				subtitle: 'Du hast nur eine Chance!',
-				chapters: [{'start':'00:00:00.000','title':'Chapter One',   'image':'samples/coverimage.png',       'href':'http://podlove.org/'}],
 				summary: '<p>Kati hat uns an ihrer langjährigen Erfahrung der Selbstdarstellung und Präsentation teilhaben lassen: Was kann und sollte man beachten? Wie stelle ich mich dar? </p>',
 				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 58725,"url": "http://files.hasi.it/podcast/Kati-Der_erste_Eindruck.mp3","dlurl": "http://files.hasi.it/podcast/Kati-Der_erste_Eindruck.mp3"}],
 				duration: '89:04.400',
