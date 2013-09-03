@@ -7,17 +7,6 @@ talk:
   file: barcamp2013/Renate_Hermanns-HTML5.mp3
   duration: 00:44:51
 ---
-Beim diesjährigen [Barcamp Siegen](http://barcamp-siegen.de/) sprach [@renaade](https://twitter.com/Renaade) über HTML5.  
-
-<!-- break -->
-
-HTML5 bringt viele Neuerungen und eine neue Struktur mit.  
-[@renaade](https://twitter.com/Renaade) beantwortet in ihrer Session Fragen zu dieser neuen Struktur, zur nativen Audio und Video Unterstützung sowie praxisbezogene Fragen zu bestimmten Browsern und mehr.  
-Alles in allem eine gelungene Einführung in den Themenkomplex.  
-
-<br />
-<br />
-<br />
 <html>
 <head>
 <meta charset="utf-8" />
@@ -57,3 +46,13 @@ Alles in allem eine gelungene Einführung in den Themenkomplex.  </p>',
 	</p>
 </body>
 </html>
+<br />
+<br />
+<br />
+Beim diesjährigen [Barcamp Siegen](http://barcamp-siegen.de/) sprach [@renaade](https://twitter.com/Renaade) über HTML5.  
+
+<!-- break -->
+
+HTML5 bringt viele Neuerungen und eine neue Struktur mit.  
+[@renaade](https://twitter.com/Renaade) beantwortet in ihrer Session Fragen zu dieser neuen Struktur, zur nativen Audio und Video Unterstützung sowie praxisbezogene Fragen zu bestimmten Browsern und mehr.  
+Alles in allem eine gelungene Einführung in den Themenkomplex.  
