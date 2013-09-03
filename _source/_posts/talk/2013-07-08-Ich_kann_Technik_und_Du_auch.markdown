@@ -21,7 +21,7 @@ talk:
 
 <body>
 	<p>
-		<audio id="testplayer1">
+		<audio id="testplayer">
 			<source src="http://files.hasi.it/podcast/barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3" type="audio/mpeg"></source>
 		</audio>
 
