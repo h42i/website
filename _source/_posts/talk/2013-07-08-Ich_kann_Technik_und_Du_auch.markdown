@@ -7,9 +7,8 @@ talk:
   file: barcamp2013/Frank_Sperber-Ich_kann_Technik.mp3
   duration: 00:51:23
 ---
-
-<br />
 <html>
+<br />
 <head>
 <meta charset="utf-8" />
 
