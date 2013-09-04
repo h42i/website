@@ -28,7 +28,7 @@ talk:
 
 		<script>
 			$('#testplayer1').podlovewebplayer({
-				<!--poster: 'samples/coverimage.png',-->
+				poster: 'http://hasi.it/images/HaSi_Cover.png',
 				title: 'Kati - Der erste Eindruck',
 				permalink: 'http://hasi.it/talk/2013/08/22/Der_erste_Eindruck.html',
 				subtitle: 'Du hast nur eine Chance!',
