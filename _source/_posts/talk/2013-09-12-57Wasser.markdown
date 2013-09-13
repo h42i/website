@@ -29,7 +29,7 @@ talk:
 		<script>
 			$('#testplayer1').podlovewebplayer({
 				poster: 'http://hasi.it/images/HaSi_Cover.png',
-				title: 'Kati - Der erste Eindruck',
+				title: 'Dirk - 57Wasser',
 				permalink: 'http://hasi.it/talk/2013/09/12/57Wasser.html',
 				subtitle: 'the robin hood of waters',
 				summary: '<p>57wasser wurde von den beiden Freunden Dirk und Björn 2012 gegründet. “The robin hood of waters” spendet 57% des Bruttogewinns an soziale und humanitäre Projekte in Deutschland und der ganzen Welt und Du entscheidest mit!</p>',
