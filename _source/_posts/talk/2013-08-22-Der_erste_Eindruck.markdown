@@ -8,6 +8,10 @@ talk:
   duration: 01:29:04
 ---
 
+
+Der erste Eindruck - Du hast nur eine Chance!
+Kati hat uns an ihrer langjährigen Erfahrung der Selbstdarstellung und Präsentation teilhaben lassen: Was kann und sollte man beachten? Wie stelle ich mich dar? 
+<!-- breal -->
 <br>
 <html>
 <head>
@@ -48,6 +52,3 @@ talk:
 </body>
 </html>
 <br />
-
-Der erste Eindruck - Du hast nur eine Chance!
-Kati hat uns an ihrer langjährigen Erfahrung der Selbstdarstellung und Präsentation teilhaben lassen: Was kann und sollte man beachten? Wie stelle ich mich dar? 
