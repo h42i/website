@@ -37,7 +37,7 @@ title: Dein Hackspace in Siegen
           <br />
         <header><h2>status</h2></header>
 
-        {% if site.environment == 'production' %}
+        {% if site.environment != 'production' %}
         <a href="http://www.stats.l3kn.de" target="_blank"><img src="http://stats.l3kn.de/api/hasi.peng" alt="Stausanzeige"></a>
         {% else %}
         <a href="http://www.stats.l3kn.de" target="_blank"><img src="/images/ampel_gruen.png" alt="Stausanzeige"></a>
@@ -67,23 +67,3 @@ title: Dein Hackspace in Siegen
 
     </article>
 </aside>
-<section class="wside">
-    <!--<article>
-        <header><h1>news</h1></header>
-        {% for post in site.posts limit: 4 %}
-            <h3><a href="{{ post.url }}">{{ post.category}} : {{ post.title }}</a></h3>
-        {% endfor %}
-    </article>-->
-</section>
-<aside>
-    <article>
-<!--        <header><h1>status</h1></header>
-        <img src="http://stats.l3kn.de/api/image" alt="Stausanzeige"> -->
-    </article>
-<!--     <article>
-        <header><h1>search</h1></header>
-        {% include search.html %}
-    </article> -->
-</aside>
-
-

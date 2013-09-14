@@ -40,7 +40,7 @@ layout: nil
       <enclosure url="{{ site.podcast.path }}{{ post.talk.file }}" length="{{ post.talk.file | file_size }}" type="audio/mpeg" />
       <itunes:keywords>{{ post.tags }}</itunes:keywords>
       <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
-      <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+      <itunes:summary>{{ post.excerpt | xml_escape }}</itunes:summary>
       <itunes:author>{{ post.author | otherwise:site.author }}</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>{{ post.talk.duration }}</itunes:duration>
