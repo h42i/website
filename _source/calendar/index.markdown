@@ -7,13 +7,10 @@ HaSi-Talks finden (fast) jeden Donnerstag um 20.30 Uhr im Hackspace statt.
 Du hast selbst ein Thema was du vorstellen willst? Dann schreib einfach dem Hybr1s eine Mail: [hybr1s@hybr1s.de](mailto:hybr1s@hybr1s.de)
 Mehr Infos zu den HaSi-Talks findest du im [Wiki](http://hasi.it/wiki/Kategorie:Vortrag). 
 
-### 12. September: Dirk - 57 Wasser 
-
-57wasser wurde von den beiden Freunden Dirk und Björn 2012 gegründet. "The robin hood of waters" spendet 57% des Bruttogewinns an soziale und humanitäre Projekte in Deutschland und der ganzen Welt und Du entscheidest mit! 
 
 ### 19. September: DL6DBN - Space Invaders – Amateure erobern den Weltraum
 
-Seit dem 2011er Chaos Computer Camp schwebt das Hackerspace Global Grid (HGG) im virtuellen Raum. Das Grid, ein satellitengestütztes Netzwerk, soll der Einstieg der Hacking-Bewegung in das Space-Zeitalter sein. Doch es gibt schon seit 1961 “Space Hacking”. In seinem Vortrag will Frank (6DBN), der für die AMSAT-Deutschland schon an nicht-kommerziellen Kommunikationssatelliten gearbeitet hat, aufzeigen, dass es für die Reise ins All neben einer Idee eine ganze Menge Physik, Engineering und auch Geld bedarf. Ob und wie ein HGG funktionieren kann, soll am Ende des Vortrags stehen.
+Seit dem 2011er Chaos  Communication Camp schwebt das Hackerspace Global Grid (HGG) im virtuellen Raum. Das Grid, ein satellitengestütztes Netzwerk, soll der Einstieg der Hacking-Bewegung in das Space-Zeitalter sein. Doch es gibt schon seit 1961 “Space Hacking”. In seinem Vortrag will Frank (6DBN), der für die AMSAT-Deutschland schon an nicht-kommerziellen Kommunikationssatelliten gearbeitet hat, aufzeigen, dass es für die Reise ins All neben einer Idee eine ganze Menge Physik, Engineering und auch Geld bedarf. Ob und wie ein HGG funktionieren kann, soll am Ende des Vortrags stehen.
 
 ### 26. September: haggl - Git
 
