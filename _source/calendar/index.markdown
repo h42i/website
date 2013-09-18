@@ -2,6 +2,10 @@
 layout: post
 title: Termine
 ---
+<html>
+<iframe src="https://www.google.com/calendar/embed?src=bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com&ctz=Europe/Berlin" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</html>
+
 ## Hasi - Talks
 HaSi-Talks finden (fast) jeden Donnerstag um 20.30 Uhr im Hackspace statt.
 Du hast selbst ein Thema was du vorstellen willst? Dann schreib einfach dem Hybr1s eine Mail: [hybr1s@hybr1s.de](mailto:hybr1s@hybr1s.de)
