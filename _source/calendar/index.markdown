@@ -3,7 +3,7 @@ layout: post
 title: Termine
 ---
 <html>
-<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=2&amp;hl=de&amp;bgcolor=%23ffffff&amp;src=bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FBerlin" style=" border-width:0 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=400&amp;wkst=2&amp;hl=de&amp;bgcolor=%23ffffff&amp;src=bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FBerlin" style=" border-width:0 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 </html>
 
 ## Hasi - Talks
