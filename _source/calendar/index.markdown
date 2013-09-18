@@ -34,10 +34,6 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alle
 ### Ligthingtalks
 
 Jeden ersten Donnerstag im Monat um 20.30 Uhr. <br>
-Die nächsten Termine sind am: <br>
-- 5. September 2013
-- 3. Oktober 2013
-
 Mehr Infos gibt es im [Wiki](http://hasi.it/wiki/LightningTalks).
 
 
@@ -87,4 +83,4 @@ Fahrgelegenheiten stehen normalerweise ab / bis Weidenau zur Verfügung.  Anmeld
 
 <hr>
 
-[Webcal abonieren](webcal://p06-calendarws.icloud.com/ca/subscribe/1/UBv-TIGJfFoHvGX1Y3IAW_b_RH1l2kaXsN7A1WWNeRCCJBhheEGTp0MqKpds2EJzUaEwhJoFM9iieG9_M3ygAD2RXJWFgSv4Yr6PYPzVUgA )
+[Kalender XML abonieren](https://www.google.com/calendar/feeds/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic)
