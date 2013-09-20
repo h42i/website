@@ -51,9 +51,12 @@ talk:
 </html>
 <br />
 
-Seit dem 2011er Chaos Communication Camp schwebt das Hackerspace Global Grid (HGG) im virtuellen Raum. Das Grid, ein satellitengestütztes Netzwerk, soll der Einstieg der Hacking-Bewegung in das Space-Zeitalter sein. Doch es gibt schon seit 1961 “Space Hacking”. In seinem Vortrag will Frank (6DBN), der für die AMSAT-Deutschland schon an nicht-kommerziellen Kommunikationssatelliten gearbeitet hat, aufzeigen, dass es für die Reise ins All neben einer Idee eine ganze Menge Physik, Engineering und auch Geld bedarf. Ob und wie ein HGG funktionieren kann, soll am Ende des Vortrags stehen.
-
 <html>
-<br>
+<br />
 <iframe src="http://www.slideshare.net/slideshow/embed_code/26360971" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"></div>
+<br  />
 </html>
+
+<!-- break -->
+
+Seit dem 2011er Chaos Communication Camp schwebt das Hackerspace Global Grid (HGG) im virtuellen Raum. Das Grid, ein satellitengestütztes Netzwerk, soll der Einstieg der Hacking-Bewegung in das Space-Zeitalter sein. Doch es gibt schon seit 1961 “Space Hacking”. In seinem Vortrag will Frank (6DBN), der für die AMSAT-Deutschland schon an nicht-kommerziellen Kommunikationssatelliten gearbeitet hat, aufzeigen, dass es für die Reise ins All neben einer Idee eine ganze Menge Physik, Engineering und auch Geld bedarf. Ob und wie ein HGG funktionieren kann, soll am Ende des Vortrags stehen.
