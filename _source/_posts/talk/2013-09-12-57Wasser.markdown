@@ -8,6 +8,10 @@ talk:
   duration: 01:06:32
 ---
 
+57wasser wurde von den beiden Freunden Dirk und Björn 2012 gegründet. “The robin hood of waters” spendet 57% des Bruttogewinns an soziale und humanitäre Projekte in Deutschland und der ganzen Welt und Du entscheidest mit!
+
+<!-- break -->
+
 <br>
 <html>
 <head>
@@ -48,5 +52,3 @@ talk:
 </body>
 </html>
 <br />
-
-57wasser wurde von den beiden Freunden Dirk und Björn 2012 gegründet. “The robin hood of waters” spendet 57% des Bruttogewinns an soziale und humanitäre Projekte in Deutschland und der ganzen Welt und Du entscheidest mit!
