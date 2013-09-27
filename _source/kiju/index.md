@@ -31,11 +31,10 @@ Am Samstag, den 12. Oktober 2013 bieten wir für dich und deine Eltern einen Sch
 
 
 
-Noch Fragen oder gleich zum Schnuppernachmittag anmelden? <Zwischenüberschrift>
-
-<KiJu-E-Mail-Adresse>
+Noch Fragen oder gleich zum Schnuppernachmittag anmelden? Schreib an kiju@hasi.it
 
 ![Scratch](/images/scratch2.jpg){: .img-left}
+
 
 ## Übrigens
 
