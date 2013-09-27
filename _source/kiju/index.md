@@ -31,11 +31,11 @@ Am Samstag, den 12. Oktober 2013 bieten wir für dich und deine Eltern einen Sch
 
 
 
-Noch Fragen oder gleich zum Schnuppernachmittag anmelden? Schreib an kiju@hasi.it
+Noch Fragen oder gleich zum Schnuppernachmittag anmelden? Schreib an  <a href="mailto:kiju@hasi.it">kiju@hasi.it</a> 
 
 ![Scratch](/images/scratch2.jpg){: .img-left}
 
 
 ## Übrigens
 
-Das Angebot baut auf den Erfahrungen des Siegener Scratch Days, von (Coderdojo)[http://coderdojo.com/], Rails Girls und Chaos macht Schule auf.
+Das Angebot baut auf den Erfahrungen des <a href="http://scratchdaysiegen.wordpress.com/>Siegener Scratch Days</a>, von <a href="http://coderdojo.com/">Coderdojo</a>, <a href="http://railsgirls.com/">Rails Girls</a> und <a href="http://ccc.de/schule"> Chaos macht Schule</a> auf.
