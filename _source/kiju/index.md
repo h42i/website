@@ -5,20 +5,23 @@ title:
 
 {::options parse_block_html="true" /}
 
-# Kiju 
+## Kiju 
+
 ## Unser Angebot für Kinder und Jugendliche
 
 - Sportler spielen im Team 
 - Musiker gründen eine Band
 - Technik-begeisterte Jugendliche und Kinder treffen sich im HaSi
 
+<br />
+
+![Scratch](/images/scratch1.jpg){: .img-left}
+
 Du interessierst dich für Technik, Elektronik, Computer,  Roboter, Programmieren und/oder das Internet - dann bist du bei uns genau richtig!
 
 Ab November 2013 bietet der HaSi e.V.  ein regelmäßiges, offenes Nachmittagsprogramm für Kinder und Jugendliche ab dem dritten Schuljahr an.
 
 Auf spielerische Art werden wir die kreativen Möglichkeiten des Computers erforschen, Experimente und Projekte mit Elektronik machen, zusammen Programmieren lernen, Technik hinterfragen und vor allem Spaß haben.
-
-![Scratch](/images/scratch1.jpg){: .img-left}
 
 ## Du bist neugierig geworden? 
 
@@ -33,6 +36,7 @@ Noch Fragen oder gleich zum Schnuppernachmittag anmelden? <Zwischenüberschrift>
 <KiJu-E-Mail-Adresse>
 
 ![Scratch](/images/scratch2.jpg){: .img-left}
+
 ## Übrigens
 
-Das Angebot baut auf den Erfahrungen des Siegener Scratch Days, von [http://coderdojo.com/](Coderdojo), Rails Girls und Chaos macht Schule auf.
+Das Angebot baut auf den Erfahrungen des Siegener Scratch Days, von (Coderdojo)[http://coderdojo.com/], Rails Girls und Chaos macht Schule auf.
