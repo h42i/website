@@ -31,7 +31,7 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alle
 
 ## Regelmäßige Termine
 
-### Ligthingtalks
+### Lightningtalks
 
 Jeden ersten Donnerstag im Monat um 20.30 Uhr. <br>
 Mehr Infos gibt es im [Wiki](http://hasi.it/wiki/LightningTalks).
