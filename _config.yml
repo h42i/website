@@ -50,6 +50,8 @@ navigation:
   break: </span class="menuline">
 - title: Holon
   url: /holon/
+- title: Kiju
+  url: /kiju/
 - title: Wiki
   url: http://hasi.it/wiki
 - title: Kontakt
