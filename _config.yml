@@ -27,7 +27,7 @@ assets:
   - _assets/stylesheets
   - _assets/webfonts
   - _assets/images
-  cachebust: none
+  cachebust: soft
   css_compressor: sass
 
 info:
