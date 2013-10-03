@@ -8,8 +8,6 @@ talk:
   duration: 01:27:24
 ---
 
-### GIT
-
 <br>
 <html>
 <head>
