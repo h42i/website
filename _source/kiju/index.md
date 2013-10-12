@@ -6,14 +6,12 @@ title:
 {::options parse_block_html="true" /}
 
 ## Kiju 
-
 ## Unser Angebot für Kinder und Jugendliche
 
 - Sportler spielen im Team 
 - Musiker gründen eine Band
 - Technik-begeisterte Jugendliche und Kinder treffen sich im HaSi
 
-<br />
 
 ![Scratch](/images/scratch1.jpg){: .img-left}
 
@@ -39,3 +37,10 @@ Schreib an  <a href="mailto:kiju@hasi.it">kiju@hasi.it</a>
 ## Übrigens
 
 Das Angebot baut auf den Erfahrungen des <a href="http://scratchdaysiegen.wordpress.com/">Siegener Scratch Days</a>, von <a href="http://coderdojo.com/">Coderdojo</a>, <a href="http://railsgirls.com/">Rails Girls</a> und <a href="http://ccc.de/schule"> Chaos macht Schule</a> auf.
+
+## Links
+
+[Download Scratch](http://scratch.mit.edu/scratch_1.4/)  
+
+[Das großartige Tron-Spiel](http://shared.l3kn.de/tron.sb)
+
