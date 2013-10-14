@@ -32,7 +32,7 @@ Mehr Infos gibt es im [Wiki](http://hasi.it/wiki/LightningTalks).
 
 Jeden letzten Mittwoch im Monat ab 18:00 Uhr im Hackspace Siegen. 
 Der nächste Termin ist am: <br />
-25 Sep 2013 » CryptoIndianSummerParty 2013 <br>
+30 Okt 2013 » CryptoGoldenAutumnParty 2013 <br>
 Mehr Infos unter: [Link](http://chaostreff-siegen.de/veranstaltungen/cryptoparty/)
 
 
