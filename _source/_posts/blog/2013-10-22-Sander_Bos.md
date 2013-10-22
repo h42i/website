@@ -19,7 +19,7 @@ advisories/NetBSD-SA2013-008.txt.asc) - erwähnt.
 
 Durch das Ausnutzen der Sicherheitslücke kann ein lokaler Nutzer im Grunde die
 gesamte Kontrolle über die Netzwerkfunktionen des Hosts erlangen. Im Anschluss 
-Demonstration der Sicherheitslücke geben und es wurde über technische Details 
-und weitere Informationen gesprochen.
+hat es eine Demonstration der Sicherheitslücke gegeben und es wurde über 
+technische Details gesprochen.
 
 Der Vortrag wurde auf Englisch gehalten und nicht aufgenommen!
