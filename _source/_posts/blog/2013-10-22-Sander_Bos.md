@@ -21,5 +21,3 @@ Durch das Ausnutzen der Sicherheitslücke kann ein lokaler Nutzer im Grunde die
 gesamte Kontrolle über die Netzwerkfunktionen des Hosts erlangen. Im Anschluss 
 hat es eine Demonstration der Sicherheitslücke gegeben und es wurde über 
 technische Details gesprochen.
-
-Der Vortrag wurde auf Englisch gehalten und nicht aufgenommen!
