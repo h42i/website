@@ -8,6 +8,11 @@ talk:
   duration: 01:27:24
 ---
 
+Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. 
+
+<!-- break -->
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/26850728" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 <br>
 <html>
 <head>
@@ -48,9 +53,3 @@ talk:
 </body>
 </html>
 <br />
-
-<!-- break -->
-
-Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. 
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/26850728" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
