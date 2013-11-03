@@ -1,6 +1,0 @@
-#!/bin/sh
-
-python ical.py --full > ical.md
-kramdown ical.md > ical.html
-str="<!--ical.py-->"
-sed -e "/$str/r ical.html" -e "/$str/d" ../_site/calendar/index.html >> ../_site/calendar/index.html
