@@ -1,0 +1,7 @@
+#!/bin/sh
+
+path = "$HOME/html/jekyll"
+python $path/ical/ical.py --full > $path/ical/ical.md
+kramdown $path/ical/ical.md > $path/ical/ical.html
+str="<!--ical.py-->"
+sed -e "/$str/r $path/ical/ical.html" -e "/$str/d" $path/_site/calendar/template.html >> $path/ical/calendar/index.html
