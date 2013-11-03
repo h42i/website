@@ -29,7 +29,7 @@ def simple_tzinfos (abbrev, offset):
 class Event (dict):
    def shortdesc (self):
       r = []
-      if self.has_key ("SUMMARY"):
+      if self["SUMMARY"]:
          r.append ("* <a href=\"/calendar/#%s\">%s: %s</a>" % (self["UID"], str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["SUMMARY"]))
 
       return "\n\n".join (r)
@@ -37,24 +37,17 @@ class Event (dict):
 
    def longdesc (self):
       r = []
-      if self.has_key ("SUMMARY"):
+      if self["SUMMARY"]:
          r.append ("## <a name=\"%s\">%s</a>" % (self["UID"], self["SUMMARY"]))
 
       r.append (str (self.get_time()[0].strftime ("__%d. %m. %Y, %H:%M Uhr__")) + "\n")
-      if self.has_key ("DESCRIPTION") and self["DESCRIPTION"]:
-         def unq (x):
-            rdict = {
-               'n' : "\n",
-            }
-            return rdict.get (x.group(1), x.group(1))
-         txt = self["DESCRIPTION"] + "\n"
-         txt = re.sub ("\\\\(.)", unq, txt)
-         r.append (txt)
+      if self["DESCRIPTION"]:
+         r.append (self["DESCRIPTION"] + "\n")
 
-      if self.has_key ("LOCATION") and self["LOCATION"]:
+      if self["LOCATION"]:
          r.append ("_Ort:_ " + self["LOCATION"])
 
-      if self.has_key ("URL") and self["URL"]:
+      if self["URL"]:
          r.append ("_weitere Infos:_ [%s](%s)" % (self["URL"], self["URL"]))
 
       pending = self.get_time()[1:]
@@ -62,6 +55,17 @@ class Event (dict):
          r.append ("_Folgetermine:_ " +
                    ", ".join ([p.strftime ("%d. %m. %Y") for p in pending[:3]]) + [".", "…"][len (pending) > 3])
       return "\n\n".join (r)
+
+
+   def __getitem__(self, key):
+      return super (Event, self).get (key, None)
+
+
+   def __setitem__(self, key, value):
+      rdict = { 'n' : "\n" }
+      value = re.sub ("\\\\(.)",
+                      lambda x: rdict.get (x.group(1), x.group(1)), value)
+      super (Event, self).__setitem__ (key, value)
 
 
    def __lt__ (self, other):
