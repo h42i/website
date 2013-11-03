@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path = "$HOME/html/jekyll"
+path="$HOME/html/jekyll"
 python $path/ical/ical.py --full > $path/ical/ical.md
 kramdown $path/ical/ical.md > $path/ical/ical.html
 str="<!--ical.py-->"
