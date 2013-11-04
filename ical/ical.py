@@ -9,9 +9,13 @@
 # Wenn keine URLs zu icals angegeben werden dann wird die URL des
 # HaSi-Kalenders genutzt.
 
-import sys, re, urllib
+import sys, StringIO, subprocess, re, urllib
 import datetime
 import dateutil.rrule, dateutil.parser, dateutil.tz
+
+urllist = [
+   "https://www.google.com/calendar/ical/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic.ics",
+]
 
 now = datetime.datetime.now (dateutil.tz.tzutc ())
 
@@ -30,7 +34,7 @@ class Event (dict):
    def shortdesc (self):
       r = []
       if self["SUMMARY"]:
-         r.append ("* <a href=\"/calendar/#%s\">%s: %s</a>" % (self["UID"], str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["SUMMARY"]))
+         r.append ("* %s: <a href=\"/calendar/#%s\">%s</a>" % (str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["UID"], self["SUMMARY"]))
 
       return "\n\n".join (r)
 
@@ -91,25 +95,7 @@ class Event (dict):
 
 
 if __name__ == '__main__':
-   args = set (sys.argv[1:])
-   do_summary = False
-   do_fulllist = False
-
-   if "--summary" in args:
-      do_summary = True
-
-   if "--full" in args:
-      do_fulllist = True
-
-   if not do_summary and not do_fulllist:
-      do_fullist = True
-
-   args -= set (["--summary", "--full"])
-
-   if not args:
-      args = set (["https://www.google.com/calendar/ical/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic.ics"])
-
-   for url in args:
+   for url in urllist:
       data = urllib.urlopen (url).read()
 
       data = data.replace ("\r\n", "\n")
@@ -147,15 +133,23 @@ if __name__ == '__main__':
 
    el = [ e for e in eventlist if e.is_pending() ]
 
-   if do_summary:
-      for e in el:
-         print e.shortdesc()
+   summary_in  = "\n".join ([e.shortdesc() for e in el])
+   p = subprocess.Popen ("kramdown",
+                         stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+   summary_out, summary_err = p.communicate (summary_in)
 
-      if do_fulllist:
-         print "\n\n<hr />\n"
+   fulllist_in = "\n\n".join ([e.longdesc()  for e in el])
+   p = subprocess.Popen ("kramdown",
+                         stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+   fulllist_out, fulllist_err = p.communicate (fulllist_in)
 
-   if do_fulllist:
-      for e in el:
-         print e.longdesc()
-         print
+   for f in sys.argv[1:]:
+      data = open (f).read ()
+      data = re.sub ("(?ms)(<!-- ical:summary -->).*?(<!-- /ical:summary -->)", 
+                     lambda x: x.group(1) + summary_out + x.group(2), data)
+      data = re.sub ("(?ms)(<!-- ical:full -->).*?(<!-- /ical:full -->)", 
+                     lambda x: x.group(1) + fulllist_out + x.group(2), data)
+      outf = open (f, "w")
+      outf.write (data)
+      outf.close ()
 
