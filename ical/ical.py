@@ -152,6 +152,6 @@ if __name__ == '__main__':
 
       if data2 != data:
          outf = open (f, "w")
-         outf.write (data)
+         outf.write (data2)
          outf.close ()
 
