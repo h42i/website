@@ -34,7 +34,7 @@ class Event (dict):
    def shortdesc (self):
       r = []
       if self["SUMMARY"]:
-         r.append ("* %s: <a href=\"/calendar/#%s\">%s</a>" % (str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["UID"], self["SUMMARY"]))
+         r.append ("* %s: <a name=\"summary-%s\" href=\"/calendar/#item-%s\">%s</a>" % (str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["UID"], self["UID"], self["SUMMARY"]))
 
       return "\n\n".join (r)
 
@@ -42,7 +42,7 @@ class Event (dict):
    def longdesc (self):
       r = []
       if self["SUMMARY"]:
-         r.append ("## <a name=\"%s\">%s</a>" % (self["UID"], self["SUMMARY"]))
+         r.append ("## <a name=\"item-%s\" href=\"/calendar/#summary-%s\">%s</a>" % (self["UID"], self["UID"], self["SUMMARY"]))
 
       r.append (str (self.get_time()[0].strftime ("__%d. %m. %Y, %H:%M Uhr__")) + "\n")
       if self["DESCRIPTION"]:
