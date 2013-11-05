@@ -145,11 +145,13 @@ if __name__ == '__main__':
 
    for f in sys.argv[1:]:
       data = open (f).read ()
-      data = re.sub ("(?ms)(<!-- ical:summary -->).*?(<!-- /ical:summary -->)", 
-                     lambda x: x.group(1) + summary_out + x.group(2), data)
-      data = re.sub ("(?ms)(<!-- ical:full -->).*?(<!-- /ical:full -->)", 
-                     lambda x: x.group(1) + fulllist_out + x.group(2), data)
-      outf = open (f, "w")
-      outf.write (data)
-      outf.close ()
+      data2 = re.sub ("(?ms)(<!-- ical:summary -->).*?(<!-- /ical:summary -->)",
+                      lambda x: x.group(1) + summary_out + x.group(2), data)
+      data2 = re.sub ("(?ms)(<!-- ical:full -->).*?(<!-- /ical:full -->)", 
+                      lambda x: x.group(1) + fulllist_out + x.group(2), data2)
+
+      if data2 != data:
+         outf = open (f, "w")
+         outf.write (data)
+         outf.close ()
 
