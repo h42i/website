@@ -88,9 +88,9 @@ class Event (dict):
 
       if self.has_key ("DTSTART"):
          dts = dateutil.parser.parse (self["DTSTART"], tzinfos = simple_tzinfos)
-         return [ dts ]
+         return [ dts.astimezone (dateutil.tz.tzlocal ()) ]
 
-      return [ now ]
+      return [ now.astimezone (dateutil.tz.tzlocal ()) ]
 
 
 
@@ -142,6 +142,9 @@ if __name__ == '__main__':
    p = subprocess.Popen ("kramdown",
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE)
    fulllist_out, fulllist_err = p.communicate (fulllist_in)
+
+   if not sys.argv[1:]:
+      print fulllist_in
 
    for f in sys.argv[1:]:
       data = open (f).read ()
