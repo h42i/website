@@ -7,6 +7,8 @@ title: Termine
 Dieser Text wird nachträglich durch Kalenderdaten ersetzt (ical.py)
 <!-- /ical:summary -->
 
+<hr/>
+
 <!-- ical:full -->
 Dieser Text wird nachträglich durch Kalenderdaten ersetzt (ical.py)
 <!-- /ical:full -->
