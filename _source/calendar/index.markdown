@@ -15,4 +15,4 @@ Dieser Text wird nachträglich durch Kalenderdaten ersetzt (ical.py)
 
 <hr>
 
-[Kalender XML abonieren](https://www.google.com/calendar/feeds/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic)
+[Kalender XML abonnieren](https://www.google.com/calendar/feeds/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic)
