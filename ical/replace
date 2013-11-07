@@ -3,4 +3,9 @@
 PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
 
 path="$HOME/html/jekyll"
-python $path/ical/ical.py $path/_site/calendar/index.html
+
+filelist=                            \
+   $path/_site/index.html            \
+   $path/_site/calendar/index.html   \
+
+python $path/ical/ical.py ${filelist}

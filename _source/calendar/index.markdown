@@ -3,15 +3,11 @@ layout: post
 title: Termine
 ---
 
-<!-- ical:summary -->
-Dieser Text wird nachträglich durch Kalenderdaten ersetzt (ical.py)
-<!-- /ical:summary -->
+{% ical summary %}
 
 <hr/>
 
-<!-- ical:full -->
-Dieser Text wird nachträglich durch Kalenderdaten ersetzt (ical.py)
-<!-- /ical:full -->
+{% ical full %}
 
 <hr>
 
