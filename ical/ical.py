@@ -17,7 +17,10 @@ default_url = "https://www.google.com/calendar/ical/bhj0m4hpsiqa8gpfdo8vb76p7k%4
 
 calendars = {}
 
-now = datetime.datetime.now (dateutil.tz.tzutc ())
+# figure out the day start in local time
+now = datetime.datetime.now (dateutil.tz.tzlocal ())
+now = now.replace (hour=0, minute=0, second=0, microsecond=0)
+now = now.astimezone (dateutil.tz.tzutc ())
 
 
 def kramdown (input):
