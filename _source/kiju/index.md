@@ -17,22 +17,12 @@ title: Kiju
 
 ## Du interessierst dich für
 
-* Programmieren,
-
 <br />
 
-* Computer,
-
-<br />
-
-* Elektronik,
-
-<br />
-
-* Roboter,
-
-<br />
-
+* Programmieren
+* Computer
+* Elektronik
+* Roboter
 * Internet
 
 <br />
@@ -85,10 +75,14 @@ Schreib an  <a href="mailto:kiju@hasi.it">kiju@hasi.it</a>
 
 In der nächsten Zeit werden wir uns mit
 
+<br />
+
 * [Scratch](http://scratch.mit.edu/)
 * [Fritzing](http://fritzing.org/)
 * [Arduino](http://arduino.cc/)
 * [HacketyHack](http://hackety.com/) (Ruby-Shoes)
+
+<br />
 
 beschäftigen, die es alle kostenlos für Linux, Mac OS X und Windows gibt.\\
 Und vielleicht bauen wir zu Weihnachten schon eine LED-Kerze.
