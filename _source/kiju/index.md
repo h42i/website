@@ -17,16 +17,16 @@ title: Kiju
 ![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-left}
 
 * Programmieren,
-
+<br />
 * Computer,
-
+<br />
 * Elektronik,
-
+<br />
 * Roboter,
-
+<br />
 * Internet
-
-- dann bist du bei uns genau richtig!
+<br />
+dann bist du bei uns genau richtig!
 
 <br />
 
