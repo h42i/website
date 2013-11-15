@@ -14,7 +14,7 @@ title: Kiju
 
 ## Du interessierst dich für
 
-![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-right}
+![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-left}
 
 * Programmieren,
 * Computer,
