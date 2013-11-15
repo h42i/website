@@ -11,7 +11,10 @@ title: Kiju
 - Musiker gründen eine Band
 - Technik-begeisterte Jugendliche und Kinder treffen sich im HaSi
 
+<br />
+
 ![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-left}
+
 ## Du interessierst dich für
 
 * Programmieren,
@@ -40,17 +43,17 @@ dann bist du bei uns genau richtig!
 
 ## Technikspaß in Raum und Zeit
 
-Ab\\
+Ab
 
 <br />
 
-**Montag, den 25. November 2013** alle zwei Wochen (außer in den Ferien)\\
-**von 16:45 bis 18:15 Uhr**\\
+**Montag, den 25. November 2013** alle zwei Wochen (außer in den Ferien)
+**von 16:45 bis 18:15 Uhr**
 
 <br />
 
 bietet der HaSi e.V. (Hackspace Siegen) ein regelmäﬂiges, offenes Programm
-für Kinder und Jugendliche ab 9 Jahren an.\\
+für Kinder und Jugendliche ab 9 Jahren an.
 
 <br />
 
@@ -78,6 +81,8 @@ Schreib an  <a href="mailto:kiju@hasi.it">kiju@hasi.it</a>
 
 ## Unsere Spielarena
 
+![Scratch](/images/kijutools.jpg "Techniker brauchen gute Werkzeuge, auch am Computer"){: .img-left}
+
 In der nächsten Zeit werden wir uns mit
 
 * [Scratch](http://scratch.mit.edu/)
@@ -88,7 +93,6 @@ In der nächsten Zeit werden wir uns mit
 beschäftigen, die es alle kostenlos für Linux, Mac OS X und Windows gibt.\\
 Und vielleicht bauen wir zu Weihnachten schon eine LED-Kerze.
 
-![Scratch](/images/kijutools.jpg "Techniker brauchen gute Werkzeuge, auch am Computer"){: .img-left}
 
 ## Übrigens
 
