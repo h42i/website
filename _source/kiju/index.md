@@ -1,11 +1,9 @@
 ---
 layout: post
-title: 
+title: Kiju
 ---
 
 {::options parse_block_html="true" /}
-
-## Kiju 
 
 ## Unser Angebot für Kinder und Jugendliche
 
@@ -14,9 +12,9 @@ title:
 - Technik-begeisterte Jugendliche und Kinder treffen sich im HaSi
 
 
-![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-left}
+## Du interessierst dich für
 
-Du interessierst dich für
+![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: .img-right}
 
 * Programmieren,
 * Computer,
@@ -24,6 +22,8 @@ Du interessierst dich für
 * Roboter,
 * Internet
 - dann bist du bei uns genau richtig!
+
+<br />
 
 ## Technikspaß in Raum und Zeit
 
