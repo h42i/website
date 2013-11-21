@@ -1,18 +1,12 @@
 ---
 layout: post
-title: Bier brauen
+title: HTML und CSS Hacks
 category: talk
 author: Hybr1s
 talk:
-  file: Shguro-Bier_brauen.mp3
-  duration: 01:01:12
+  file: Shawn_Shure-CSS_und_HTML_Hacks.mp3
+  duration: 00:38:18
 ---
-
-Bier brauen im Selbstversuch. Erfahrungen und Berichte aus der Welt von Hopfen und Malz. 
-
-
-<!-- break -->
-
 
 <html>
 <head>
@@ -28,18 +22,18 @@ Bier brauen im Selbstversuch. Erfahrungen und Berichte aus der Welt von Hopfen u
 <body>
 	<p>
 		<audio id="testplayer1">
-			<source src="http://files.hasi.it/podcast/Shguro-Bier_brauen.mp3" type="audio/mpeg"></source>
+			<source src="http://files.hasi.it/podcast/Shawn_Shure-CSS_und_HTML_Hacks.mp3" type="audio/mpeg"></source>
 		</audio>
 
 		<script>
 			$('#testplayer1').podlovewebplayer({
 				poster: 'http://hasi.it/images/HaSi_Cover.png',
 				title: 'Bier brauen',
-				permalink: 'http://hasi.it/talk/2013/10/24/Bier.html',
+				permalink: 'http://hasi.it/talk/2013/11/21/HTMLHacks.html',
 				subtitle: '',
 				summary: '<p></p>',
-				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 5300,"url": "http://files.hasi.it/podcast/Shguro-Bier_brauen.mp3","dlurl": "http://files.hasi.it/podcast/Shguro-Bier_brauen.mp3"}],
-				duration: '61:12.400',
+				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 5300,"url": "http://files.hasi.it/podcast/Shawn_Shure-CSS_und_HTML_Hacks.mp3","dlurl": "http://files.hasi.it/podcast/Shawn_Shure-CSS_und_HTML_Hacks.mp3"}],
+				duration: '38:18.400',
 				alwaysShowHours: true,
 				startVolume: 0.8,
 				width: 'auto',
@@ -53,3 +47,8 @@ Bier brauen im Selbstversuch. Erfahrungen und Berichte aus der Welt von Hopfen u
 </body>
 </html>
 <br />
+
+<!-- break -->
+
+Flexboxes, Pseudo-Selektoren, responsive Menüs und niedliche Katzenbilder:
+Wie lassen sich mit den neuesten CSS-Modulen und durch kreative Kombination alter Elemente $(spannende? großartige? tolle?) Effekte ganz ohne JavaScript erzielen?
