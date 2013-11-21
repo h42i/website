@@ -28,7 +28,7 @@ talk:
 		<script>
 			$('#testplayer1').podlovewebplayer({
 				poster: 'http://hasi.it/images/HaSi_Cover.png',
-				title: 'Bier brauen',
+				title: 'HTML und CSS Hacks',
 				permalink: 'http://hasi.it/talk/2013/11/21/HTMLHacks.html',
 				subtitle: '',
 				summary: '<p></p>',
