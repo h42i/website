@@ -94,7 +94,10 @@ class Event (dict):
 
    def get_time (self):
       if self.has_key ("DTSTART") and self.has_key ("RRULE"):
-         rr = dateutil.rrule.rrulestr ("DTSTART:%s\nRRULE:%s\n" % (self["DTSTART"], self["RRULE"]), tzinfos = simple_tzinfos)
+         if self.has_key ("EXDATE"):
+            rr = dateutil.rrule.rrulestr ("DTSTART:%s\nRRULE:%s\nEXDATE:%s\n" % (self["DTSTART"], self["RRULE"], self["EXDATE"]), tzinfos = simple_tzinfos)
+         else:
+            rr = dateutil.rrule.rrulestr ("DTSTART:%s\nRRULE:%s\n" % (self["DTSTART"], self["RRULE"]), tzinfos = simple_tzinfos)
          pending = rr.between (now, now + datetime.timedelta (120))
          return [ p.astimezone (dateutil.tz.tzlocal ()) for p in pending]
 
