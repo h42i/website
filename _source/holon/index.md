@@ -9,9 +9,13 @@ Ein Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
 Hier werden Projekte und Individuen aus und um den HaSi e. V. vorgestellt.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="group">
 =======
 >>>>>>> parent of 7ef2578... floating foo
+=======
+<div>
+>>>>>>> parent of 36d2342... floating foo
 ## Fnordbedarf
 
 <a href="http://www.fnordbedarf.de"
@@ -21,10 +25,14 @@ Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft
 Kontakt unter <a href="mailto:hallo@fnordbedarf.de">hallo@fnordbedarf.de</a>.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 </div><div class="group">
 =======
 <hr>{: .full .hidden}
 >>>>>>> parent of 7ef2578... floating foo
+=======
+</div><div>
+>>>>>>> parent of 36d2342... floating foo
 
 ## Transition Siegen
 
