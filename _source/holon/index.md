@@ -8,7 +8,7 @@ title: Holon
 Ein Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
 Hier werden Projekte und Individuen aus und um den HaSi e. V. vorgestellt.
 
-<div>
+<div class="group">
 ## Fnordbedarf
 
 <a href="http://www.fnordbedarf.de"
@@ -17,7 +17,7 @@ Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft
 [Gertänke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr.
 Kontakt unter <a href="mailto:hallo@fnordbedarf.de">hallo@fnordbedarf.de</a>.
 
-</div><div>
+</div><div class="group">
 
 ## Transition Siegen
 
