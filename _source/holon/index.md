@@ -8,6 +8,7 @@ title: Holon
 Ein Holon ist ein Ganzes, das Teil eines anderen Ganzen ist.
 Hier werden Projekte und Individuen aus und um den HaSi e. V. vorgestellt.
 
+<div>
 ## Fnordbedarf
 
 <a href="http://www.fnordbedarf.de"
@@ -16,7 +17,7 @@ Der [Fnordbedarf](http://www.fnordbedarf.de) verkauft
 [Gertänke](http://fnordbedarf.de/core/index.php?title=Getränke) und mehr.
 Kontakt unter <a href="mailto:hallo@fnordbedarf.de">hallo@fnordbedarf.de</a>.
 
-<hr>{: .full .hidden}
+</div><div>
 
 ## Transition Siegen
 
@@ -29,8 +30,8 @@ Die Idee von [Transition Siegen](http://transition-siegen.de/blog/) ist es
  
 _„Wir möchten gemeinsam mit Euch, allen Menschen der Stadt, einen innerstädtischen Naturerfahrungsraum gestalten. Gemeinsames Gärtnern verbindet und schafft einen intensiven Austausch zwischen Generationen und Kulturen. Wir wollen so die Lebensqualität unserer Stadt verbessern.“_
 
-<hr>{: .full .hidden}
- 
+</div>
+
 ## Projekte
 
 Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http://hasi.it/wiki/Kategorie:Projekt).
