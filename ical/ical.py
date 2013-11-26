@@ -12,6 +12,7 @@
 import sys, StringIO, subprocess, re, urllib
 import datetime
 import dateutil.rrule, dateutil.parser, dateutil.tz
+import uuid
 
 default_url = "https://www.google.com/calendar/ical/bhj0m4hpsiqa8gpfdo8vb76p7k%40group.calendar.google.com/public/basic.ics"
 
@@ -50,7 +51,6 @@ class Event (dict):
 
    def set_update_events (self, updates):
       if len (updates) > 0:
-         print "update:", id (self), id (updates)
          self.update = updates[0]
          self.update.set_update_events (updates[1:])
 
@@ -104,21 +104,32 @@ class Event (dict):
       return now < self.get_time ()[0]
 
 
-   def get_time (self):
+   def get_time (self, times = []):
+      if self.has_key ("RECURRENCE-ID"):
+         rec = dateutil.parser.parse (self["RECURRENCE-ID"],
+                                      tzinfos = simple_tzinfos)
+         times = [t for t in times if t != rec]
+
       if self.has_key ("DTSTART") and self.has_key ("RRULE"):
-         if self.has_key ("EXDATE"):
-            rr = dateutil.rrule.rrulestr ("DTSTART:%s\nRRULE:%s\nEXDATE:%s\n" % (self["DTSTART"], self["RRULE"], self["EXDATE"]), tzinfos = simple_tzinfos)
-         else:
-            rr = dateutil.rrule.rrulestr ("DTSTART:%s\nRRULE:%s\n" % (self["DTSTART"], self["RRULE"]), tzinfos = simple_tzinfos)
+         rulestr = "".join (["%s:%s\n" % (k, self[k]) for k in
+                             ["RRULE", "RRULE", "RDATE", "EXRULE",
+                              "EXDATE", "DTSTART"] if self.has_key (k)])
+         rr = dateutil.rrule.rrulestr (rulestr, tzinfos = simple_tzinfos)
          pending = rr.between (now, now + datetime.timedelta (120))
-         return [ p.astimezone (dateutil.tz.tzlocal ()) for p in pending]
+         times = times + [ p.astimezone (dateutil.tz.tzlocal ()) for p in pending]
 
-      if self.has_key ("DTSTART"):
+      elif self.has_key ("DTSTART"):
          dts = dateutil.parser.parse (self["DTSTART"], tzinfos = simple_tzinfos)
-         return [ dts.astimezone (dateutil.tz.tzlocal ()) ]
+         times = times + [ dts.astimezone (dateutil.tz.tzlocal ()) ]
 
-      return [ now.astimezone (dateutil.tz.tzlocal ()) ]
+      else:
+         times = times + [ now.astimezone (dateutil.tz.tzlocal ()) ]
 
+      if self.update:
+         times = self.update.get_time (times)
+
+      times.sort ()
+      return times
 
 
 class Calendar(object):
