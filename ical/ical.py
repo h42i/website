@@ -44,15 +44,16 @@ def simple_tzinfos (abbrev, offset):
 
 
 class Event (dict):
-   def __init__ (self, *args, **kwargs):
-      super (Event, self).__init__ (*args, **kwargs)
-      self.update = None
+   def __init__ (self, entries):
+      for k, v in entries.items ():
+         self[k] = v
+      self.upd = None
 
 
    def set_update_events (self, updates):
       if len (updates) > 0:
-         self.update = updates[0]
-         self.update.set_update_events (updates[1:])
+         self.upd = updates[0]
+         self.upd.set_update_events (updates[1:])
 
 
    def shortdesc (self):
@@ -125,8 +126,8 @@ class Event (dict):
       else:
          times = times + [ now.astimezone (dateutil.tz.tzlocal ()) ]
 
-      if self.update:
-         times = self.update.get_time (times)
+      if self.upd:
+         times = self.upd.get_time (times)
 
       times.sort ()
       return times
