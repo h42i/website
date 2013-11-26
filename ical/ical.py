@@ -43,6 +43,18 @@ def simple_tzinfos (abbrev, offset):
 
 
 class Event (dict):
+   def __init__ (self, *args, **kwargs):
+      super (Event, self).__init__ (*args, **kwargs)
+      self.update = None
+
+
+   def set_update_events (self, updates):
+      if len (updates) > 0:
+         print "update:", id (self), id (updates)
+         self.update = updates[0]
+         self.update.set_update_events (updates[1:])
+
+
    def shortdesc (self):
       r = []
       if self["SUMMARY"]:
@@ -125,7 +137,7 @@ class Calendar(object):
 
       lines = [l.strip () for l in data.split ("\n")]
 
-      self.eventlist = []
+      self.eventdict = {}
       cur_event = None
 
       for l in lines:
@@ -139,16 +151,29 @@ class Calendar(object):
             key, extra = key.split (";", 1)
 
          if key == "BEGIN" and value == "VEVENT":
-            cur_event = Event()
+            cur_event = {}
             continue
-         
+
          if key == "END" and value == "VEVENT":
-            self.eventlist.append (cur_event)
+            if not cur_event.has_key ("UID"):
+               cur_event["UID"] = "%s" % uuid.uuid1()
+            uid = cur_event["UID"]
+            if not self.eventdict.has_key (uid):
+               self.eventdict[uid] = []
+            self.eventdict[uid].append (Event (cur_event))
             cur_event = None
             continue
-         
+
          if cur_event != None:
             cur_event[key] = value
+
+      self.eventlist = []
+
+      for ev in self.eventdict.values ():
+         ev.sort ( lambda x, y: int (x.get ("SEQUENCE", "0")) -
+                                int (y.get ("SEQUENCE", "0")))
+         ev[0].set_update_events (ev[1:])
+         self.eventlist.append (ev[0])
 
       self.eventlist.sort ()
 
