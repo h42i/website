@@ -58,31 +58,36 @@ class Event (dict):
 
    def shortdesc (self):
       r = []
-      if self["SUMMARY"]:
-         r.append ("* %s: <a name=\"summary-%s\" href=\"/calendar/#item-%s\">%s</a>" % (str (self.get_time()[0].strftime ("__%d. %m. %Y__")), self["UID"], self["UID"], self["SUMMARY"]))
+      tim, evt = self.get_time()[0]
+
+      if evt["SUMMARY"]:
+         r.append ("* %s: <a name=\"summary-%s\" href=\"/calendar/#item-%s\">%s</a>" % (str (tim.strftime ("__%d. %m. %Y__")),
+                                                                                        evt["UID"], evt["UID"], evt["SUMMARY"]))
 
       return "\n\n".join (r) + "\n"
 
 
    def longdesc (self):
       r = []
-      if self["SUMMARY"]:
-         r.append ("## <a name=\"item-%s\" href=\"/calendar/#summary-%s\">%s</a>" % (self["UID"], self["UID"], self["SUMMARY"]))
+      tim, evt = self.get_time()[0]
+      if evt["SUMMARY"]:
+         r.append ("## <a name=\"item-%s\" href=\"/calendar/#summary-%s\">%s</a>" % (evt["UID"], evt["UID"], evt["SUMMARY"]))
 
-      r.append (str (self.get_time()[0].strftime ("__%d. %m. %Y, %H:%M Uhr__")) + "\n")
-      if self["DESCRIPTION"]:
-         r.append (self["DESCRIPTION"] + "\n")
+      r.append (str (tim.strftime ("__%d. %m. %Y, %H:%M Uhr__")) + "\n")
+      if evt["DESCRIPTION"]:
+         r.append (evt["DESCRIPTION"] + "\n")
 
-      if self["LOCATION"]:
-         r.append ("_Ort:_ " + self["LOCATION"])
+      if evt["LOCATION"]:
+         r.append ("_Ort:_ " + evt["LOCATION"])
 
-      if self["URL"]:
-         r.append ("_weitere Infos:_ [%s](%s)" % (self["URL"], self["URL"]))
+      if evt["URL"]:
+         r.append ("_weitere Infos:_ [%s](%s)" % (evt["URL"], evt["URL"]))
 
       pending = self.get_time()[1:]
       if pending:
          r.append ("_Folgetermine:_ " +
-                   ", ".join ([p.strftime ("%d. %m. %Y") for p in pending[:3]]) + [".", "…"][len (pending) > 3])
+                   ", ".join ([p[0].strftime ("%d. %m. %Y")
+                              for p in pending[:3]]) + [".", "…"][len (pending) > 3])
       return "\n\n".join (r) + "\n"
 
 
@@ -98,18 +103,18 @@ class Event (dict):
 
 
    def __lt__ (self, other):
-      return self.get_time ()[0] < other.get_time ()[0]
+      return self.get_time ()[0][0] < other.get_time ()[0][0]
 
 
    def is_pending (self):
-      return now < self.get_time ()[0]
+      return now < self.get_time ()[0][0]
 
 
    def get_time (self, times = []):
       if self.has_key ("RECURRENCE-ID"):
          rec = dateutil.parser.parse (self["RECURRENCE-ID"],
                                       tzinfos = simple_tzinfos)
-         times = [t for t in times if t != rec]
+         times = [t for t in times if t[0] != rec]
 
       if self.has_key ("DTSTART") and self.has_key ("RRULE"):
          rulestr = "".join (["%s:%s\n" % (k, self[k]) for k in
@@ -117,20 +122,24 @@ class Event (dict):
                               "EXDATE", "DTSTART"] if self.has_key (k)])
          rr = dateutil.rrule.rrulestr (rulestr, tzinfos = simple_tzinfos)
          pending = rr.between (now, now + datetime.timedelta (120))
-         times = times + [ p.astimezone (dateutil.tz.tzlocal ()) for p in pending]
+         times = times + [ (p.astimezone (dateutil.tz.tzlocal ()), self)
+                           for p in pending ]
 
       elif self.has_key ("DTSTART"):
          dts = dateutil.parser.parse (self["DTSTART"], tzinfos = simple_tzinfos)
-         times = times + [ dts.astimezone (dateutil.tz.tzlocal ()) ]
+         times = times + [ (dts.astimezone (dateutil.tz.tzlocal ()), self) ]
 
       else:
-         times = times + [ now.astimezone (dateutil.tz.tzlocal ()) ]
+         times = times + [ (now.astimezone (dateutil.tz.tzlocal ()), self) ]
 
       if self.upd:
          times = self.upd.get_time (times)
 
       times.sort ()
+      while len (times) > 1 and times[0][0] < now:
+         times = times[1:]
       return times
+
 
 
 class Calendar(object):
