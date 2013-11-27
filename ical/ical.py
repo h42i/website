@@ -117,10 +117,7 @@ class Event (dict):
          times = [t for t in times if t[0] != rec]
 
       if self.has_key ("DTSTART") and self.has_key ("RRULE"):
-         rulestr = "".join (["%s:%s\n" % (k, self[k]) for k in
-                             ["RRULE", "RRULE", "RDATE", "EXRULE",
-                              "EXDATE", "DTSTART"] if self.has_key (k)])
-         rr = dateutil.rrule.rrulestr (rulestr, tzinfos = simple_tzinfos)
+         rr = dateutil.rrule.rrulestr (self.rrtext, tzinfos = simple_tzinfos)
          pending = rr.between (now, now + datetime.timedelta (120))
          times = times + [ (p.astimezone (dateutil.tz.tzlocal ()), self)
                            for p in pending ]
@@ -160,6 +157,7 @@ class Calendar(object):
 
       self.eventdict = {}
       cur_event = None
+      raw_rrtext = ""
 
       for l in lines:
          if not l:
@@ -173,7 +171,11 @@ class Calendar(object):
 
          if key == "BEGIN" and value == "VEVENT":
             cur_event = {}
+            raw_rrtext = ""
             continue
+
+         if key in ["RRULE", "RRULE", "RDATE", "EXRULE", "EXDATE", "DTSTART"]:
+            raw_rrtext = raw_rrtext + "%s:%s\n" % (key, value)
 
          if key == "END" and value == "VEVENT":
             if not cur_event.has_key ("UID"):
@@ -182,6 +184,7 @@ class Calendar(object):
             if not self.eventdict.has_key (uid):
                self.eventdict[uid] = []
             self.eventdict[uid].append (Event (cur_event))
+            self.eventdict[uid][-1].rrtext = raw_rrtext
             cur_event = None
             continue
 
