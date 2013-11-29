@@ -9,6 +9,16 @@ talk:
   duration: 00:38:18
 ---
 
+
+Flexboxes, Pseudo-Selektoren, responsive Menüs und niedliche Katzenbilder:
+Wie lassen sich mit den neuesten CSS-Modulen und durch kreative Kombination alter Elemente $(spannende? großartige? tolle?) Effekte ganz ohne JavaScript erzielen?
+
+Die Slides findet ihr [hier](http://slides.l3kn.de/).
+
+
+<!-- break -->
+
+
 <html>
 <head>
 <meta charset="utf-8" />
@@ -48,10 +58,3 @@ talk:
 </body>
 </html>
 <br />
-
-<!-- break -->
-
-Flexboxes, Pseudo-Selektoren, responsive Menüs und niedliche Katzenbilder:
-Wie lassen sich mit den neuesten CSS-Modulen und durch kreative Kombination alter Elemente $(spannende? großartige? tolle?) Effekte ganz ohne JavaScript erzielen?
-
-Die Slides findet ihr [hier](http://slides.l3kn.de/).
