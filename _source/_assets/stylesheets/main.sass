@@ -1,8 +1,5 @@
-// Mobile first
-// mobile: 0 - 768px
-// tablet: 768 - 1024px
-// desktop 1024px - 1440px
-// wide desktop 1440px - ... 
+@import "fonts"
+
 
 // variables
 $color_back: #1D1717
@@ -13,58 +10,53 @@ $color_text_light: white
 $color_text_contrast: #55d400
 $color_back_contrast: #55d400
 
-
-// fonts
-@font-face
-  font-family: "icons"
-  src: url(asset_path('icomoon.woff')) format('woff'), url(asset_path('icomoon.ttf')) format('truetype')
-
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: normal
-  font-weight: 400
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(asset_path('SourceSansPro-Regular.woff')) format('woff'), url(asset_path('SourceSansPro-Regular.ttf')) format('truetype')
-
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: normal
-  font-weight: 700
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(asset_path('SourceSansPro-Bold.woff')) format('woff'), url(asset_path('SourceSansPro-Bold.ttf')) format('truetype')
-
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: italic
-  font-weight: 400
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(asset_path('SourceSansPro-It.woff')) format('woff'), url(asset_path('SourceSansPro-It.ttf')) format('truetype')
-
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: italic
-  font-weight: 700
-  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(asset_path('SourceSansPro-BoldIt.woff')) format('woff'), url(asset_path('SourceSansPro-BoldIt.ttf')) format('truetype')
-
-
 // basic
-body 
+html
+  background-color: black
+  background: url(http://hasi.it/wiki/images/9/92/LED-Throwies.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
   margin: 0
   font: normal 12pt/1.4em 'Source Sans Pro', sans-serif
-  background: black
+  background: none
   color: $color_text
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
-
+  > header
+    position: relative
+    min-height: 60px  /* ensures that the logo fits */
+    h1
+      color: $color_text_light
+      margin: 0
+      font-size: 240%
+      padding: 0
+      line-height: 1.0
+    p
+      font-weight: bold
+    img
+      position: absolute
+      margin: 0px
+      right: 18px
+      bottom: -9px    
 h1
   font-size: 140%
   font-weight: bold
   padding-top: 1.5ex
   padding-bottom: 0.6ex
-
+  margin: 0
 h2
   font-size: 120%
   font-weight: bold
   padding-top: 2ex
   padding-bottom: 1ex
-
+  margin: 0
 h3
   font-size: 100%
   font-weight: bold
@@ -76,42 +68,29 @@ h4
   font-weight: normal
   padding-top: 1ex
 
-em
-  font-style: italic
-
-strong
-  font-weight: bolder
-
 p
   padding-top: 0.3ex
 
-#page-header
-  position: relative
-  padding: 1em
-  background-color: darken($color_back_contrast, 10%)
-  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
-  background-size: 13px, 29px, 37px, 53px
-  min-height: 60px  /* ensures that the logo fits */
-  h1
-    color: $color_text_light
-    margin: 0
-    font-size: 240%
-    padding: 0
-    line-height: 1.0
-  p
-    font-weight: bold
-  img
-    position: absolute
-    margin: 0px
-    right: 18px
-    bottom: -9px
+main
+  max-width: 60em
+  margin: 0 auto
+  flex: 1
+  
+aside
+  margin-left: -10px
+  
+.flex  
+  display: flex
+  flex-direction: column
+  section, article
+    flex: 1
 
-#wrapper
-  background: $color_back
-
-#main
-  padding: 0.5em 2em
-
+main > article, .block
+  background: $color_back_light
+  padding: 10px
+  border-radius: 5px
+  margin: 10px
+    
 footer
   text-align: right
   background: $color_back_light
@@ -122,27 +101,25 @@ footer
     &:hover
       color: $color_text_contrast
 
+
+ul 
+  text-indent: 0px 
+  list-style-type: square
+  margin-left: 2em
+      
 nav
   width: 100%
   text-align: center
   background: $color_back_light
-  .menuline
-    display: inline-block
-    padding: 0px
   a
     display: block
     padding: 6px 13px
     color: $color_text_light
     &:hover
-      background: $color_back_contrast
+      background: $color_back
 
 .active
   font-weight: bold
-
-aside
-  ul
-    list-style: none
-    padding: 0
 
 audio
   width: 100%
@@ -189,9 +166,8 @@ audio
   width: 100%
 
 .half
-  // fuck that margins
+  flex: 1
   width: 150px
-  float: left
   margin: 20px
   height: 400px
 .hidden
@@ -258,34 +234,9 @@ img
 @media screen and (min-width: 768px)
   .m-hidden
     display: block
-  .post
-    border-bottom: none
-    padding-right: 1%
-  .wside
-    float: left
-    width: 69%
-  aside
-    padding-left: 5%
-    float: left
-    width: 25%
-  nav
-    text-align: left
+  .flex
+    flex-direction: row
 
-@media screen and (min-width: 1024px)
-  body
-    // background-image: url(asset_path('pattern.png'))
-  #wrapper
-    width: 90%
-    margin-left: auto
-    margin-right: auto
-
-@media screen and (min-width: 1440px)
-  #wrapper
-    width: 90%
-    max-width: 1440px
-
-ul 
-  text-indent: 0px 
-  // text-indent war mal 5px
-  list-style-type: square
-  margin-left: 2em
+      //background-color: darken($color_back_contrast, 10%)
+  //background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
+  //background-size: 13px, 29px, 37px, 53px

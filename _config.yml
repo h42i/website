@@ -64,7 +64,5 @@ navigation_bottom:
   url: /blog/
 - title: Vereinssatzung
   url: /site/satzung/
-- title: Meta
-  url: /meta/
 - title: Impressum
   url: /site/notice/

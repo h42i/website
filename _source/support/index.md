@@ -67,8 +67,3 @@ Sachspenden sind aber bitte immer im Voraus abzusprechen. Wende dich dazu bitte 
         <td>DE13460400330815989900</td>
     </tr>
 </table>
-
-  
-
-
-

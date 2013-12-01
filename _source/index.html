@@ -3,66 +3,44 @@ layout: default
 title: Dein Hackspace in Siegen
 ---
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-<section class="wside">
-        <!--<img src="/images/pixelhasi-text-weiß-200px.png" align="left" >
-		<h1>Was bitte ist ein Hackspace?</h1>
-        <p>Kurz gefasst: Kreativ-produktives Chaos.<br/>
-        Eine detailiertere Erklärung findest du <a href="/about/">hier</a>.
-        </p>
-        <hr />
-        <br />-->
-        {% for post in site.posts limit: 1 %}
-		<article>
-			<header>
-				{% if post.banner %}<img class="banner" alt="" src="{{ post.banner }}"/>{% endif %}
-				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			</header>
-			{{ post.content }}
-		</article>
-		{% endfor %}
-       <!-- <br />
-				<img src="/images/pixelhasi-text-weiß.png">-->
-        <article>
-        <header><h1>news</h1></header>
-        <ul>
-        {% for post in site.posts limit: 5 %}
-            <li><a href="{{ post.url }}">{{ post.category}}: {{ post.title }}</a></li>
-        {% endfor %}
-         </ul>
-        </article>
-
-        <article>
-        <header><h1>Termine</h1></header>
-        {% ical summary:5 %}
-        </article>
-
+<div class="flex">
+<section class="block">
+  {% for post in site.posts limit: 1 %}
+  <article>
+    <header>
+      {% if post.banner %}<img class="banner" alt="" src="{{ post.banner }}"/>{% endif %}
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    </header>
+    {{ post.content }}
+  </article>
+  {% endfor %}
+  <article>
+    <header><h1>news</h1></header>
+    <ul>
+    {% for post in site.posts limit: 5 %}
+      <li><a href="{{ post.url }}">{{ post.category}}: {{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </article>
+  <article>
+    <header><h1>Termine</h1></header>
+    {% ical summary:5 %}
+  </article>
 </section>
 <aside>
-       <article>
-          <br />
-        <header><h2>status</h2></header>
-        <img height="240" src="http://raumstatus.hasi.it/56/8/white" alt="Stausanzeige">
-    </article>
-      <article>
-        <header><h2>social</h2></header>
-        <ul id="social">
-            <li><a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a></li>
-            <li><a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a></li>
-            <li><a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a></li>
-            <li><form class="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="spende@hasi.it">
-<input type="hidden" name="lc" value="DE">
-<input type="hidden" name="item_name" value="HaSi e.V. – Dein Hackspace in Siegen">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="EUR">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-<input type="submit" class="paypal" name="submit" value="Spenden">
-</form>
-</li>
-<li><a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a>
-</li>
-        </ul>
-
-    </article>
+  <article class="block">
+    <header><h2>status</h2></header>
+    <img height="240" src="http://raumstatus.hasi.it/56/8/white" alt="Stausanzeige">
+  </article>
+  <article class="block">
+    <header><h2>social</h2></header>
+    <ul id="social">
+      <li><a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a></li>
+      <li><a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a></li>
+      <li><a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a></li>
+      <li> {% include paypal.html %}</li>
+      <li><a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a></li>
+    </ul>
+  </article>
 </aside>
+</div>

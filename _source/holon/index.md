@@ -55,6 +55,7 @@ Eine umfangreichere Übersicht über unsere Projekte findest du im [Wiki](http:/
 * [Shure nerd porn](http://etemu.com/blog)
 
 ## HaSi-Faces
+<section class="flex">
 <div class="half">
 
 ### Shure One ([@AlexShure](http://twitter.com/AlexShure))
@@ -97,7 +98,9 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * Flauschist
 * Koffein
 
-</div><div class="half">
+</div>
+</section><section class="flex">
+<div class="half">
 
 ### nanooq ([@nanooq_ ](http://twitter.com/nanooq_))
 
@@ -138,7 +141,9 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * LEDs/µCs
 * Woof
 
-</div><div class="half">
+</div>
+</section><section class="flex">
+<div class="half">
 
 ### Ole ([ole](irc://irc.freenode.net/hasi))
 
@@ -150,4 +155,4 @@ width="146">](http://hasi.it/wiki/Benutzer:L3kn)
 * High Voltage / Tesla Coils
 
 </div>
-
+</section>

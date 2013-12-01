@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
-		{% include head.html %}
-	</head>
-	<body lang="de">
-		<!--[if lt IE 9]>
-			<h1 class="oldbrowserframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h1>
-		<![endif]-->
-		<section id="wrapper">
-			<header id="page-header">
-				<h1 class="huge">{{ site.name }}</h1>
-				<p>{{ site.description }}</p>
-				<img src="/images/pixelhasi-halb.gif" alt="halbes hasi ;)">
-			</header>
-			<section>
-				<nav>
-					<span class="menuline">
-					{% assign url = page.url|remove:'index.html' %}
-					{% for link in site.navigation %}
-						<a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %}>{{ link.title }}</a>{{ link.break }}
-					{% endfor %}
-					</span>
-				</nav>	
-			</section>
-			<section id="main" class="group">
-				{{ content }}
-			</section>
-			<footer>
-			{% for link in site.navigation_bottom %}
-				<a href="{{link.url}}">{{ link.title }}</a>
-			{% endfor %}
-			</footer>
-		</section>
-		{% if site.environment == 'production' %}
-		<!-- Piwik -->
-		<script type="text/javascript"> 
-			var _paq = _paq || [];
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hasi.it//";
-				_paq.push(['setTrackerUrl', u+'piwik.php']);
-				_paq.push(['setSiteId', 1]);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-				g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-			})();
-		</script>
-		<noscript><p><img src="http://piwik.hasi.it/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-		<!-- End Piwik Code -->	
-		{% endif %}
-	</body>
+  <head>
+    {% include head.html %}
+  </head>
+  <body lang="de">
+    <!--[if lt IE 9]>
+	<h1 class="oldbrowserframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h1>
+	<![endif]-->
+    <header>
+      <nav>
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in site.navigation %}
+          <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %}>{{ link.title }}</a>{{ link.break }}
+        {% endfor %}
+      </nav>
+    </header>
+    <main class="group">
+      {{ content }}
+    </main>
+    <footer>
+    {% for link in site.navigation_bottom %}
+      <a href="{{link.url}}">{{ link.title }}</a>
+    {% endfor %}
+    </footer>
+    {% if site.environment == 'production' %}{% include piwik.html %}{% endif %}
+  </body>
 </html>
 
+<!--
+      <h1 class="huge">{{ site.name }}</h1>
+      <p>{{ site.description }}</p>
+      <img src="/images/pixelhasi-halb.gif" alt="halbes hasi ;)">
+      
+       -->
