@@ -6,50 +6,10 @@ author: Hybr1s
 talk:
   file: Sebastian_Neuser-GIT.mp3
   duration: 01:27:24
+  slides: http://www.slideshare.net/slideshow/embed_code/26850728
 ---
 
 Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. 
 
-<!-- break -->
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/26850728" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-<br>
-<html>
-<head>
-<meta charset="utf-8" />
-
-	<link href="http://hasi.it/podlove-web-player/static/podlove-web-player.css" rel="stylesheet" media="screen" type="text/css" />
-
-	<script src="http://hasi.it/podlove-web-player/libs/html5shiv.js"></script>
-	<script src="http://hasi.it/podlove-web-player/libs/jquery-1.9.1.min.js"></script>
-	<script src="http://hasi.it/podlove-web-player/static/podlove-web-player.js"></script>
-</head>
-
-<body>
-	<p>
-		<audio id="testplayer1">
-			<source src="http://files.hasi.it/podcast/Sebastian_Neuser-GIT.mp3" type="audio/mpeg"></source>
-		</audio>
-
-		<script>
-			$('#testplayer1').podlovewebplayer({
-				poster: 'http://hasi.it/images/HaSi_Cover.png',
-				title: 'GIT',
-				permalink: 'http://hasi.it/talk/2013/09/26/git.html',
-				subtitle: '--distributed-even-if-your-workflow-isnt',
-				summary: '<p>Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien - Alles klar? Nein? haggl wird uns erklären, was das bedeutet. Er wird uns in seinem Vortrag sämtliche Basic-Funktionen zeigen, so dass am Ende jeder das Programm einsetzen kann. </p>',
-				downloads: [{"name": "MPEG-1 Audio Layer III (MP3) High Quality","size": 5300,"url": "http://files.hasi.it/podcast/Sebastian_Neuser-GIT.mp3","dlurl": "http://files.hasi.it/podcast/Sebastian_Neuser-GIT.mp3"}],
-				duration: '87:24.400',
-				alwaysShowHours: true,
-				startVolume: 0.8,
-				width: 'auto',
-				summaryVisible: false,
-				timecontrolsVisible: false,
-				sharebuttonsVisible: false,
-				chaptersVisible: false
-			});
-		</script>
-	</p>
-</body>
-</html>
-<br />
+Die Slides liegen [hier](http://www.slideshare.net/slideshow/embed_code/26850728){:target="_blank"} rum.
