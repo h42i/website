@@ -4,11 +4,13 @@ RewriteEngine On
 # Prettify sitenames for wiki-pages
 # /wiki/index.php?title=$foo -> /wiki/$foo
 # (t3o)
+RewriteCond %{HTTPS} on [OR]
+RewriteCond %{ENV:HTTPS} on
+RewriteRule ^couchdb/(.*) http://localhost:21857/$1 [P]
+
 RewriteCond %{REQUEST_URI}  !^/wiki/index\.php.*
 RewriteCond %{REQUEST_URI}  !^/wiki/load\.php.*
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^wiki/(.*)$ /wiki/index.php?title=$1 [PT,L,QSA]
 
-RewriteCond %{HTTPS} on [OR]
-RewriteCond %{ENV:HTTPS} on
-RewriteRule ^couchdb/(.*) http://localhost:21857/$1 [P]
+
