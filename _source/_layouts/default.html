@@ -8,12 +8,16 @@
 	<h1 class="oldbrowserframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h1>
 	<![endif]-->
     <header>
-      <nav>
+      <section class="Logo">
+        <h1>Hasi</h1>
+        <p>Dein Hackspace in Siegen</p>
+      </section>
+        <nav>
         {% assign url = page.url|remove:'index.html' %}
         {% for link in site.navigation %}
           <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %}>{{ link.title }}</a>{{ link.break }}
         {% endfor %}
-      </nav>
+        </nav>
     </header>
     <main class="group">
       {{ content }}

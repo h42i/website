@@ -31,22 +31,50 @@ body
   -webkit-font-smoothing: antialiased
   > header
     position: relative
-    min-height: 60px  /* ensures that the logo fits */
-    h1
-      color: $color_text_light
-      margin: 0
-      font-size: 240%
-      padding: 0
-      line-height: 1.0
-    p
-      font-weight: bold
+    min-height: 60px
+    background: #242424
+    display: flex
+    flex-direction: column
+    -webkit-flex-align: center
+    -webkit-align-items: center
+    align-items: center
     img
       position: absolute
       margin: 0px
       right: 18px
-      bottom: -9px
-      
+      bottom: -9px 
+  > main
+    max-width: 60em
+    margin: 0 auto
+    flex: 1
 
+nav
+  width: 100%
+  text-align: center
+  margin-right: 2em
+  a
+    display: block
+    padding: 6px 13px
+    color: $color_text_light
+    line-height: 100%
+    &:hover
+      background: $color_back
+    
+.Logo
+  margin: 0.5em 0 0.5em 2em
+  text-align: left
+  min-width: 14em
+  h1
+    color: $color_text_light
+    margin: 0
+    font-size: 240%
+    padding: 0
+    line-height: 1.0
+  p
+    font-weight: bold  
+    margin: 0
+    color: $color_text_contrast
+      
 aside
   min-width: 200px
       
@@ -76,10 +104,7 @@ h4
 p
   padding-top: 0.3ex
 
-main
-  max-width: 60em
-  margin: 0 auto
-  flex: 1
+
   
 aside
   margin-left: -10px
@@ -91,7 +116,8 @@ aside
     flex: 1
 
 main > article, .block
-  background: $color_back_light
+  background: #242424
+  opacity: 0.99
   padding: 10px
   border-radius: 5px
   margin: 10px
@@ -111,17 +137,6 @@ ul
   text-indent: 0px 
   list-style-type: none
   margin-left: 1em
-      
-nav
-  width: 100%
-  text-align: center
-  background: $color_back_light
-  a
-    display: block
-    padding: 6px 13px
-    color: $color_text_light
-    &:hover
-      background: $color_back
 
 .active
   font-weight: bold
@@ -237,6 +252,10 @@ img
     display: inline-block
 
 @media screen and (min-width: 768px)
+  body > header
+    flex-direction: row
+  nav
+    text-align: right
   .m-hidden
     display: block
   .flex
