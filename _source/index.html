@@ -11,9 +11,7 @@ title: Dein Hackspace in Siegen
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     </header>
     {{ post.content }}
-    {% if post.talk.slides contains 'embed_code' %}
-    <iframe src="{{ post.talk.slides }}" frameborder="0"></iframe>
-    {% endif %}
+    {% include slideshare.html %}
   </article>
   {% endfor %}
   <article>

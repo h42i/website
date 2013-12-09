@@ -5,19 +5,18 @@ layout: default
 <!--
 l3 default layout for a single blogpage
 -->
-<section>
-  
-</section>
-<article>
+<div class="flex">
+<article class="block">
 	<header>
 		{% if page.banner %}<img class="banner"alt="" src="{{ page.banner }}"/>{% endif %}
 		<h1>{{ page.title }}</h1>
 	</header>	
 	{{ content}}
+    {% include slideshare.html %}
 </article>
-<aside>
+<aside class="block">
 	{% if page.talk.file or page.talk.video or page.talk.slides %}
-	<article class="group">
+	<article class="group block">
 		<header><h2>media</h2></header>
 		{% if page.talk.file %}		
 			<audio controls>
@@ -35,5 +34,4 @@ l3 default layout for a single blogpage
 	</article>
 	{% endif %}
 </aside>
-
-
+</div>
