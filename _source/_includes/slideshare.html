@@ -1,0 +1,9 @@
+{% if post %}
+    {% assign this = post %}
+{% else %}
+    {% assign this = page %}
+{% endif %}
+
+{% if this.talk.slides contains 'embed_code' %}
+<iframe src="{{ this.talk.slides }}" frameborder="0"></iframe>
+{% endif %}
