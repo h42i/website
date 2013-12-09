@@ -24,7 +24,7 @@ body
   flex-direction: column
   min-height: 100vh
   margin: 0
-  font: normal 12pt/1.4em 'Source Sans Pro', sans-serif
+  font: normal 13pt/1.4em 'Source Sans Pro', sans-serif
   background: none
   color: $color_text
   text-rendering: optimizeLegibility
@@ -53,7 +53,7 @@ nav
   text-align: center
   margin-right: 2em
   a
-    display: block
+    display: inline-block
     padding: 6px 13px
     color: $color_text_light
     line-height: 100%
@@ -103,10 +103,7 @@ h4
 
 p
   padding-top: 0.3ex
-  
-aside
-  margin-left: -10px
-  
+
 .flex  
   display: flex
   flex-direction: column
@@ -248,12 +245,9 @@ img
     color: $color_text_highlight
 
 // media foo
-
-@media screen and (min-width: 360px)
-  nav a
-    display: inline-block
-
 @media screen and (min-width: 768px)
+  aside
+    margin-left: -10px
   body > header
     flex-direction: row
   nav
@@ -262,7 +256,3 @@ img
     display: block
   .flex
     flex-direction: row
-
-      //background-color: darken($color_back_contrast, 10%)
-  //background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
-  //background-size: 13px, 29px, 37px, 53px
