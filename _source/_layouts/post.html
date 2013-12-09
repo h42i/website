@@ -14,8 +14,9 @@ l3 default layout for a single blogpage
 	{{ content}}
     {% include slideshare.html %}
 </article>
+{% if page.talk.file or page.talk.video or page.talk.slides %}
 <aside class="block">
-	{% if page.talk.file or page.talk.video or page.talk.slides %}
+	
 	<article class="group block">
 		<header><h2>media</h2></header>
 		{% if page.talk.file %}		
@@ -32,6 +33,7 @@ l3 default layout for a single blogpage
 			<a href="{{ page.talk.slides }}" class="button">Slides</a>
 		{% endif %}
 	</article>
-	{% endif %}
+	
 </aside>
+{% endif %}
 </div>
