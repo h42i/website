@@ -26,6 +26,7 @@ kramdown:
 assets:
   sources:
   - _assets/stylesheets
+  - _assets/javascripts
   - _assets/webfonts
   - _assets/images
   cachebust: soft
