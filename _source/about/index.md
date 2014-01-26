@@ -7,8 +7,7 @@ Wir sind dein Hackspace in Siegen und Umgebung.
 
 # Und was bitte ist ein Hackspace?
 
-Der Hackerspace, bzw. gegendert „Hackspace“ oder „Hackingspace“, ist ein Raum
-und noch mehr. Was dort passiert, hängt allein von den Mitmachenden ab.  
+Der Hackspace ist ein Raum und noch mehr. Was dort passiert, hängt allein von den Mitmachenden ab.  
 <br />
 <img src="/images/270px-Erweiterte_Produkterfassung.jpg" width="206" height="135"> 
 <img class="alignnone hoverZoomLink" alt="" src="/images/270px-LED-Throwies.jpg" width="239" height="135">
