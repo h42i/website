@@ -1,4 +1,6 @@
 @import "fonts"
+@import "paypal"
+@import "_breakpoints"
 
 // variables
 $color_back: #1D1717
@@ -9,25 +11,28 @@ $color_text_light: white
 $color_text_contrast: #55d400
 $color_back_contrast: #55d400
 
-// basic
+
 html
-  background-color: black
   background: url(/images/LED-Throwies.jpg) no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
 
+// basic
 body
-  //display: flex
-  background: white
-  //flex-direction: column
-  min-height: 100vh
-  margin-top: 100px
   font: normal 13pt/1.4em 'Source Sans Pro', sans-serif
-  color: $color_text
+  color: #222
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)
+  display: flex
+  background: white
+  flex-direction: column
+  min-height: 100vh
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
+  max-width: 60em
+  margin: 120px auto 0px auto
+  z-index: 999
   > header
     position: relative
     min-height: 60px
@@ -37,19 +42,25 @@ body
     -webkit-flex-align: center
     -webkit-align-items: center
     align-items: center
-    img
-      position: absolute
-      margin: 0px
-      right: 18px
-      bottom: -9px 
   > main
-    max-width: 60em
-    margin: 0 auto
     flex: 1
+    padding: 10px
 
+body:after
+
+
+
+#Logo
+  position: absolute
+  position: absolute
+  top: -100px
+  left: 80%
+  rect
+    fill: white
+    
 nav
   width: 100%
-  text-align: center
+  text-align: right
   margin-right: 2em
   a
     display: inline-block
@@ -58,7 +69,8 @@ nav
     line-height: 100%
     &:hover
       background: $color_back
-    
+  @include bp-medium
+    text-align: center
 .Logo
   margin: 0.5em 0 0.5em 2em
   text-align: left
@@ -108,17 +120,10 @@ p
   flex-direction: column
   section, article
     flex: 1
-
-main > article, .block
-  background: #242424
-  opacity: 0.99
-  padding: 10px
-  border-radius: 5px
-  margin: 10px
     
 footer
   text-align: right
-  background: $color_back_light
+  background: #242424
   padding: 0.5em
   a
     padding-left: 10px
@@ -143,28 +148,6 @@ audio
   padding-bottom: 1em
   border-bottom: 5px solid $color_back_light
 
-.paypalform
-  color: $color_back_contrast
-  &:before
-    content: '\23'
-    font-family: "icons"
-    font-style: normal
-  &:hover
-    color: $color_text_highlight
-
-.paypal
-  color: inherit
-  border: none
-  background: none
-  margin-left: 0.25em
-  font: normal 13pt/1.4em "Source Sans Pro", sans-serif
-  font-size: 100%
-  line-height: 100%
-  padding: 0
-  -webkit-font-smoothing: antialiased
-  font-family: 'Source Sans Pro', sans-serif
-  
-
 iframe
   width: 100%
   height: 50vh
@@ -179,9 +162,6 @@ iframe
   display: table
   clear: both
 
-.m-hidden
-  display: none
-
 .img-left
   max-width: 40%
   float: left
@@ -195,9 +175,14 @@ iframe
   width: 150px
   margin: 20px
   height: 400px
+
 .hidden
   opacity: 0
 
+.m-hidden
+  @include bp-small
+    display: none
+  
 input, textarea
   color: $color_back_light
 
@@ -256,9 +241,5 @@ img
     margin-left: -10px
   body > header
     flex-direction: row
-  nav
-    text-align: right
-  .m-hidden
-    display: block
   .flex
     flex-direction: row
