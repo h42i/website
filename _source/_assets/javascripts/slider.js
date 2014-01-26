@@ -1,11 +1,10 @@
 window.onload = function() {
-  var index = 0;
   var slider = document.getElementById('slider');
   var images = slider.getElementsByTagName('img');
   var progress = slider.getElementsByClassName('progress')[0];
-  
-  var time_last  = new Date().getTime();
   var delay = 5000;
+  var time_last  = new Date().getTime();
+  var index = images.length - 1;
   
   setInterval(function() {
     var time_new = new Date().getTime();
@@ -13,7 +12,8 @@ window.onload = function() {
     if (time_diff >= delay) {
       time_last = time_new;
       index = (index+1) % images.length;
-      for (var i = 0; i < images.length; ++i) {
+      console.log(index);
+      for (var i = 0; i < images.length; i++) {
         images[i].style.opacity= ((i == index) ? 1 : 0);
       }
     }
