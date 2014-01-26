@@ -51,13 +51,21 @@ body
   height: 300px
   overflow: hidden
   position: relative
-  > img
+  img
     position: absolute
     top: 0px
     left: 0px
     width: 100%
     margin: 0
     transition-duration: 1s
+    z-index: 10
+  .progress
+    position: absolute
+    top: 0px
+    left: 0px
+    background: rgba(85,212,0,0.7)
+    height: 3px
+    z-index: 20
 
 #Logo
   position: absolute
