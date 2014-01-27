@@ -28,7 +28,7 @@
         <rect x="50" y="20" width="10" height="20"/>
         <rect x="60" width="10" height="20"/>
       </svg>      
-      <section class="Logo">
+      <section id="heading">
         <h1>Hasi</h1>
         <p>Dein Hackspace in Siegen</p>
       </section>
@@ -43,9 +43,27 @@
       {{ content }}
     </main>
     <footer>
+    <nav>
     {% for link in site.navigation_bottom %}
       <a href="{{link.url}}">{{ link.title }}</a>
     {% endfor %}
+    </nav>
+    <section>
+      <article>
+      <h1>status</h1>
+      <img height="200" src="http://raumstatus.hasi.it/56/8/white" alt="Stausanzeige">
+      </article>
+      <article>
+      <h1>social</h1>
+      <ul id="social">
+        <li><a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a></li>
+        <li><a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a></li>
+        <li><a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a></li>
+        <li> {% include paypal.html %}</li>
+        <li><a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a></li>
+      </ul>
+      </article>
+    </section>
     </footer>
     {% if site.environment == 'production' %}{% include piwik.html %}{% endif %}
   </body>

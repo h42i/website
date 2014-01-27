@@ -1,6 +1,7 @@
 @import "fonts"
 @import "paypal"
 @import "_breakpoints"
+@import "_icons"
 
 // variables
 $color_back: #1D1717
@@ -20,7 +21,7 @@ html
 
 // basic
 body
-  font: normal 13pt/1.4em 'Source Sans Pro', sans-serif
+  font: normal 14pt/1.6 'Source Sans Pro', sans-serif
   color: #222
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)
   display: flex
@@ -31,27 +32,51 @@ body
   -webkit-font-smoothing: antialiased
   max-width: 60em
   margin: 120px auto 0px auto
-  z-index: 999
+  @include bp-small
+    margin-top: 0
   > header
     position: relative
     min-height: 60px
     background: #242424
     display: flex
-    flex-direction: column
+    flex-direction: row
     -webkit-flex-align: center
     -webkit-align-items: center
     align-items: center
+    @include bp-medium
+      flex-direction: column
   > main
     flex: 1
-    padding: 10px
-  @include bp-small
-    margin-top: 0
-
+    padding: 10px 2em 10px 2em
+  > footer
+    background: #242424
+    nav
+      width: 100%
+      border-bottom: 2px solid gray
+    h1
+      margin-top: .1em
+      text-align: center
+    section
+      flex-direction: row
+      display: flex
+      article
+        flex: 1
+        border-right: 2px solid gray
+        &:last-child
+          border-right: none
+    a
+      padding-left: 10px
+      color: $color_text_light
+      &:hover
+        color: $color_text_contrast
+      
+    
 #slider
-  margin: -10px
+  margin: -10px -2em -10px -2em
   height: 300px
   overflow: hidden
   position: relative
+  // width: 100%
   img
     position: absolute
     top: 0px
@@ -71,7 +96,7 @@ body
 #Logo
   position: absolute
   top: -100px
-  left: 80%
+  right: 50px
   height: 110px
   width: 130px
   rect
@@ -81,6 +106,7 @@ nav
   width: 100%
   text-align: right
   margin-right: 2em
+  font-size: 1rem
   a
     display: inline-block
     padding: 6px 13px
@@ -88,9 +114,13 @@ nav
     line-height: 100%
     &:hover
       background: $color_back
+      text-decoration: none
   @include bp-medium
     text-align: center
-.Logo
+
+#heading
+  @include bp-medium
+    width: 100%
   margin: 0.5em 0 0.5em 2em
   text-align: left
   min-width: 14em
@@ -107,49 +137,46 @@ nav
       
 aside
   min-width: 200px
-      
+
+// text styling
+
+a
+  text-decoration: none
+  color: $color_text_contrast
+  &:hover
+    text-decoration: underline
+
+h1, h2, h3, h4, h5, h6
+  a
+    color: inherit
+    
 h1
-  font-size: 140%
-  font-weight: bold
-  padding-top: 1.5ex
-  padding-bottom: 0.6ex
-  margin: 0
+  font-size: 28px
+  color: black
+
 h2
-  font-size: 120%
-  font-weight: bold
-  padding-top: 2ex
-  padding-bottom: 1ex
-  margin: 0
+  font-size: 24px
+  border-bottom: 1px solid #cccccc
+  color: black
+
 h3
-  font-size: 100%
-  font-weight: bold
-  padding-top: 2ex
-  padding-bottom: 1ex
+  font-size: 18px
 
 h4
-  font-size: 100%
-  font-weight: normal
-  padding-top: 1ex
+  font-size: 16px
 
-p
-  padding-top: 0.3ex
+h5
+  font-size: 14px
+
+h6
+  color: #777777
+  font-size: 14px
 
 .flex  
   display: flex
   flex-direction: column
   section, article
     flex: 1
-    
-footer
-  text-align: right
-  background: #242424
-  padding: 0.5em
-  a
-    padding-left: 10px
-    color: $color_text_light
-    &:hover
-      color: $color_text_contrast
-
 
 ul 
   text-indent: 0 
@@ -194,7 +221,7 @@ iframe
   width: 150px
   margin: 20px
   height: 400px
-
+  
 .hidden
   opacity: 0
 
@@ -205,13 +232,6 @@ iframe
 input, textarea
   color: $color_back_light
 
-// text styling
-
-a
-  text-decoration: none
-  color: $color_text_contrast
-  &:hover
-    color: $color_text_highlight
 
 table
   margin: 10px 0 15px 0
@@ -258,7 +278,5 @@ img
 @media screen and (min-width: 768px)
   aside
     margin-left: -10px
-  body > header
-    flex-direction: row
   .flex
     flex-direction: row
