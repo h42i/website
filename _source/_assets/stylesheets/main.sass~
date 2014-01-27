@@ -1,0 +1,293 @@
+// Mobile first
+// mobile: 0 - 768px
+// tablet: 768 - 1024px
+// desktop 1024px - 1440px
+// wide desktop 1440px - ... 
+
+// variables
+$color_back: #1D1717
+$color_back_light: #303030  
+$color_text: white
+$color_text_highlight: white
+$color_text_light: white
+$color_text_contrast: #55d400
+$color_back_contrast: #55d400
+
+
+// fonts
+@font-face
+  font-family: "icons"
+  src: url(asset_path('icomoon.woff')) format('woff'), url(asset_path('icomoon.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 400
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(asset_path('SourceSansPro-Regular.woff')) format('woff'), url(asset_path('SourceSansPro-Regular.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 700
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(asset_path('SourceSansPro-Bold.woff')) format('woff'), url(asset_path('SourceSansPro-Bold.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: italic
+  font-weight: 400
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(asset_path('SourceSansPro-It.woff')) format('woff'), url(asset_path('SourceSansPro-It.ttf')) format('truetype')
+
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: italic
+  font-weight: 700
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(asset_path('SourceSansPro-BoldIt.woff')) format('woff'), url(asset_path('SourceSansPro-BoldIt.ttf')) format('truetype')
+
+
+// basic
+body 
+  margin: 0
+  font: normal 12pt/1.4em 'Source Sans Pro', sans-serif
+  background: black
+  color: $color_text
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  display: flex
+  display: -webkit-flex
+  min-height: 100vh
+  flex-direction: column
+
+h1
+  font-size: 140%
+  font-weight: bold
+  padding-top: 1.5ex
+  padding-bottom: 0.6ex
+
+h2
+  font-size: 120%
+  font-weight: bold
+  padding-top: 2ex
+  padding-bottom: 1ex
+
+h3
+  font-size: 100%
+  font-weight: bold
+  padding-top: 2ex
+  padding-bottom: 1ex
+
+h4
+  font-size: 100%
+  font-weight: normal
+  padding-top: 1ex
+
+em
+  font-style: italic
+
+strong
+  font-weight: bolder
+
+p
+  padding-top: 0.3ex
+
+body > header
+  background-color: darken($color_back_contrast, 10%)
+  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%)
+  background-size: 13px, 29px, 37px, 53px
+  min-height: 60px  /* ensures that the logo fits */
+  h1
+    color: $color_text_light
+    font-size: 240%
+    padding: 0
+    line-height: 1.0
+  p
+    font-weight: bold
+  img
+    position: absolute
+    margin: 0px
+    right: 18px
+    bottom: -9px
+  #heading
+    padding: 1em
+
+body > main
+  padding: 0.5em 2em
+  background: $color_back
+  flex: 1
+
+footer
+  text-align: right
+  background: $color_back_light
+  padding: 0.5em
+  a
+    padding-left: 10px
+    color: $color_text_light
+    &:hover
+      color: $color_text_contrast
+
+nav
+  width: 100%
+  text-align: center
+  background: $color_back_light
+  .menuline
+    display: inline-block
+    padding: 0px
+  a
+    display: block
+    padding: 6px 13px
+    color: $color_text_light
+    &:hover
+      background: $color_back_contrast
+
+.active
+  font-weight: bold
+
+aside
+  ul
+    list-style: none
+    padding: 0
+
+audio
+  width: 100%
+
+.post
+  margin-bottom: 2em
+  padding-bottom: 1em
+  border-bottom: 5px solid $color_back_light
+
+.paypalform
+  color: $color_back_contrast
+  &:before
+    content: '\23'
+    font-family: "icons"
+    font-style: normal
+  &:hover
+    color: $color_text_highlight
+
+.paypal
+  color: inherit
+  border: none
+  background: none
+  margin-left: 0.25em
+
+#social
+  font-size: 120%
+  margin-left: 0
+// helper
+
+.group:after
+  content: ""
+  display: table
+  clear: both
+
+.m-hidden
+  display: none
+
+.img-left
+  max-width: 40%
+  float: left
+  margin: 0 20px 0 0
+
+.full
+  width: 100%
+
+.half
+  // fuck that margins
+  width: 150px
+  float: left
+  margin: 20px
+  height: 400px
+.hidden
+  opacity: 0
+
+input, textarea
+  color: $color_back_light
+
+// text styling
+
+a
+  text-decoration: none
+  color: $color_text_contrast
+  &:hover
+    color: $color_text_highlight
+
+table
+  margin: 10px 0 15px 0
+  border-collapse: collapse
+
+td, th
+  border: 0px solid #ddd
+  padding: 3px 10px
+
+th
+  padding: 5px 10px
+
+code
+  background-color: $color_back_light
+  padding: 1px 3px
+  font-size: 90%
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+
+img
+  max-width: 100%
+  margin: 15px
+
+.tag
+  float: left
+  background: $color_back_contrast
+  color: $color_text_light
+  padding: 5px
+  margin: 5px 0 0px 5px
+  &:hover
+    color: $color_text_highlight
+
+.button
+  float: left
+  background: $color_back_light
+  color: $color_text_light
+  padding: 5px
+  margin: 10px 5px 10px 5px
+  &:hover
+    color: $color_text_highlight
+
+// media foo
+
+@media screen and (min-width: 360px)
+  nav a
+    display: inline-block
+
+@media screen and (min-width: 768px)
+  .m-hidden
+    display: block
+  .post
+    border-bottom: none
+    padding-right: 1%
+  .wside
+    float: left
+    width: 69%
+  aside
+    padding-left: 5%
+    float: left
+    width: 25%
+  nav
+    text-align: left
+
+@media screen and (min-width: 1024px)
+  body
+    // background-image: url(asset_path('pattern.png'))
+  #wrapper
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+
+@media screen and (min-width: 1440px)
+  #wrapper
+    width: 90%
+    max-width: 1440px
+
+ul 
+  text-indent: 0px 
+  // text-indent war mal 5px
+  list-style-type: square
+  margin-left: 2em
