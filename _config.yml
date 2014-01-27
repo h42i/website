@@ -29,7 +29,6 @@ assets:
   - _assets/webfonts
   cachebust: soft
   css_compressor: sass
-  js_compressor: uglify
 
 info:
   name: Hasi e.V.
