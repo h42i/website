@@ -1,12 +1,12 @@
 $small:  1024px 
 $medium: 1500px
 
-@mixin bp-large
-  @media only screen and (max-width: $large)
-    @content
-
 @mixin bp-medium
   @media only screen and (max-width: $medium)
+    @content
+
+@mixin bp-small
+  @media only screen and (max-width: $small)
     @content
 
 .s-hidden
