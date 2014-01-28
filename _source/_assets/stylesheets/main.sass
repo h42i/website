@@ -52,12 +52,11 @@ body
     display: block
     padding: 10px 2em 10px 2em
   > footer
-    padding: 0 10px
     background: #242424
     nav
       padding: 5px 0
       width: 100%
-      border-bottom: 1px solid #cccccc
+      background: lighten(#242424, 10%)
     h1
       margin-top: .1em
       color: $color_text_contrast
@@ -202,9 +201,16 @@ iframe
   max-width: 100%
   max-height: 50vh
   
-#social
-  font-size: 120%
-  margin-left: 0
+.social
+  a
+    text-align: center
+    width: 33%
+    i
+      font-size: 4em
+      margin: 0
+    p
+      margin-top: -1em
+
 // helper
 
 .group:after

@@ -29,16 +29,23 @@
       <a href="{{link.url}}">{{ link.title }}</a>
     {% endfor %}
     </nav>
-    <section>
-      <article class="social">
-      <h1>social</h1>
-        <a href="https://www.github.com/h42i" target="_blank"><i class="github"></i>Github</a>
-        <a href="https://www.twitter.com/h42i" target="_blank"><i class="twitter"></i>Twitter</a>
-        <a href="https://www.flattr.com/profile/h42i" target="_blank"><i class="flattr"></i>Flattr</a>
-        <!--{% include paypal.html %}</li>
-        <a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a></li>
-        -->
-      </article>
+    <section class="social">
+      <a href="https://www.github.com/h42i" target="_blank">
+        <i class="github"></i>
+        <p>Github</p>
+      </a>
+      <a href="https://www.twitter.com/h42i" target="_blank">
+        <i class="twitter"></i>
+        <p>Twitter</p>
+      </a>
+      <a href="https://www.flattr.com/profile/h42i" target="_blank">
+        <i class="flattr"></i>
+        <p>Flattr</p>
+      </a>
+      <!--
+      {% include paypal.html %}</li>
+      <a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a></li>
+      -->
     </section>
     </footer>
     {% if site.environment == 'production' %}{% include piwik.html %}{% endif %}
