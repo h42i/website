@@ -1,5 +1,4 @@
 @import "fonts"
-@import "paypal"
 @import "_breakpoints"
 @import "_icons"
 
@@ -12,6 +11,11 @@ $color_text_light: white
 $color_text_contrast: #55d400
 $color_back_contrast: #55d400
 
+*, *:before, *:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
 html
   background: url(/images/LED-Throwies.jpg) no-repeat center center fixed
   -webkit-background-size: cover
@@ -21,7 +25,8 @@ html
 
 // basic
 body
-  font: normal 14pt/1.6 'Source Sans Pro', sans-serif
+  font: normal 16pt/1.5 'Source Sans Pro', sans-serif
+  font-size: 100%
   color: #222
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)
   display: flex
@@ -95,10 +100,10 @@ body
     z-index: 10
   .progress
     position: absolute
-    top: 0px
+    bottom: 0px
     left: 0px
-    background: rgba(85,212,0,0.7)
-    height: 3px
+    background: rgba(255,255,255,0.4)
+    height: 5px
     z-index: 20
 
 #Logo
@@ -145,7 +150,7 @@ nav
 
 a
   text-decoration: none
-  color: $color_text_contrast
+  color: #4183c4 
   &:hover
     text-decoration: underline
 
@@ -154,26 +159,26 @@ h1, h2, h3, h4, h5, h6
     color: inherit
     
 h1
-  font-size: 28px
+  font-size: 1.7rem
   color: black
 
 h2
-  font-size: 24px
+  font-size: 1.5em
   border-bottom: 1px solid #cccccc
   color: black
 
 h3
-  font-size: 18px
+  font-size: 1.3rem
 
 h4
-  font-size: 16px
+  font-size: 1.2rem
 
 h5
-  font-size: 14px
+  font-size: 1.1rem
 
 h6
   color: #777777
-  font-size: 14px
+  font-size: 1rem
 
 .flex  
   display: flex
@@ -189,19 +194,12 @@ ul
 .active
   font-weight: bold
 
-audio
-  width: 100%
-
-.post
-  margin-bottom: 2em
-  padding-bottom: 1em
-  border-bottom: 5px solid $color_back_light
-
 iframe
-  max-width: 100%
-  max-height: 50vh
+  width: 100%
+  height: 50vh
   
 .social
+  padding-top: 1em
   a
     text-align: center
     width: 33%
@@ -244,18 +242,24 @@ input, textarea
 
 
 table
-  margin: 10px 0 15px 0
-  border-collapse: collapse
-
-td, th
-  border: 0px solid #ddd
-  padding: 3px 10px
-
-th
-  padding: 5px 10px
+  padding: 0
+  tr
+    margin: 0
+    padding: 0
+    &:nth-child(2n-1)
+      background: rgba(0, 0, 0, .05)
+    td, th
+      margin: 0
+      padding: 6px 13px
+    th
+      font-weight: bold
+    th :first-child, td :first-child
+      margin-top: 0
+    th :last-child, td :last-child
+      margin-bottom: 0
 
 code
-  background-color: $color_back_light
+  background-color: #999
   padding: 1px 3px
   font-size: 90%
   -webkit-border-radius: 3px
@@ -266,27 +270,13 @@ img
   max-width: 100%
   margin: 15px
 
-.tag
-  float: left
-  background: $color_back_contrast
-  color: $color_text_light
-  padding: 5px
-  margin: 5px 0 0px 5px
-  &:hover
-    color: $color_text_highlight
+.break
+  font-weight: bold
 
 .button
-  float: left
-  background: $color_back_light
+  background: #999
   color: $color_text_light
-  padding: 5px
-  margin: 10px 5px 10px 5px
+  padding: 3px 10px
+  margin-right: 10px
   &:hover
     color: $color_text_highlight
-
-// media foo
-@media screen and (min-width: 768px)
-  aside
-    margin-left: -10px
-  .flex
-    flex-direction: row

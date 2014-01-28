@@ -1,11 +1,27 @@
+$small:   640px // iphone4 vertical
+$medium: 1024px // ipad    horizontal
+$large:  1920px // Full-HD monitor
+
 @mixin bp-large
-  @media only screen and (max-width: 60em)
+  @media only screen and (max-width: $large)
     @content
 
 @mixin bp-medium
-  @media only screen and (max-width: 40em)
+  @media only screen and (max-width: $medium)
     @content
 
 @mixin bp-small
-  @media only screen and (max-width: 30em)
+  @media only screen and (max-width: $small)
     @content
+
+.s-hidden
+  @include bp-small
+    display: none
+
+.m-hidden
+  @include bp-medium
+    display: none
+
+.l-hidden
+  @include bp-large
+    display: none

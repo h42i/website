@@ -4,31 +4,28 @@ title: talks
 ---
 
 {% for post in site.categories.talk %}
-<article class="flex">
-<section class="group">
-  <header><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></header>
+<article class="group post">
+  <header>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <section class="controls">
+      {% if post.talk.file %}		
+      <audio controls>
+		  <source src={{ site.podcast.path }}{{ post.talk.file }} type="audio/mpeg">
+		    Your browser does not support this audio format.
+			</audio>
+      {% endif %}
+   </section>
+  </header>
   {{ post.excerpt }}
   {% include break.html %}
-</section>
-<aside>
-	{% if post.talk.file or post.talk.video or post.talk.slides %}
-	<article class="group">
-		<header><h2>media</h2></header>
-		{% if post.talk.file %}		
-			<audio controls>
-			<source src={{ site.podcast.path }}{{ post.talk.file }} type="audio/mpeg">
-			Your browser does not support this audio format.
-			</audio>
-			<a href="{{ site.podcast.path }}{{ post.talk.file }}" class="button">Play (or download)</a>
-		{% endif %}
-		{% if post.talk.video %}
-			<a href="{{ post.talk.video }}" class="button">Video</a>
-		{% endif %}
-		{% if post.talk.slides %}
-			<a href="{{ post.talk.slides }}" class="button">Slides</a>
-		{% endif %}
-	</article>
-	{% endif %}
-</aside>
+  {% if post.talk.file %}		
+  <a href="{{ site.podcast.path }}{{ post.talk.file }}" class="button">Download</a>
+  {% endif %}
+  {% if post.talk.video %}
+  <a href="{{ post.talk.video }}" class="button">Video</a>
+  {% endif %}
+  {% if post.talk.slides %}
+  <a href="{{ post.talk.slides }}" class="button">Slides</a>
+  {% endif %}
 </article>
 {% endfor %}
