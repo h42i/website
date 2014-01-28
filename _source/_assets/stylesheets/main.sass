@@ -1,6 +1,5 @@
 @import "fonts"
 @import "_breakpoints"
-@import "_icons"
 
 // variables
 $color_back: #1D1717
@@ -62,6 +61,7 @@ body
       padding: 5px 0
       width: 100%
       background: lighten(#242424, 10%)
+      text-align: right
     a
       padding-left: 10px
       color: $color_text_light
@@ -84,8 +84,6 @@ body
     p
       margin-top: -1em
 
-     
-    
 #slider
   margin: -10px -2em -10px -2em
   height: 300px
@@ -114,11 +112,13 @@ body
   height: 110px
   width: 130px
 
-nav
+header > nav
   width: 100%
   text-align: right
   margin-right: 2em
   font-size: 1rem
+  @include bp-small
+    margin-right: 0
   a
     display: inline-block
     padding: 6px 13px
@@ -127,8 +127,30 @@ nav
     &:hover
       background: $color_back
       text-decoration: none
+    @include bp-small
+      display: block
+      width: 100%
+      padding: 10px 0
   @include bp-medium
     text-align: center
+
+#Menu-button
+  display: none
+  &:checked ~ #Menu-wrapper
+    display: block
+ 
+#Menu-label
+  display: none
+  text-align: center
+  font-size: 1.5em
+  color: white
+  @include bp-small
+    display: block
+      
+#Menu-wrapper
+  display: block
+  @include bp-small
+    display: none
 
 #heading
   @include bp-medium
@@ -229,7 +251,6 @@ iframe
 input, textarea
   color: $color_back_light
 
-
 table
   padding: 0
   tr
@@ -269,3 +290,16 @@ img
   margin-right: 10px
   &:hover
     color: $color_text_highlight
+
+[data-icon]:before
+  font-family: "icons"   
+  font-style: normal
+  margin-left: 5px
+  content: attr(data-icon)
+
+  -webkit-font-feature-settings: "liga"
+  -moz-font-feature-settings: "liga=1"
+  -moz-font-feature-settings: "liga"
+  -ms-font-feature-settings: "liga" 1
+  -o-font-feature-settings: "liga"
+  font-feature-settings: "liga"

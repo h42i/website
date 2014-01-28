@@ -13,7 +13,9 @@
         <h1>Hasi</h1>
         <p>Dein Hackspace in Siegen</p>
       </section>
-      <nav>
+			<input id="Menu-button" type="checkbox" />
+			<label for="Menu-button" id="Menu-label" data-icon="menu" onclick></label>
+      <nav id="Menu-wrapper">
       {% assign url = page.url|remove:'index.html' %}
       {% for link in site.navigation %}
         <a href="{{link.url}}" {% if url == link.url %}class="active"{% endif %}>{{ link.title }}</a>{{ link.break }}
@@ -24,29 +26,25 @@
       {{ content }}
     </main>
     <footer>
-    <nav>
-    {% for link in site.navigation_bottom %}
-      <a href="{{link.url}}">{{ link.title }}</a>
-    {% endfor %}
-    </nav>
-    <section class="social">
-      <a href="https://www.github.com/h42i" target="_blank">
-        <i class="github"></i>
-        <p>Github</p>
-      </a>
-      <a href="https://www.twitter.com/h42i" target="_blank">
-        <i class="twitter"></i>
-        <p>Twitter</p>
-      </a>
-      <a href="https://www.flattr.com/profile/h42i" target="_blank">
-        <i class="flattr"></i>
-        <p>Flattr</p>
-      </a>
-      <!--
-      {% include paypal.html %}</li>
-      <a href="http://hasi.it/wiki/images/f/f7/Beitrittsformular.pdf" target="_blank">Mitglied werden</a></li>
-      -->
-    </section>
+      <section class="social">
+        <a href="https://www.github.com/h42i" target="_blank">
+          <i data-icon="github"></i>
+          <p>Github</p>
+        </a>
+        <a href="https://www.twitter.com/h42i" target="_blank">
+          <i data-icon="twitter"></i>
+          <p>Twitter</p>
+        </a>
+        <a href="https://www.flattr.com/profile/h42i" target="_blank">
+          <i data-icon="flattr"></i>
+          <p>Flattr</p>
+        </a>
+      </section>
+      <nav>
+      {% for link in site.navigation_bottom %}
+        <a href="{{link.url}}">{{ link.title }}</a>
+      {% endfor %}
+      </nav>
     </footer>
     {% if site.environment == 'production' %}{% include piwik.html %}{% endif %}
   </body>
