@@ -14,7 +14,9 @@
         <p>Dein Hackspace in Siegen</p>
       </section>
 			<input id="Menu-button" type="checkbox" />
-			<label for="Menu-button" id="Menu-label" data-icon="menu" onclick></label>
+			<label for="Menu-button" id="Menu-label" onclick>
+        <img src="/images/icons/menu.svg" alt="">
+      </label>
       <nav id="Menu-wrapper">
       {% assign url = page.url|remove:'index.html' %}
       {% for link in site.navigation %}
