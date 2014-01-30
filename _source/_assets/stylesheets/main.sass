@@ -61,6 +61,8 @@ body
     flex: 1
     display: block
     padding: 10px 2em 10px 2em
+    @include bp-small
+      padding: 10px
   > footer
     background: #242424
     nav
@@ -221,8 +223,9 @@ ul
   font-weight: bold
 
 iframe
-  width: 100%
-  height: 50vh
+  width: 50%
+  //height: 50vh //not supported in mobile safari
+  height: 20%
 // helper
 
 .group:after
