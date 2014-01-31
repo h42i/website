@@ -61,7 +61,7 @@ class Event (dict):
       tim, evt = self.get_time()[0]
 
       if evt["SUMMARY"]:
-        r.append ("*__%s:__ <a name=\"summary-%s\" href=\"/calendar/#item-%s\">%s</a>" % (str (tim.strftime ("%d. %m. %Y")),
+        r.append ("* __%s:__ <a name=\"summary-%s\" href=\"/calendar/#item-%s\">%s</a>" % (str (tim.strftime ("%d. %m. %Y")),
                                                                                         evt["UID"], evt["UID"], evt["SUMMARY"]))
 
       return "\n\n".join (r) + "\n"
