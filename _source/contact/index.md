@@ -6,6 +6,7 @@ title: Nimm Kontakt auf!
 ![](/images/180px-Der_Hybr1s.jpg)  
 [David Penndorf (@Hybr1s)](http://hasi.it/wiki/Benutzer:Hybr1s)  
 E-Mail: <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>
+
 (Auch mit PGP-Verschlüsselung. Den PGP PUBLIC KEY BLOCK findest du ganz unten auf dieser Seite) 
   
 ## Physische Präsenz
@@ -41,6 +42,7 @@ Mehr Infos zur Mailingliste und wie du sie wieder abbestellen kannst, findest du
 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
+
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
 Comment: GPGTools - https://gpgtools.org
 
@@ -71,4 +73,5 @@ kY4u3AzNYuytdrAGXAZTq4v3ynIfk2Uhg45vEisQQ119K6AgwA0BV0ZI14wSBQyc
 EVzNRIorI90HQGZzGx4wRKOBl5xdXmk4JX2XBB05qeN7J+DZfAUBGDKdYDKUZwbo
 cqcFmS9ek57Ne56AVnXr26QleR69xHCI4pqizdzLtkdC
 =eY94
+
 -----END PGP PUBLIC KEY BLOCK-----
