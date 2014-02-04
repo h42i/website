@@ -6,6 +6,7 @@ title: Nimm Kontakt auf!
 ![](/images/180px-Der_Hybr1s.jpg)  
 [David Penndorf (@Hybr1s)](http://hasi.it/wiki/Benutzer:Hybr1s)  
 E-Mail: <a href="mailto:kontakt@hasi.it">kontakt@hasi.it</a>
+(Auch mit PGP-Verschlüsselung. Den PGP PUBLIC KEY BLOCK findest du ganz unten auf dieser Seite) 
   
 ## Physische Präsenz
   
@@ -37,3 +38,37 @@ Damit du auf die Mailingliste schreiben kannst, musst du sie aboniert haben. Um 
 Nun kannst du selbst an die Adresse <a href="mailto:alle@hasi.it"><alle@hasi.it></a> schreiben und damit auf die Mailingliste posten.  
   
 Mehr Infos zur Mailingliste und wie du sie wieder abbestellen kannst, findest du im [Wiki](http://hasi.it/wiki/Mailingliste).
+
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+mQENBFLxUvoBCAC6Qy/xS4UZ4KkjzI5c9JltASAwkmZoOest5Y/1Jo8YCmssUJCp
+ZI9j6qMk7npwJuBksPDw294MZHYo8JhAKmQwRRouIC6liB12TK4Y2CDf7f1Tll32
+pn/4TFZicd2bbwuJljl8qIBdsQy9v6HAu5j43biyyBhgaOmRGZBRxUNtx9RtZ5F/
+jhDuGIEhKV410AodYn+daxbESdcYDGtniBZgLtTeJA8NadRAT+8Cyv0Sg2IVlMnR
+htgDUAO+xTfyiJXNCNWEwBmFzfQLZKxiRx0C/XiW8MVJF9luvofA283KKuxrMrXX
+979SPI/QnbQqL7gzty6LaNYtIKvNFw8bBFjhABEBAAG0R0hhU2kgZS5WLiAtIERl
+aW4gSGFja3NwYWNlIGluIFNpZWdlbiAoaHR0cDovL2hhc2kuaXQpIDxrb250YWt0
+QGhhc2kuaXQ+iQE9BBMBCgAnBQJS8VL6AhsDBQkHhh+ABQsJCAcDBRUKCQgLBRYC
+AwEAAh4BAheAAAoJEKP13x1HeMZem0oH/0T02Ko13zw5Hygs+MKaSMNk3ZftKmdW
+cRGHDWjfpqJ5MBtyCuDSiKc2hyIKXngl/4dsY9dvpJiNCOWs6cBsvGDiggIkmaF+
+y38vF2jvccnNiOzVTeYYHA/+8a7JM+z4O2rY5WmM4tox6eQYWNBHDupZzKdYdDcD
+isiYwVfKxTzJMIWf5DbZHXb8IofAlenG1ljJQ6j2YZ5vLOOya0xKVWco6xvBE77Y
+241Gn0qc91orCQtN09nYRgwHpfB0+XAeuq8IgiZTjMG/PPKO5WhyBh19vsuECBj5
+DKQX+nEC0q+FTciFieO9l1GIbzxl32qHB3QDcxcnb6aZNsRcYd+EGgK5AQ0EUvFS
++gEIANjg4a/8M7v4FarkD3YL7HsViFAQMv37rahw7ctXRpjH6xdU5rz/Aw36IiMm
+4JHwRnN6aqjCOHkliDWAKGpVEjn0A440PklMmsiXTUuGgLp5zEmDSG7FeveZdGhu
+TDg9izvBYrLoEGEw1TuJcnzChkP1SsxmgB8E71wgs1QtwaOLmk1p6qS+m1v2JVj9
+1Vhq0Fa0QZGYNFOEpboi2z9OzSt1aLvsLvtMurXNG47mvZQSm1Xqof6DM0/NueBK
+ObILupEV0GKOI8Jrwh9sntHY1x05vFTRVHxBZelSudm4ExZbwH/xcfcBg1tYy8IO
+7/3VwGkeTraZnOVZyboUziWynesAEQEAAYkBJQQYAQoADwUCUvFS+gIbDAUJB4Yf
+gAAKCRCj9d8dR3jGXnRMB/97eVcGGj/3zWXOw9Wb1PhqeCSfpmLA8ZlKSatzJsHQ
+aX+EHeP2Gn+gNpx9f+M/RE8gQUiG2YHNFs4jFdUnpwTOYRkUBpatHEwvk5zTK686
+rolFhFXdZAXsIykGbCbd6FBpsbDP+7qGu8q2SI2vKixL7fI9Ne2Wx54Z0NjYqDAC
+kY4u3AzNYuytdrAGXAZTq4v3ynIfk2Uhg45vEisQQ119K6AgwA0BV0ZI14wSBQyc
+EVzNRIorI90HQGZzGx4wRKOBl5xdXmk4JX2XBB05qeN7J+DZfAUBGDKdYDKUZwbo
+cqcFmS9ek57Ne56AVnXr26QleR69xHCI4pqizdzLtkdC
+=eY94
+-----END PGP PUBLIC KEY BLOCK-----
