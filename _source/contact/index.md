@@ -40,10 +40,12 @@ Nun kannst du selbst an die Adresse <a href="mailto:alle@hasi.it"><alle@hasi.it>
   
 Mehr Infos zur Mailingliste und wie du sie wieder abbestellen kannst, findest du im [Wiki](http://hasi.it/wiki/Mailingliste).
 
+###PGP PUBLIC KEY
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+
 Comment: GPGTools - https://gpgtools.org
 
 mQENBFLxUvoBCAC6Qy/xS4UZ4KkjzI5c9JltASAwkmZoOest5Y/1Jo8YCmssUJCp
