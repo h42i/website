@@ -103,11 +103,25 @@ class Event (dict):
 
 
    def __lt__ (self, other):
-      return self.get_time ()[0][0] < other.get_time ()[0][0]
+      owntimes = self.get_time ()
+      othertimes = other.get_time ()
 
+      if len (owntimes) > 0 and len (othertimes) > 0:
+         return self.get_time ()[0][0] < other.get_time ()[0][0]
+      elif len (othertimes) > 0:
+         return True
+      elif len (owntimes) > 0:
+         return False
+      else:
+         return False
 
    def is_pending (self):
-      return now < self.get_time ()[0][0]
+      owntimes = self.get_time ()
+
+      if len (owntimes):
+         return now < self.get_time ()[0][0]
+      else:
+         return False
 
 
    def get_time (self, times = []):
@@ -135,6 +149,7 @@ class Event (dict):
       times.sort ()
       while len (times) > 1 and times[0][0] < now:
          times = times[1:]
+
       return times
 
 
