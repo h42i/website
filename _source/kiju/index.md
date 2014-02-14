@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kiju, unser Angebot für Kinder und Jugendliche
+title: KiJu, unser Angebot für Kinder und Jugendliche
 ---
 
 {::options parse_block_html="true" /}
@@ -20,7 +20,7 @@ Weitere Infos und Arbeitsmaterial zum HaSi-KiJu-Programm gibts im [Wiki](http://
 
 ![Scratch](/images/scratch1.jpg "Ein junger Programmierer"){: style="max-width: 400px"}
 
-## Technikspaß in Raum und Zeit
+## Unser Spielfeld 
 
 Alle zwei Wochen montags (außer in den Ferien) von 16:45 bis 18:15 Uhr
 bietet der HaSi e.V. (Hackspace Siegen) ein regelmäßiges, offenes Programm
